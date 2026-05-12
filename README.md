@@ -1,11 +1,12 @@
 # Atemmuskulatur Memory Palace
 
-Interactive static study poster for respiratory muscles / Atemmuskulatur.
+Interactive static study site for respiratory muscles / Atemmuskulatur.
 
-Current design: a generated movie-poster style “Breathing Circus Opera House” memory palace, with deterministic overlay hooks:
+Current version: stitched 15-panel “Rib-Cage Opera House” mnemonic atlas. Each respiratory muscle gets its own larger generated panel with a purposeful background, plus deterministic captions/legend for exact facts.
 
+Color code:
 - green = muscle/name/action hook
 - magenta = innervation/root hook
-- red circle = active character/mini-scene selected from the legend
+- red = active selected panel
 
-The generated image is used as the story background; the HTML legend is the exact medical truth layer because AI-generated text is unreliable.
+Generated art is the memory hook; HTML captions and legend are the truth layer.
