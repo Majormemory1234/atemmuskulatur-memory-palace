@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Zwerchfell-Kuppelkröte",
+    "muscle": "Diaphragma",
+    "innervation": "N. phrenicus C3–5",
+    "green": "Kuppel/Fallschirm zieht Bühnenboden nach unten",
+    "magenta": "Halskrone: Mama–Reh–Löwe = C3–C5",
+    "zone": "Zentrale Bühne",
+    "image": "assets/gpt-image-2-high-panels/panel_01.png"
+  },
+  {
+    "id": 2,
+    "title": "Zwischenrippen-Leiterakrobaten",
+    "muscle": "Mm. intercostales",
+    "innervation": "Nn. intercostales Th1–11",
+    "green": "Akrobaten zwischen Rippen-Leiter öffnen Zwischenräume",
+    "magenta": "Thor + Krawatten-Parade = Th1–Th11",
+    "zone": "Rippenrang",
+    "image": "assets/gpt-image-2-high-panels/panel_02.png"
+  },
+  {
+    "id": 3,
+    "title": "Hals-Seil-Kapitän",
+    "muscle": "M. sternocleidomastoideus",
+    "innervation": "N. accessorius XI + C2–3",
+    "green": "Drei Seile zu Sternum, Clavicula, Mastoid-Mast",
+    "magenta": "Accessoire-XI + Knie/Noah–Mama = C2–C3",
+    "zone": "Hals-Balkon",
+    "image": "assets/gpt-image-2-high-panels/panel_03.png"
+  },
+  {
+    "id": 4,
+    "title": "Skalenen-Treppengnome",
+    "muscle": "Mm. scaleni",
+    "innervation": "C3–8 variabel",
+    "green": "Drei Gnome heben erste/zweite Rippenstufen",
+    "magenta": "Mama–Reh–Löwe–Schuh–Schlüssel–Efeu = C3–C8",
+    "zone": "Hals-Treppe",
+    "image": "assets/gpt-image-2-high-panels/panel_04.png"
+  },
+  {
+    "id": 5,
+    "title": "Großer Pectoralis-Strongman",
+    "muscle": "M. pectoralis major",
+    "innervation": "Nn. pectorales C5–T1",
+    "green": "Kutschersitz-Strongman hebt Rippenvorhänge",
+    "magenta": "Löwe C5 + Thor-Krawatte T1",
+    "zone": "Kutschersitz-Bühne",
+    "image": "assets/gpt-image-2-high-panels/panel_05.png"
+  },
+  {
+    "id": 6,
+    "title": "Kleiner Pectoralis-Page",
+    "muscle": "M. pectoralis minor",
+    "innervation": "N. pectoralis medialis C8–T1",
+    "green": "Kleiner Page zieht Korakoid-Haken / obere Rippen",
+    "magenta": "Efeu C8 + Thor-Krawatte T1",
+    "zone": "Kutschersitz-Bühne",
+    "image": "assets/gpt-image-2-high-panels/panel_06.png"
+  },
+  {
+    "id": 7,
+    "title": "Oberer Sägezahn-Engel",
+    "muscle": "M. serratus posterior superior",
+    "innervation": "Nn. intercostales Th2–5",
+    "green": "Gezackte Flügel heben obere Rippen",
+    "magenta": "Thor + Knie/Noah–Mama–Reh–Löwe = Th2–Th5",
+    "zone": "Hintere obere Loge",
+    "image": "assets/gpt-image-2-high-panels/panel_07.png"
+  },
+  {
+    "id": 8,
+    "title": "Unterer Sägezahn-Kobold",
+    "muscle": "M. serratus posterior inferior",
+    "innervation": "Nn. intercostales Th9–12",
+    "green": "Gezackter Kobold zieht untere Rippen hinab",
+    "magenta": "Thor + Biene–Säge/Krawatte–zwei Krawatten–Krawatte/Noah = Th9–Th12",
+    "zone": "Hintere untere Loge",
+    "image": "assets/gpt-image-2-high-panels/panel_08.png"
+  },
+  {
+    "id": 9,
+    "title": "Vorderer Sägehai-Boxer",
+    "muscle": "M. serratus anterior",
+    "innervation": "N. thoracicus longus C5–7",
+    "green": "Sägehai drückt Scapula flach an Rippen",
+    "magenta": "Langer Thor-Seilnerv: Löwe–Schuh–Schlüssel = C5–C7",
+    "zone": "Seitliche Wand",
+    "image": "assets/gpt-image-2-high-panels/panel_09.png"
+  },
+  {
+    "id": 10,
+    "title": "Gerader Bauchritter",
+    "muscle": "M. rectus abdominis",
+    "innervation": "Th7–12",
+    "green": "Vertikales Schild presst Bauch-Kessel aus",
+    "magenta": "Thor: Schlüssel–Efeu–Biene–Säge/Krawatte–2 Krawatten–Krawatte/Noah",
+    "zone": "Bauch-Maschinenraum",
+    "image": "assets/gpt-image-2-high-panels/panel_10.png"
+  },
+  {
+    "id": 11,
+    "title": "Querer Korsettmeister",
+    "muscle": "M. transversus abdominis",
+    "innervation": "Th7–12 + L1",
+    "green": "Horizontales Korsett zieht Bauch quer zusammen",
+    "magenta": "Thor Th7–12 + Lenden-Holzscheit-Krawatte L1",
+    "zone": "Bauch-Maschinenraum",
+    "image": "assets/gpt-image-2-high-panels/panel_11.png"
+  },
+  {
+    "id": 12,
+    "title": "Äußerer Schrägschärpen-Krieger",
+    "muscle": "M. obliquus externus abdominis",
+    "innervation": "Th5–12",
+    "green": "Äußere Diagonalschärpe presst Bauch schräg",
+    "magenta": "Thor: Löwe bis Krawatte/Noah = Th5–Th12",
+    "zone": "Bauch-Maschinenraum",
+    "image": "assets/gpt-image-2-high-panels/panel_12.png"
+  },
+  {
+    "id": 13,
+    "title": "Innerer Gegenschärpen-Krieger",
+    "muscle": "M. obliquus internus abdominis",
+    "innervation": "Th7–12 + L1",
+    "green": "Innere Gegendiagonale presst Bauch von innen",
+    "magenta": "Thor Th7–12 + Lenden-Holzscheit-Krawatte L1",
+    "zone": "Bauch-Maschinenraum",
+    "image": "assets/gpt-image-2-high-panels/panel_13.png"
+  },
+  {
+    "id": 14,
+    "title": "Quadratischer Lenden-Holzfäller",
+    "muscle": "M. quadratus lumborum",
+    "innervation": "Th12–L4",
+    "green": "Quadratischer Rahmen stabilisiert/zieht 12. Rippe",
+    "magenta": "Thor Th12 + Lenden-Holzscheite Krawatte–Knie–Mama–Reh = L1–L4",
+    "zone": "Lenden-Fundament",
+    "image": "assets/gpt-image-2-high-panels/panel_14.png"
+  },
+  {
+    "id": 15,
+    "title": "Breiter Rücken-Schwimmer",
+    "muscle": "M. latissimus dorsi",
+    "innervation": "N. thoracodorsalis C6–8",
+    "green": "Breiter Schwimmer/Kletterer zieht Seile bei forcierter Exspiration",
+    "magenta": "Thorakodorsal-Seil: Schuh–Schlüssel–Efeu = C6–C8",
+    "zone": "Hintere Wasserbühne",
+    "image": "assets/gpt-image-2-high-panels/panel_15.png"
+  }
+]
