@@ -1,1 +1,263 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Atemmuskulatur Memory Palace</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><main><h1>Atemmuskulatur Memory Palace</h1><p>A one-page Sketchy-inspired mnemonic poster for respiratory muscles: main breathing muscles, inspiratory accessory muscles, expiratory accessory muscles, and innervation/root ranges.</p><div class="buttons"><a class="btn" href="poster.svg" download>Download SVG poster</a><a class="btn secondary" href="poster.svg" target="_blank">Open poster only</a><button class="btn secondary" onclick="window.print()">Print / save PDF</button></div><div class="note"><b>Mnemonic rule:</b> C = cervical collar/crown, Th = Thor hammer/chestplate, L = lumber/log. Numbers use Major System-ish props: 1 tie, 2 Noah/knee, 3 mummy, 4 rye/roar, 5 lion, 6 shoe, 7 key, 8 ivy, 9 bee, 10 saw+tie, 11 two ties, 12 tie+Noah.</div><div class="poster"><object data="poster.svg" type="image/svg+xml"><img src="poster.svg" alt="Atemmuskulatur mnemonic poster"></object></div><div class="note"><b>Accuracy note:</b> This is a study aid, not a primary anatomy source. Some root ranges differ slightly between references; match to your lecture/AMBOSS/atlas if your exam is picky.</div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Atemmuskulatur Memory Palace</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="eyebrow">Respiratory anatomy mnemonic</p>
+    <h1>Atemmuskulatur: the Breathing Circus</h1>
+    <p class="subtitle">A Sketchy-style story scene: walk 1→15 through the rib-cage circus. Each Latin-name character carries innervation props. Click a table row to circle its character in red.</p>
+  </div>
+  <div class="controls">
+    <button id="clearHighlight">Clear highlight</button>
+    <button onclick="window.print()">Print / Save PDF</button>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="stage-card" aria-label="Mnemonic story image">
+    <svg id="poster" viewBox="0 0 1600 1060" role="img" aria-labelledby="svgTitle svgDesc">
+      <title id="svgTitle">Atemmuskulatur Breathing Circus mnemonic scene</title>
+      <desc id="svgDesc">Characters represent respiratory muscles; red highlight circles appear on selected characters.</desc>
+      <defs>
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="8" stdDeviation="10" flood-opacity=".20"/>
+        </filter>
+        <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f9fbff"/>
+          <stop offset=".55" stop-color="#fff2df"/>
+          <stop offset="1" stop-color="#f5e8ff"/>
+        </linearGradient>
+        <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+          <circle cx="3" cy="3" r="2" fill="#9b8ab7" opacity=".18"/>
+        </pattern>
+      </defs>
+
+      <rect width="1600" height="1060" rx="38" fill="url(#sky)"/>
+      <rect width="1600" height="1060" rx="38" fill="url(#dots)"/>
+      <text x="800" y="58" text-anchor="middle" class="svg-title">The Breathing Circus inside the Rib-Cage Tent</text>
+      <text x="800" y="91" text-anchor="middle" class="svg-subtitle">Blue left = INHALE helpers lift ribs • Red right/bottom = EXHALE squeezers press abdomen • center = core pump</text>
+
+      <!-- zones -->
+      <rect x="36" y="122" width="560" height="812" rx="36" fill="#dff5ff" stroke="#1794c8" stroke-width="5" opacity=".75"/>
+      <text x="315" y="160" text-anchor="middle" class="zone inhale">INHALE: lift the tent</text>
+      <rect x="1004" y="122" width="560" height="812" rx="36" fill="#ffe6dc" stroke="#d94c2d" stroke-width="5" opacity=".78"/>
+      <text x="1285" y="160" text-anchor="middle" class="zone exhale">EXHALE: squeeze the air out</text>
+
+      <!-- central rib tent -->
+      <g id="ribTent" filter="url(#softShadow)">
+        <ellipse cx="800" cy="442" rx="282" ry="245" fill="#fffdf7" stroke="#2a203a" stroke-width="8"/>
+        <path d="M610 418 C660 180 940 180 990 418" fill="none" stroke="#6d617f" stroke-width="18" stroke-linecap="round" opacity=".32"/>
+        <path d="M590 458 C675 385 925 385 1010 458" fill="none" stroke="#6d617f" stroke-width="14" stroke-linecap="round" opacity=".35"/>
+        <path d="M610 515 C685 608 915 608 990 515" fill="none" stroke="#6d617f" stroke-width="15" stroke-linecap="round" opacity=".35"/>
+        <path d="M800 190 L800 665" stroke="#ded3bf" stroke-width="8" stroke-dasharray="12 18" opacity=".6"/>
+        <text x="800" y="236" text-anchor="middle" class="tent-label">CORE PUMP</text>
+      </g>
+
+      <!-- story paths -->
+      <path class="walkPath" d="M800,650 L800,335 L245,250 L430,255 L245,462 L430,462 L245,692 L430,692 L1180,250 L1180,420 L1368,420 L1180,650 L1368,650 L1180,840 L1368,840"/>
+
+      <!-- reusable-ish character groups -->
+      <g class="char" id="char-1" data-id="1" transform="translate(800 650)">
+        <circle class="target" r="96"/>
+        <path d="M-120,-30 Q0,-125 120,-30 Q70,20 0,18 Q-70,20 -120,-30Z" fill="#f5d77b" stroke="#2a203a" stroke-width="6"/>
+        <path d="M-78,-18 Q0,38 78,-18" fill="none" stroke="#2a203a" stroke-width="5"/>
+        <circle cx="0" cy="13" r="28" fill="#79c56e" stroke="#2a203a" stroke-width="5"/>
+        <circle cx="-9" cy="8" r="4"/><circle cx="10" cy="8" r="4"/><path d="M-11,21 Q0,28 13,21" fill="none" stroke="#2a203a" stroke-width="3"/>
+        <text y="-138" class="num">1</text><text y="78" class="caption">Dome frog = Diaphragma</text><text y="101" class="roots">C3–5 mummy/rye/lion collar</text>
+      </g>
+
+      <g class="char" id="char-2" data-id="2" transform="translate(800 335)">
+        <circle class="target" r="96"/>
+        <g stroke="#2a203a" stroke-width="6" stroke-linecap="round">
+          <path d="M-86,-56 C-30,-90 30,-90 86,-56" fill="none"/><path d="M-98,-18 C-35,-46 35,-46 98,-18" fill="none"/><path d="M-88,20 C-28,4 28,4 88,20" fill="none"/>
+          <line x1="-55" y1="-70" x2="-18" y2="45"/><line x1="55" y1="-70" x2="18" y2="45"/>
+        </g>
+        <circle cx="-43" cy="-9" r="21" fill="#ffd7a3" stroke="#2a203a" stroke-width="5"/><circle cx="43" cy="-9" r="21" fill="#ffd7a3" stroke="#2a203a" stroke-width="5"/>
+        <text y="-126" class="num">2</text><text y="76" class="caption">Rib acrobats = Intercostales</text><text y="99" class="roots">Thor chestplates Th1–11</text>
+      </g>
+
+      <g class="char" id="char-3" data-id="3" transform="translate(245 250)">
+        <circle class="target" r="91"/>
+        <path d="M-48,38 L-12,-34 L12,-34 L48,38" fill="#9bd5ff" stroke="#2a203a" stroke-width="5"/>
+        <circle cy="-58" r="28" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-60,40 Q0,95 60,40" fill="#c9ecff" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-78,-40 L-10,-88" stroke="#2a203a" stroke-width="7"/><path d="M-78,-40 L-108,10" stroke="#2a203a" stroke-width="7"/>
+        <text x="-116" y="20" class="prop">sternum</text><text x="-22" y="-99" class="prop">mastoid</text>
+        <text y="-122" class="num">3</text><text y="78" class="caption">Sterno-cleido-mastoid sailor</text><text y="101" class="roots">XI skull flag + C2–3 collar</text>
+      </g>
+
+      <g class="char" id="char-4" data-id="4" transform="translate(430 255)">
+        <circle class="target" r="91"/>
+        <path d="M-82,38 H82" stroke="#2a203a" stroke-width="8"/><path d="M-65,10 H65" stroke="#2a203a" stroke-width="8"/><path d="M-48,-18 H48" stroke="#2a203a" stroke-width="8"/>
+        <circle cx="-45" cy="-45" r="24" fill="#b1f5aa" stroke="#2a203a" stroke-width="5"/><circle cx="0" cy="-62" r="24" fill="#8ce887" stroke="#2a203a" stroke-width="5"/><circle cx="45" cy="-45" r="24" fill="#64d477" stroke="#2a203a" stroke-width="5"/>
+        <text y="-124" class="num">4</text><text y="75" class="caption">Scaleni stair goblins</text><text y="98" class="roots">ant C4–6 • med C3–8 • post C6–8</text>
+      </g>
+
+      <g class="char" id="char-5" data-id="5" transform="translate(245 462)">
+        <circle class="target" r="91"/>
+        <path d="M-84,-6 Q0,-80 84,-6 L54,58 Q0,22 -54,58Z" fill="#ff9fc8" stroke="#2a203a" stroke-width="6"/>
+        <circle cy="-52" r="26" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-90,18 L-134,58 M90,18 L134,58" stroke="#2a203a" stroke-width="10" stroke-linecap="round"/>
+        <text y="-121" class="num">5</text><text y="80" class="caption">Major pec strongman</text><text y="103" class="roots">braced coach-seat C5–Th1</text>
+      </g>
+
+      <g class="char" id="char-6" data-id="6" transform="translate(430 462)">
+        <circle class="target" r="91"/>
+        <path d="M-50,8 Q0,-44 50,8 L30,52 Q0,30 -30,52Z" fill="#ffc7dc" stroke="#2a203a" stroke-width="6"/>
+        <circle cy="-42" r="22" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-65,35 L-92,72 M65,35 L92,72" stroke="#2a203a" stroke-width="8" stroke-linecap="round"/>
+        <text x="0" y="8" class="prop">ribs 3–5</text>
+        <text y="-121" class="num">6</text><text y="80" class="caption">Minor pec page</text><text y="103" class="roots">C8–Th1 tiny badge</text>
+      </g>
+
+      <g class="char" id="char-7" data-id="7" transform="translate(245 692)">
+        <circle class="target" r="91"/>
+        <path d="M-78,0 L-24,-38 L-8,5 L20,-42 L35,8 L78,-20 L45,52 L-45,52Z" fill="#d6c7ff" stroke="#2a203a" stroke-width="5"/>
+        <circle cy="-52" r="24" fill="#fff0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-45,-65 Q0,-100 45,-65" fill="none" stroke="#f7ce42" stroke-width="7"/>
+        <text y="-121" class="num">7</text><text y="80" class="caption">Upper serrated angel</text><text y="103" class="roots">Thor feathers Th2–5</text>
+      </g>
+
+      <g class="char" id="char-9" data-id="9" transform="translate(430 692)">
+        <circle class="target" r="91"/>
+        <path d="M-82,20 L-30,-45 L4,0 L30,-50 L85,28 Q10,62 -82,20Z" fill="#8ee8ff" stroke="#2a203a" stroke-width="6"/>
+        <circle cx="-40" cy="-10" r="8" fill="#2a203a"/><path d="M15,12 L80,0" stroke="#fff" stroke-width="6" stroke-dasharray="8 8"/>
+        <path d="M-70,-60 C-10,-92 43,-86 80,-44" fill="none" stroke="#2a203a" stroke-width="5"/>
+        <text y="-121" class="num">9</text><text y="80" class="caption">Anterior saw shark</text><text y="103" class="roots">long thoracic leash C5–7</text>
+      </g>
+
+      <g class="char" id="char-8" data-id="8" transform="translate(1180 250)">
+        <circle class="target" r="91"/>
+        <path d="M-80,-10 L-35,-50 L-15,-10 L10,-55 L28,-8 L72,-35 L60,48 L-58,48Z" fill="#ff9b72" stroke="#2a203a" stroke-width="5"/>
+        <circle cy="-48" r="24" fill="#f07a4e" stroke="#2a203a" stroke-width="5"/><path d="M-8,-55 L8,-55 M-10,-44 Q0,-36 12,-44" stroke="#2a203a" stroke-width="4" fill="none"/>
+        <text y="-121" class="num">8</text><text y="80" class="caption">Lower serrated imp</text><text y="103" class="roots">Thor tail tags Th9–12</text>
+      </g>
+
+      <g class="char" id="char-10" data-id="10" transform="translate(1180 420)">
+        <circle class="target" r="91"/>
+        <rect x="-47" y="-44" width="94" height="105" rx="24" fill="#ffd46b" stroke="#2a203a" stroke-width="6"/>
+        <path d="M0,-40 V60 M-47,-10 H47 M-47,24 H47" stroke="#2a203a" stroke-width="4" opacity=".65"/>
+        <circle cy="-70" r="24" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <text y="-121" class="num">10</text><text y="80" class="caption">Rectus straight six-pack</text><text y="103" class="roots">Thor shield Th7–12</text>
+      </g>
+
+      <g class="char" id="char-11" data-id="11" transform="translate(1368 420)">
+        <circle class="target" r="91"/>
+        <ellipse cx="0" cy="5" rx="70" ry="55" fill="#ffe08c" stroke="#2a203a" stroke-width="6"/>
+        <path d="M-80,2 C-35,-25 35,-25 80,2 M-82,25 C-35,50 35,50 82,25" stroke="#2a203a" stroke-width="7" fill="none"/>
+        <rect x="-25" y="-20" width="50" height="45" rx="8" fill="#fff" stroke="#2a203a" stroke-width="4"/><text y="8" class="prop">L1</text>
+        <text y="-121" class="num">11</text><text y="80" class="caption">Transverse corset</text><text y="103" class="roots">Th7–12 + lumbar tie L1</text>
+      </g>
+
+      <g class="char" id="char-12" data-id="12" transform="translate(1180 650)">
+        <circle class="target" r="91"/>
+        <circle cy="-55" r="24" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-60,45 L55,-50" stroke="#ff5663" stroke-width="28" stroke-linecap="round"/><path d="M-55,-20 L45,55" stroke="#ffe1e4" stroke-width="22" stroke-linecap="round"/>
+        <path d="M-55,50 H55 L35,70 H-35Z" fill="#ff9aa2" stroke="#2a203a" stroke-width="5"/>
+        <text y="-121" class="num">12</text><text y="80" class="caption">Outer oblique sash</text><text y="103" class="roots">outside diagonal Th5–12</text>
+      </g>
+
+      <g class="char" id="char-13" data-id="13" transform="translate(1368 650)">
+        <circle class="target" r="91"/>
+        <circle cy="-55" r="24" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M60,45 L-55,-50" stroke="#ff82a3" stroke-width="28" stroke-linecap="round"/><path d="M55,-20 L-45,55" stroke="#ffe1ec" stroke-width="22" stroke-linecap="round"/>
+        <rect x="-24" y="3" width="48" height="36" rx="8" fill="#fff" stroke="#2a203a" stroke-width="4"/><text y="28" class="prop">L1</text>
+        <path d="M-55,50 H55 L35,70 H-35Z" fill="#ffb3c1" stroke="#2a203a" stroke-width="5"/>
+        <text y="-121" class="num">13</text><text y="80" class="caption">Inner oblique sash</text><text y="103" class="roots">opposite diagonal Th7–12 + L1</text>
+      </g>
+
+      <g class="char" id="char-14" data-id="14" transform="translate(1180 840)">
+        <circle class="target" r="91"/>
+        <rect x="-55" y="-56" width="110" height="110" rx="12" fill="#b79267" stroke="#2a203a" stroke-width="6"/>
+        <circle cy="-75" r="22" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-72,58 H72" stroke="#6f4e2d" stroke-width="14" stroke-linecap="round"/><text y="2" class="prop light">rib 12</text>
+        <text y="-121" class="num">14</text><text y="80" class="caption">Square lumbar lumberjack</text><text y="103" class="roots">Th12 → L4 log ruler</text>
+      </g>
+
+      <g class="char" id="char-15" data-id="15" transform="translate(1368 840)">
+        <circle class="target" r="91"/>
+        <path d="M-90,-20 Q0,-90 90,-20 L52,64 Q0,18 -52,64Z" fill="#94cfff" stroke="#2a203a" stroke-width="6"/>
+        <circle cy="-58" r="24" fill="#ffe0bd" stroke="#2a203a" stroke-width="5"/>
+        <path d="M-100,25 C-35,5 35,5 100,25" stroke="#2a203a" stroke-width="9" fill="none" stroke-linecap="round"/>
+        <text y="-121" class="num">15</text><text y="80" class="caption">Latissimus wide swimmer</text><text y="103" class="roots">thoracodorsal rope C6–8</text>
+      </g>
+
+      <!-- order labels -->
+      <text x="800" y="1005" text-anchor="middle" class="scene-note">Story: the diaphragm frog drops the circus floor → rib acrobats expand the tent → left-side helpers lift → right-side squeezers force air out.</text>
+    </svg>
+  </section>
+
+  <aside class="legend-card">
+    <h2>Clickable legend</h2>
+    <p>Click or hover a row: a red circle appears around that character in the story image.</p>
+    <div class="codebox">
+      <b>Innervation props:</b> C = cervical collar/crown; Th = Thor hammer/chestplate; L = lumber/log.<br>
+      Major-ish numbers: 1 tie, 2 Noah/knee, 3 mummy, 4 rye/roar, 5 lion, 6 shoe, 7 key, 8 ivy, 9 bee, 10 saw+tie, 11 two ties, 12 tie+Noah.
+    </div>
+    <table id="legend">
+      <thead><tr><th>#</th><th>Character / muscle</th><th>Innervation</th></tr></thead>
+      <tbody>
+        <tr data-id="1"><td>1</td><td><b>Dome frog</b><br>Diaphragma</td><td>N. phrenicus C3–5</td></tr>
+        <tr data-id="2"><td>2</td><td><b>Rib acrobats</b><br>Mm. intercostales</td><td>Nn. intercostales Th1–11</td></tr>
+        <tr data-id="3"><td>3</td><td><b>Sterno-cleido-mastoid sailor</b><br>M. sternocleidomastoideus</td><td>N. accessorius XI + C2–3</td></tr>
+        <tr data-id="4"><td>4</td><td><b>Scaleni stair goblins</b><br>Mm. scaleni</td><td>ant C4–6, med C3–8, post C6–8</td></tr>
+        <tr data-id="5"><td>5</td><td><b>Major pec strongman</b><br>M. pectoralis major</td><td>Nn. pectorales C5–Th1</td></tr>
+        <tr data-id="6"><td>6</td><td><b>Minor pec page</b><br>M. pectoralis minor</td><td>N. pectoralis medialis C8–Th1</td></tr>
+        <tr data-id="7"><td>7</td><td><b>Upper serrated angel</b><br>M. serratus posterior superior</td><td>Nn. intercostales Th2–5</td></tr>
+        <tr data-id="8"><td>8</td><td><b>Lower serrated imp</b><br>M. serratus posterior inferior</td><td>Nn. intercostales Th9–12</td></tr>
+        <tr data-id="9"><td>9</td><td><b>Anterior saw shark</b><br>M. serratus anterior</td><td>N. thoracicus longus C5–7</td></tr>
+        <tr data-id="10"><td>10</td><td><b>Rectus straight six-pack</b><br>M. rectus abdominis</td><td>Th7–12</td></tr>
+        <tr data-id="11"><td>11</td><td><b>Transverse corset</b><br>M. transversus abdominis</td><td>Th7–12 + L1</td></tr>
+        <tr data-id="12"><td>12</td><td><b>Outer oblique sash</b><br>M. obliquus externus abdominis</td><td>Th5–12</td></tr>
+        <tr data-id="13"><td>13</td><td><b>Inner oblique sash</b><br>M. obliquus internus abdominis</td><td>Th7–12 + L1</td></tr>
+        <tr data-id="14"><td>14</td><td><b>Square lumbar lumberjack</b><br>M. quadratus lumborum</td><td>Th12–L4</td></tr>
+        <tr data-id="15"><td>15</td><td><b>Latissimus wide swimmer</b><br>M. latissimus dorsi</td><td>N. thoracodorsalis C6–8</td></tr>
+      </tbody>
+    </table>
+  </aside>
+</main>
+
+<section class="story">
+  <h2>The story you rehearse</h2>
+  <ol>
+    <li>The <b>dome frog diaphragm</b> drops the circus floor with a C3–5 collar.</li>
+    <li><b>Intercostal rib acrobats</b> spread the rib-ladder with Thor 1–11 plates.</li>
+    <li>On the inhale side: the <b>SCM sailor</b>, <b>scalene stair goblins</b>, <b>major/minor pec duo</b>, and <b>serratus saw creatures</b> lift/fix the tent.</li>
+    <li>On the exhale side: the <b>rectus knight</b>, <b>transverse corset</b>, <b>oblique sash warriors</b>, <b>square lumbar lumberjack</b>, and <b>wide lat swimmer</b> squeeze the air out.</li>
+  </ol>
+</section>
+
+<script>
+const rows = [...document.querySelectorAll('#legend tbody tr')];
+const chars = [...document.querySelectorAll('.char')];
+function setActive(id, lock=false){
+  rows.forEach(r => r.classList.toggle('active', r.dataset.id === String(id)));
+  chars.forEach(c => c.classList.toggle('active', c.dataset.id === String(id)));
+  if(lock) window.location.hash = 'muscle-' + id;
+}
+rows.forEach(row => {
+  row.tabIndex = 0;
+  row.addEventListener('mouseenter', () => setActive(row.dataset.id));
+  row.addEventListener('focus', () => setActive(row.dataset.id));
+  row.addEventListener('click', () => setActive(row.dataset.id, true));
+  row.addEventListener('keydown', e => { if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setActive(row.dataset.id, true); }});
+});
+chars.forEach(ch => {
+  ch.addEventListener('click', () => setActive(ch.dataset.id, true));
+  ch.style.cursor = 'pointer';
+});
+document.getElementById('clearHighlight').addEventListener('click', () => {
+  rows.forEach(r => r.classList.remove('active'));
+  chars.forEach(c => c.classList.remove('active'));
+  history.replaceState(null, '', location.pathname + location.search);
+});
+if(location.hash.startsWith('#muscle-')) setActive(location.hash.replace('#muscle-',''));
+</script>
+</body>
+</html>
