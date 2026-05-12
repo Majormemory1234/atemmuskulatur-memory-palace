@@ -1,0 +1,292 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1650" role="img" aria-labelledby="title desc">
+<title id="title">Respiratory Muscle Memory Palace Poster</title>
+<desc id="desc">Mnemonic poster for respiratory muscles and innervation.</desc>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&amp;display=swap');
+text { font-family: Inter, Arial, sans-serif; fill:#221b34; }
+.title {font-size:44px;font-weight:900;}
+.subtitle {font-size:19px;font-weight:700;fill:#473a63;}
+.zone {font-size:25px;font-weight:900;letter-spacing:2px;}
+.small {font-size:12px;font-weight:800;}
+.white {fill:white;}
+.num {font-size:31px;font-weight:900;fill:#fff;paint-order:stroke;stroke:#221b34;stroke-width:5px;}
+.root {font-size:14px;font-weight:900;}
+.emoji {font-size:24px;}
+.legendHead {font-size:18px;font-weight:900;fill:#fff;}
+.legendText {font-size:14px;font-weight:700;}
+</style>
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f7fbff"/><stop offset=".5" stop-color="#fff8ec"/><stop offset="1" stop-color="#f8f0ff"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".16"/></filter>
+<marker id="arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L8,3 z" fill="#5e548e"/></marker>
+</defs>
+<rect width="1200" height="1650" fill="url(#bg)"/>
+<text x="600" y="62" text-anchor="middle" class="title">Atemmuskulatur Memory Palace</text>
+<text x="600" y="95" text-anchor="middle" class="subtitle">Walk the numbers 1→15. Each character = muscle; root badge = innervation.</text>
+
+<rect x="55" y="175" width="500" height="760" rx="34" fill="#e6f8ff" stroke="#2a9fd6" stroke-width="5" opacity=".62"/>
+<text x="305" y="210" text-anchor="middle" class="zone" fill="#0077aa">INHALE / LIFT</text>
+<rect x="645" y="175" width="500" height="760" rx="34" fill="#fff0e8" stroke="#e76f51" stroke-width="5" opacity=".66"/>
+<text x="895" y="210" text-anchor="middle" class="zone" fill="#be3d22">EXHALE / SQUEEZE</text>
+<ellipse cx="600" cy="380" rx="185" ry="155" fill="#ffffff" stroke="#221b34" stroke-width="6" filter="url(#shadow)"/>
+<path d="M465 355 C505 210, 695 210, 735 355" fill="none" stroke="#7b6d8d" stroke-width="13" stroke-linecap="round" opacity=".45"/>
+<path d="M455 370 C525 320, 675 320, 745 370" fill="none" stroke="#7b6d8d" stroke-width="9" stroke-linecap="round" opacity=".45"/>
+<path d="M455 415 C525 475, 675 475, 745 415" fill="none" stroke="#7b6d8d" stroke-width="11" stroke-linecap="round" opacity=".45"/>
+<text x="600" y="325" text-anchor="middle" class="subtitle">rib-cage theater</text>
+<path d="M 600,405 L 600,255 L 185,230 L 385,230 L 185,440 L 385,440 L 185,650 L 1005,255 L 385,650 L 815,405 L 1015,420 L 815,620 L 1015,620 L 815,810 L 1015,810" fill="none" stroke="#5e548e" stroke-width="4" stroke-dasharray="9 12" marker-end="url(#arrow)" opacity=".55"/>
+<g filter="url(#shadow)">
+    <g class="char" transform="translate(600,405)">
+      <circle r="58" fill="#ffe08a" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">1</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🪂</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Parachute bellows</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">clown</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">C3–5</text>
+    </g>
+
+    <g class="char" transform="translate(600,255)">
+      <circle r="58" fill="#ffd2a6" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">2</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🪜</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Rib-ladder acrobats</text>
+      <text x="0" y="96" text-anchor="middle" class="small white"></text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th1–11</text>
+    </g>
+
+    <g class="char" transform="translate(185,230)">
+      <circle r="58" fill="#a7e6ff" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">3</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">⚓</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Sterno-mastoid sailor</text>
+      <text x="0" y="96" text-anchor="middle" class="small white"></text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">XI + C2–3</text>
+    </g>
+
+    <g class="char" transform="translate(385,230)">
+      <circle r="58" fill="#a9f5b9" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">4</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🪜</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Three staircase</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">goblins</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">ant. C4–6, med. C3–8, post. C6–8</text>
+    </g>
+
+    <g class="char" transform="translate(185,440)">
+      <circle r="58" fill="#ffc6e0" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">5</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">💪</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Coach-seat pec</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">giant</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">C5–Th1</text>
+    </g>
+
+    <g class="char" transform="translate(385,440)">
+      <circle r="58" fill="#f7b2d9" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">6</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🤏</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Small pec</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">page</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">C8–Th1</text>
+    </g>
+
+    <g class="char" transform="translate(185,650)">
+      <circle r="58" fill="#d7c8ff" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">7</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">👼</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Upper saw-tooth</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">angel</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th2–5</text>
+    </g>
+
+    <g class="char" transform="translate(1005,255)">
+      <circle r="58" fill="#ffb08a" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">8</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">😈</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Lower saw-tooth</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">imp</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th9–12</text>
+    </g>
+
+    <g class="char" transform="translate(385,650)">
+      <circle r="58" fill="#b7f0ff" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">9</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🦈</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Wing-fixing saw</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">shark</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">C5–7</text>
+    </g>
+
+    <g class="char" transform="translate(815,405)">
+      <circle r="58" fill="#ffcc66" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">10</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🛡️</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Six-pack crunch</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">knight</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th7–12</text>
+    </g>
+
+    <g class="char" transform="translate(1015,420)">
+      <circle r="58" fill="#ffdf8a" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">11</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🩻</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Horizontal corset</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">belt</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th7–12 + L1</text>
+    </g>
+
+    <g class="char" transform="translate(815,620)">
+      <circle r="58" fill="#ff9aa2" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">12</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">↘</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Outer diagonal</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">sash warrior</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th5–12</text>
+    </g>
+
+    <g class="char" transform="translate(1015,620)">
+      <circle r="58" fill="#ffb3c1" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">13</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">↗</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Inner diagonal</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">sash warrior</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th7–12 + L1</text>
+    </g>
+
+    <g class="char" transform="translate(815,810)">
+      <circle r="58" fill="#b49a73" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">14</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🪵</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Square lumbar</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">lumberjack</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">Th12–L4</text>
+    </g>
+
+    <g class="char" transform="translate(1015,810)">
+      <circle r="58" fill="#9fd0ff" stroke="#221b34" stroke-width="4"/>
+      <circle cx="0" cy="-20" r="22" fill="#fff4dd" stroke="#221b34" stroke-width="3"/>
+      <path d="M-36,33 Q0,8 36,33 L28,55 L-28,55 Z" fill="#ffffff" opacity="0.86" stroke="#221b34" stroke-width="3"/>
+      <circle cx="-8" cy="-24" r="2.8" fill="#221b34"/><circle cx="9" cy="-24" r="2.8" fill="#221b34"/>
+      <path d="M-10,-13 Q0,-7 12,-13" stroke="#221b34" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="0" y="-72" text-anchor="middle" class="num">15</text>
+      <text x="0" y="-5" text-anchor="middle" class="emoji">🏊</text>
+      <rect x="-51" y="63" width="102" height="46" rx="12" fill="#171323" opacity=".92"/>
+      <text x="0" y="80" text-anchor="middle" class="small white">Giant lat</text>
+      <text x="0" y="96" text-anchor="middle" class="small white">swimmer</text>
+      <rect x="-52" y="113" width="104" height="27" rx="8" fill="#fff" stroke="#221b34" stroke-width="2"/>
+      <text x="0" y="132" text-anchor="middle" class="root">C6–8</text>
+    </g></g>
+
+<rect x="55" y="970" width="1090" height="155" rx="26" fill="#221b34" opacity=".95"/>
+<text x="85" y="1012" class="legendHead">How to read innervation props</text>
+<text x="85" y="1044" class="legendHead" style="font-size:15px">C = cervical collar/crown; Th = Thor hammer/chestplate; L = lumber/log.</text>
+<text x="85" y="1070" class="legendHead" style="font-size:15px">Numbers: 1 tie, 2 Noah/knee, 3 mummy, 4 rye/roar, 5 lion, 6 shoe, 7 key, 8 ivy, 9 bee, 10 saw+tie, 11 two ties, 12 tie+Noah.</text>
+<text x="85" y="1100" class="legendHead" style="font-size:15px">Memory split: core in the center, blue inhale helpers on the left, orange/red forced-exhale squeezers on the right.</text>
+
+<foreignObject x="55" y="1150" width="1090" height="430">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Inter,Arial,sans-serif;background:white;border:4px solid #221b34;border-radius:24px;overflow:hidden;box-shadow:0 8px 22px rgba(0,0,0,.12)">
+    <table style="border-collapse:collapse;width:100%;font-size:13px;line-height:1.22">
+      <thead><tr style="background:#221b34;color:white"><th style="padding:9px">#</th><th style="padding:9px">Character</th><th style="padding:9px">Muscle</th><th style="padding:9px">Nerve</th><th style="padding:9px">Roots</th><th style="padding:9px">Visual cue</th></tr></thead>
+      <tbody><tr><td>1</td><td>Parachute bellows clown</td><td><b>Diaphragma</b></td><td>N. phrenicus</td><td><b>C3–5</b></td><td>C-collar with mummy–rye–lion charms</td></tr>
+<tr><td>2</td><td>Rib-ladder acrobats</td><td><b>Mm. intercostales</b></td><td>Nn. intercostales</td><td><b>Th1–11</b></td><td>Thor chestplates numbered 1–11</td></tr>
+<tr><td>3</td><td>Sterno-mastoid sailor</td><td><b>M. sternocleidomastoideus</b></td><td>N. accessorius + cervical plexus</td><td><b>XI + C2–3</b></td><td>skull-flag XI + C-collar Noah/mummy</td></tr>
+<tr><td>4</td><td>Three staircase goblins</td><td><b>Mm. scaleni ant./med./post.</b></td><td>Rr. anteriores cervical nerves</td><td><b>ant. C4–6, med. C3–8, post. C6–8</b></td><td>three stair goblins lifting rib 1/2</td></tr>
+<tr><td>5</td><td>Coach-seat pec giant</td><td><b>M. pectoralis major</b></td><td>Nn. pectorales lat./med.</td><td><b>C5–Th1</b></td><td>huge braced arms; C5 to Thor-1 badges</td></tr>
+<tr><td>6</td><td>Small pec page</td><td><b>M. pectoralis minor</b></td><td>N. pectoralis medialis</td><td><b>C8–Th1</b></td><td>small helper pulling ribs 3–5</td></tr>
+<tr><td>7</td><td>Upper saw-tooth angel</td><td><b>M. serratus posterior superior</b></td><td>Nn. intercostales</td><td><b>Th2–5</b></td><td>upper back angel with Thor 2–5 feathers</td></tr>
+<tr><td>8</td><td>Lower saw-tooth imp</td><td><b>M. serratus posterior inferior</b></td><td>Nn. intercostales</td><td><b>Th9–12</b></td><td>lower back imp with Thor 9–12 tail tags</td></tr>
+<tr><td>9</td><td>Wing-fixing saw shark</td><td><b>M. serratus anterior</b></td><td>N. thoracicus longus</td><td><b>C5–7</b></td><td>long thoracic leash with C5–7</td></tr>
+<tr><td>10</td><td>Six-pack crunch knight</td><td><b>M. rectus abdominis</b></td><td>Nn. intercostales + subcostal</td><td><b>Th7–12</b></td><td>Thor 7–12 shield</td></tr>
+<tr><td>11</td><td>Horizontal corset belt</td><td><b>M. transversus abdominis</b></td><td>Nn. intercostales/subcostal + iliohypogastric/ilioinguinal</td><td><b>Th7–12 + L1</b></td><td>Thor 7–12 + lumber tie buckle</td></tr>
+<tr><td>12</td><td>Outer diagonal sash warrior</td><td><b>M. obliquus externus abdominis</b></td><td>Nn. intercostales/subcostal</td><td><b>Th5–12</b></td><td>outer sash: Thor 5–12</td></tr>
+<tr><td>13</td><td>Inner diagonal sash warrior</td><td><b>M. obliquus internus abdominis</b></td><td>Nn. intercostales/subcostal + L1 branches</td><td><b>Th7–12 + L1</b></td><td>inner opposite sash: Thor 7–12 + L1</td></tr>
+<tr><td>14</td><td>Square lumbar lumberjack</td><td><b>M. quadratus lumborum</b></td><td>Plexus lumbalis + subcostal</td><td><b>Th12–L4</b></td><td>square log body; Thor-12 to lumbar-4</td></tr>
+<tr><td>15</td><td>Giant lat swimmer</td><td><b>M. latissimus dorsi</b></td><td>N. thoracodorsalis</td><td><b>C6–8</b></td><td>climber-swimmer with C6–8 rope</td></tr></tbody>
+    </table>
+  </div>
+</foreignObject>
+<text x="600" y="1630" text-anchor="middle" class="subtitle">Study aid only: root ranges vary by anatomy source. Verify against your lecture/AMBOSS/atlas for exams.</text>
+</svg>
