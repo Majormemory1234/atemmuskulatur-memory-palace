@@ -1,12 +1,11 @@
 # Atemmuskulatur Memory Palace
 
-Interactive static GitHub Pages study site for respiratory muscles and innervation.
+Interactive static study poster for respiratory muscles / Atemmuskulatur.
 
-Features:
-- Story-based Breathing Circus scene
-- Characters tied to Latin muscle names
-- Innervation encoded as visual props/root badges
-- Click/hover legend rows to draw a red circle around the matching character
-- Printable poster-style layout
+Current design: a generated movie-poster style “Breathing Circus Opera House” memory palace, with deterministic overlay hooks:
 
-Study aid only: innervation ranges can vary slightly by anatomy reference; match to your lecture/AMBOSS/atlas if your exam is picky.
+- green = muscle/name/action hook
+- magenta = innervation/root hook
+- red circle = active character/mini-scene selected from the legend
+
+The generated image is used as the story background; the HTML legend is the exact medical truth layer because AI-generated text is unreliable.

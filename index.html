@@ -8,87 +8,147 @@
 </head>
 <body>
 <header class="hero">
-  <p class="eyebrow">Respiratory anatomy mnemonic</p>
-  <h1>Atemmuskulatur: the Breathing Circus</h1>
-  <p class="subtitle">This version uses an actual generated hand-drawn medical mnemonic story image. Click a legend row: a red circle appears around the corresponding character/area in the scene.</p>
+  <p class="eyebrow">Respiratory anatomy mnemonic · Atemmuskulatur</p>
+  <h1>The Breathing Circus Opera House</h1>
+  <p class="subtitle">A movie-poster memory palace: every performer is one respiratory muscle, placed along a clockwise walk through a rib-cage circus. <b class="green-text">Green</b> marks the muscle/name/action hook; <b class="magenta-text">magenta</b> marks the innervation/root hook.</p>
   <div class="controls"><button id="clearHighlight">Clear highlight</button><button onclick="window.print()">Print / Save PDF</button></div>
 </header>
 
 <main class="layout">
   <section class="scene-card" aria-label="Generated medical mnemonic image">
+    <div class="poster-key"><span class="key muscle"></span> green = muscle/name/action hook <span class="key nerve"></span> magenta = nerve/root hook</div>
     <div id="scene" class="scene">
-      <img src="assets/breathing-circus-mnemonic.png" alt="Hand-drawn Breathing Circus medical mnemonic scene with many characters around a rib-cage circus tent" />
+      <img src="assets/breathing-circus-mnemonic.png" alt="Movie-poster style Breathing Circus medical mnemonic scene with green muscle hooks and magenta innervation hooks" />
       <div id="ring" class="ring" aria-hidden="true"></div>
-      <div class="tag" style="left:50%;top:62%" data-id="1">1</div>
-      <div class="tag" style="left:50%;top:37%" data-id="2">2</div>
-      <div class="tag" style="left:31%;top:24%" data-id="3">3</div>
-      <div class="tag" style="left:22%;top:37%" data-id="4">4</div>
-      <div class="tag" style="left:20%;top:73%" data-id="5">5</div>
-      <div class="tag" style="left:36%;top:68%" data-id="6">6</div>
-      <div class="tag" style="left:65%;top:34%" data-id="7">7</div>
-      <div class="tag" style="left:77%;top:61%" data-id="8">8</div>
-      <div class="tag" style="left:70%;top:47%" data-id="9">9</div>
-      <div class="tag" style="left:53%;top:55%" data-id="10">10</div>
-      <div class="tag" style="left:54%;top:76%" data-id="11">11</div>
-      <div class="tag" style="left:38%;top:82%" data-id="12">12</div>
-      <div class="tag" style="left:67%;top:78%" data-id="13">13</div>
-      <div class="tag" style="left:84%;top:77%" data-id="14">14</div>
-      <div class="tag" style="left:88%;top:35%" data-id="15">15</div>
+      <div id="callout" class="callout" aria-live="polite"></div>
+      <button class="tag" style="left:50%;top:55%" data-id="1">1</button>
+      <button class="tag" style="left:48%;top:34%" data-id="2">2</button>
+      <button class="tag" style="left:27%;top:20%" data-id="3">3</button>
+      <button class="tag" style="left:22%;top:38%" data-id="4">4</button>
+      <button class="tag" style="left:20%;top:67%" data-id="5">5</button>
+      <button class="tag" style="left:35%;top:63%" data-id="6">6</button>
+      <button class="tag" style="left:68%;top:27%" data-id="7">7</button>
+      <button class="tag" style="left:78%;top:56%" data-id="8">8</button>
+      <button class="tag" style="left:71%;top:43%" data-id="9">9</button>
+      <button class="tag" style="left:50%;top:71%" data-id="10">10</button>
+      <button class="tag" style="left:58%;top:73%" data-id="11">11</button>
+      <button class="tag" style="left:35%;top:82%" data-id="12">12</button>
+      <button class="tag" style="left:69%;top:80%" data-id="13">13</button>
+      <button class="tag" style="left:84%;top:76%" data-id="14">14</button>
+      <button class="tag" style="left:88%;top:35%" data-id="15">15</button>
+      <button class="hook-dot muscle-dot" data-id="1" style="left:43.9%;top:47.2%" title="green muscle hook 1"></button>
+      <button class="hook-dot nerve-dot" data-id="1" style="left:56.1%;top:47.2%" title="magenta innervation hook 1"></button>
+      <button class="hook-dot muscle-dot" data-id="2" style="left:39.0%;top:27.9%" title="green muscle hook 2"></button>
+      <button class="hook-dot nerve-dot" data-id="2" style="left:57.0%;top:27.9%" title="magenta innervation hook 2"></button>
+      <button class="hook-dot muscle-dot" data-id="3" style="left:21.2%;top:13.5%" title="green muscle hook 3"></button>
+      <button class="hook-dot nerve-dot" data-id="3" style="left:32.8%;top:13.5%" title="magenta innervation hook 3"></button>
+      <button class="hook-dot muscle-dot" data-id="4" style="left:15.9%;top:30.9%" title="green muscle hook 4"></button>
+      <button class="hook-dot nerve-dot" data-id="4" style="left:28.1%;top:30.9%" title="magenta innervation hook 4"></button>
+      <button class="hook-dot muscle-dot" data-id="5" style="left:13.5%;top:59.5%" title="green muscle hook 5"></button>
+      <button class="hook-dot nerve-dot" data-id="5" style="left:26.5%;top:59.5%" title="magenta innervation hook 5"></button>
+      <button class="hook-dot muscle-dot" data-id="6" style="left:29.6%;top:56.9%" title="green muscle hook 6"></button>
+      <button class="hook-dot nerve-dot" data-id="6" style="left:40.4%;top:56.9%" title="magenta innervation hook 6"></button>
+      <button class="hook-dot muscle-dot" data-id="7" style="left:61.9%;top:19.9%" title="green muscle hook 7"></button>
+      <button class="hook-dot nerve-dot" data-id="7" style="left:74.1%;top:19.9%" title="magenta innervation hook 7"></button>
+      <button class="hook-dot muscle-dot" data-id="8" style="left:71.9%;top:48.9%" title="green muscle hook 8"></button>
+      <button class="hook-dot nerve-dot" data-id="8" style="left:84.1%;top:48.9%" title="magenta innervation hook 8"></button>
+      <button class="hook-dot muscle-dot" data-id="9" style="left:65.2%;top:36.9%" title="green muscle hook 9"></button>
+      <button class="hook-dot nerve-dot" data-id="9" style="left:76.8%;top:36.9%" title="magenta innervation hook 9"></button>
+      <button class="hook-dot muscle-dot" data-id="10" style="left:44.2%;top:64.9%" title="green muscle hook 10"></button>
+      <button class="hook-dot nerve-dot" data-id="10" style="left:55.8%;top:64.9%" title="magenta innervation hook 10"></button>
+      <button class="hook-dot muscle-dot" data-id="11" style="left:51.2%;top:67.6%" title="green muscle hook 11"></button>
+      <button class="hook-dot nerve-dot" data-id="11" style="left:64.8%;top:67.6%" title="magenta innervation hook 11"></button>
+      <button class="hook-dot muscle-dot" data-id="12" style="left:28.5%;top:76.6%" title="green muscle hook 12"></button>
+      <button class="hook-dot nerve-dot" data-id="12" style="left:41.5%;top:76.6%" title="magenta innervation hook 12"></button>
+      <button class="hook-dot muscle-dot" data-id="13" style="left:62.5%;top:74.6%" title="green muscle hook 13"></button>
+      <button class="hook-dot nerve-dot" data-id="13" style="left:75.5%;top:74.6%" title="magenta innervation hook 13"></button>
+      <button class="hook-dot muscle-dot" data-id="14" style="left:77.5%;top:68.5%" title="green muscle hook 14"></button>
+      <button class="hook-dot nerve-dot" data-id="14" style="left:90.5%;top:68.5%" title="magenta innervation hook 14"></button>
+      <button class="hook-dot muscle-dot" data-id="15" style="left:81.5%;top:26.8%" title="green muscle hook 15"></button>
+      <button class="hook-dot nerve-dot" data-id="15" style="left:94.5%;top:26.8%" title="magenta innervation hook 15"></button>
     </div>
     <div class="scene-caption">
-      Story flow: center core pump → left/cool inspiration helpers → right/warm expiration squeezers. The red circle is intentionally large because it marks the mnemonic character/region, not a tiny anatomical structure.
+      Walk order: central diaphragm stage → rib balcony → left accessory inspirators → right posterior/lateral ribs → lower abdominal expiratory engine → far-right back tower. The red circle marks the active mini-scene.
     </div>
   </section>
 
   <aside class="legend-card">
-    <h2>Clickable legend</h2>
-    <p>Click/hover a row or numbered tag to draw the red memory circle.</p>
-    <div class="codebox"><b>Innervation encoding:</b> C = cervical collar/crown, Th = Thor hammer/chestplate, L = lumber/log. Numbers use Major-ish props: 1 tie, 2 Noah/knee, 3 mummy, 4 rye, 5 lion, 6 shoe, 7 key, 8 ivy, 9 bee, 10 saw+tie, 11 two ties, 12 tie+Noah.</div>
-    <table id="legend"><thead><tr><th>#</th><th>Character / muscle</th><th>Innervation</th></tr></thead><tbody>
-      <tr data-id="1"><td>1</td><td><b>Dome/parachute frog clown</b><br>Diaphragma</td><td>N. phrenicus C3–5</td></tr>
-      <tr data-id="2"><td>2</td><td><b>Rib-ladder acrobats</b><br>Mm. intercostales</td><td>Nn. intercostales Th1–11</td></tr>
-      <tr data-id="3"><td>3</td><td><b>Sterno-cleido-mastoid sailor</b><br>M. sternocleidomastoideus</td><td>N. accessorius XI + C2–3</td></tr>
-      <tr data-id="4"><td>4</td><td><b>Scalene stair goblins</b><br>Mm. scaleni</td><td>ant C4–6, med C3–8, post C6–8</td></tr>
-      <tr data-id="5"><td>5</td><td><b>Major pec strongman in Kutschersitz</b><br>M. pectoralis major</td><td>Nn. pectorales C5–Th1</td></tr>
-      <tr data-id="6"><td>6</td><td><b>Minor pec assistant</b><br>M. pectoralis minor</td><td>N. pectoralis medialis C8–Th1</td></tr>
-      <tr data-id="7"><td>7</td><td><b>Upper serrated angel</b><br>M. serratus posterior superior</td><td>Nn. intercostales Th2–5</td></tr>
-      <tr data-id="8"><td>8</td><td><b>Lower serrated imp</b><br>M. serratus posterior inferior</td><td>Nn. intercostales Th9–12</td></tr>
-      <tr data-id="9"><td>9</td><td><b>Anterior saw-shark boxer</b><br>M. serratus anterior</td><td>N. thoracicus longus C5–7</td></tr>
-      <tr data-id="10"><td>10</td><td><b>Straight six-pack knight</b><br>M. rectus abdominis</td><td>Th7–12</td></tr>
-      <tr data-id="11"><td>11</td><td><b>Horizontal corset squeezer</b><br>M. transversus abdominis</td><td>Th7–12 + L1</td></tr>
-      <tr data-id="12"><td>12</td><td><b>Outer diagonal sash warrior</b><br>M. obliquus externus abdominis</td><td>Th5–12</td></tr>
-      <tr data-id="13"><td>13</td><td><b>Inner opposite sash warrior</b><br>M. obliquus internus abdominis</td><td>Th7–12 + L1</td></tr>
-      <tr data-id="14"><td>14</td><td><b>Square lumbar lumberjack</b><br>M. quadratus lumborum</td><td>Th12–L4</td></tr>
-      <tr data-id="15"><td>15</td><td><b>Wide lat swimmer/climber</b><br>M. latissimus dorsi</td><td>N. thoracodorsalis C6–8</td></tr>
+    <h2>Legend: character + hooks</h2>
+    <p>Click/hover a row, number, green dot, or magenta dot. Use the table as the exact truth layer; the generated poster is the memory hook.</p>
+    <div class="codebox"><b>Root prop code:</b> C = cervical crown/collar; Th = Thor hammer/chestplate; L = lumber/log. Major-ish numbers: 1 tie, 2 Noah/knee, 3 mummy, 4 rye, 5 lion, 6 shoe, 7 key, 8 ivy, 9 bee, 10 saw+tie, 11 two ties, 12 tie+Noah.</div>
+    <table id="legend"><thead><tr><th>#</th><th>Character / muscle</th><th><span class="green-pill">green</span></th><th><span class="magenta-pill">magenta</span></th></tr></thead><tbody>
+      <tr data-id="1" id="muscle-1"><td class="num">1</td><td><b>Dome/parachute frog clown</b><span>central stage</span><br><em>Diaphragma</em></td><td><span class="green-pill">Muscle hook</span><br>emerald parachute-dome + frog clown pulling the floor down</td><td><span class="magenta-pill">Innervation hook</span><br>magenta C-crown with mummy-rye-lion charms = C3-C5<br><strong>N. phrenicus C3–5</strong></td></tr>
+      <tr data-id="2" id="muscle-2"><td class="num">2</td><td><b>Rib-ladder acrobats</b><span>upper rib balcony</span><br><em>Mm. intercostales</em></td><td><span class="green-pill">Muscle hook</span><br>emerald bands stretched between rib-ladders</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor rail from tie to two-ties = Th1-Th11<br><strong>Nn. intercostales Th1–11</strong></td></tr>
+      <tr data-id="3" id="muscle-3"><td class="num">3</td><td><b>Sterno-cleido-mastoid sailor</b><span>left neck mast</span><br><em>M. sternocleidomastoideus</em></td><td><span class="green-pill">Muscle hook</span><br>emerald diagonal sailor ropes: sternum anchor + clavicle key + mastoid mast</td><td><span class="magenta-pill">Innervation hook</span><br>magenta XI spirit flag + knee/mummy charms = C2-C3<br><strong>N. accessorius XI + C2–3</strong></td></tr>
+      <tr data-id="4" id="muscle-4"><td class="num">4</td><td><b>Three scalene stair goblins</b><span>left rib staircase</span><br><em>Mm. scaleni</em></td><td><span class="green-pill">Muscle hook</span><br>emerald stair-straps lifting first/second ribs</td><td><span class="magenta-pill">Innervation hook</span><br>magenta cervical collar with mummy→ivy charms = C3-C8<br><strong>C3–8 variants</strong></td></tr>
+      <tr data-id="5" id="muscle-5"><td class="num">5</td><td><b>Major pec strongman in Kutschersitz</b><span>left chest strongman pit</span><br><em>M. pectoralis major</em></td><td><span class="green-pill">Muscle hook</span><br>emerald fan-shaped chest cape, arms fixed to lift ribs</td><td><span class="magenta-pill">Innervation hook</span><br>magenta pectoral medal chain: lion + Thor-tie = C5-Th1<br><strong>Nn. pectorales C5–Th1</strong></td></tr>
+      <tr data-id="6" id="muscle-6"><td class="num">6</td><td><b>Minor pec page/assistant</b><span>under pec strongman</span><br><em>M. pectoralis minor</em></td><td><span class="green-pill">Muscle hook</span><br>small emerald chest strap tugging ribs 3-5/coracoid</td><td><span class="magenta-pill">Innervation hook</span><br>magenta medial glove with ivy + Thor-tie = C8-Th1<br><strong>N. pectoralis medialis C8–Th1</strong></td></tr>
+      <tr data-id="7" id="muscle-7"><td class="num">7</td><td><b>Upper serrated angel</b><span>right upper posterior balcony</span><br><em>M. serratus posterior superior</em></td><td><span class="green-pill">Muscle hook</span><br>emerald saw-tooth angel wings lifting upper ribs</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor hammer with knee→lion = Th2-Th5<br><strong>Nn. intercostales Th2–5</strong></td></tr>
+      <tr data-id="8" id="muscle-8"><td class="num">8</td><td><b>Lower serrated imp</b><span>right lower posterior balcony</span><br><em>M. serratus posterior inferior</em></td><td><span class="green-pill">Muscle hook</span><br>emerald saw-tooth imp pulling lower ribs down</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor hammer with bee→tie-Noah = Th9-Th12<br><strong>Nn. intercostales Th9–12</strong></td></tr>
+      <tr data-id="9" id="muscle-9"><td class="num">9</td><td><b>Anterior saw-shark boxer</b><span>right lateral rib wall</span><br><em>M. serratus anterior</em></td><td><span class="green-pill">Muscle hook</span><br>emerald saw teeth on lateral ribs fixing winged scapula</td><td><span class="magenta-pill">Innervation hook</span><br>long magenta thoracic whip: lion-shoe-key = C5-C7<br><strong>N. thoracicus longus C5–7</strong></td></tr>
+      <tr data-id="10" id="muscle-10"><td class="num">10</td><td><b>Straight six-pack knight</b><span>lower center engine room</span><br><em>M. rectus abdominis</em></td><td><span class="green-pill">Muscle hook</span><br>emerald vertical six-pack shield crunching air upward</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor belt key→tie-Noah = Th7-Th12<br><strong>Th7–12</strong></td></tr>
+      <tr data-id="11" id="muscle-11"><td class="num">11</td><td><b>Horizontal corset master</b><span>lower central compressor</span><br><em>M. transversus abdominis</em></td><td><span class="green-pill">Muscle hook</span><br>emerald horizontal corset squeezing abdomen inward</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor belt key→tie-Noah plus lumber log = Th7-Th12 + L1<br><strong>Th7–12 + L1</strong></td></tr>
+      <tr data-id="12" id="muscle-12"><td class="num">12</td><td><b>Outer diagonal sash warrior</b><span>lower left diagonal lane</span><br><em>M. obliquus externus abdominis</em></td><td><span class="green-pill">Muscle hook</span><br>emerald down-and-in outside sash across abdomen</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor chain lion→tie-Noah = Th5-Th12<br><strong>Th5–12</strong></td></tr>
+      <tr data-id="13" id="muscle-13"><td class="num">13</td><td><b>Inner opposite sash warrior</b><span>lower right diagonal lane</span><br><em>M. obliquus internus abdominis</em></td><td><span class="green-pill">Muscle hook</span><br>emerald up-and-in inner sash crossing the other way</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor chain key→tie-Noah plus lumber log = Th7-Th12 + L1<br><strong>Th7–12 + L1</strong></td></tr>
+      <tr data-id="14" id="muscle-14"><td class="num">14</td><td><b>Square lumbar lumberjack</b><span>far lower right lumbar dock</span><br><em>M. quadratus lumborum</em></td><td><span class="green-pill">Muscle hook</span><br>emerald square frame holding the 12th rib</td><td><span class="magenta-pill">Innervation hook</span><br>magenta Thor tie-Noah + four lumber logs = Th12-L4<br><strong>Th12–L4</strong></td></tr>
+      <tr data-id="15" id="muscle-15"><td class="num">15</td><td><b>Wide lat swimmer/climber</b><span>far right back tower</span><br><em>M. latissimus dorsi</em></td><td><span class="green-pill">Muscle hook</span><br>huge emerald lat-wing cloak pulling arms down</td><td><span class="magenta-pill">Innervation hook</span><br>magenta thoracodorsal cable with shoe-key-ivy = C6-C8<br><strong>N. thoracodorsalis C6–8</strong></td></tr>
     </tbody></table>
   </aside>
 </main>
 
 <section class="story">
-  <h2>How to rehearse it</h2>
-  <p>Start at the central diaphragm frog dropping the floor, then the rib acrobats expand the tent. Move to the left for inspiration helpers lifting/fixing the rib cage. Move to the right/bottom for forced expiration: abs, obliques, quadratus, and latissimus squeeze or pull the air out.</p>
+  <h2>The actual story to rehearse</h2>
+  <p>You enter a rib-cage opera house. The diaphragm frog drops the central dome-floor to start inspiration. Rib acrobats open the cage. On the left, neck and pec performers fix/lift the upper chest. On the right, serrated saw creatures adjust the posterior/lateral ribs. In the basement, abdominal warriors squeeze the air out; the lumbar lumberjack anchors rib 12; the lat swimmer finishes with a cough/pull-down.</p>
+  <div class="story-grid"><article data-id="1"><b>1. Dome/parachute frog clown</b><span>emerald parachute-dome + frog clown pulling the floor down</span><small>magenta C-crown with mummy-rye-lion charms = C3-C5</small></article>
+<article data-id="2"><b>2. Rib-ladder acrobats</b><span>emerald bands stretched between rib-ladders</span><small>magenta Thor rail from tie to two-ties = Th1-Th11</small></article>
+<article data-id="3"><b>3. Sterno-cleido-mastoid sailor</b><span>emerald diagonal sailor ropes: sternum anchor + clavicle key + mastoid mast</span><small>magenta XI spirit flag + knee/mummy charms = C2-C3</small></article>
+<article data-id="4"><b>4. Three scalene stair goblins</b><span>emerald stair-straps lifting first/second ribs</span><small>magenta cervical collar with mummy→ivy charms = C3-C8</small></article>
+<article data-id="5"><b>5. Major pec strongman in Kutschersitz</b><span>emerald fan-shaped chest cape, arms fixed to lift ribs</span><small>magenta pectoral medal chain: lion + Thor-tie = C5-Th1</small></article>
+<article data-id="6"><b>6. Minor pec page/assistant</b><span>small emerald chest strap tugging ribs 3-5/coracoid</span><small>magenta medial glove with ivy + Thor-tie = C8-Th1</small></article>
+<article data-id="7"><b>7. Upper serrated angel</b><span>emerald saw-tooth angel wings lifting upper ribs</span><small>magenta Thor hammer with knee→lion = Th2-Th5</small></article>
+<article data-id="8"><b>8. Lower serrated imp</b><span>emerald saw-tooth imp pulling lower ribs down</span><small>magenta Thor hammer with bee→tie-Noah = Th9-Th12</small></article>
+<article data-id="9"><b>9. Anterior saw-shark boxer</b><span>emerald saw teeth on lateral ribs fixing winged scapula</span><small>long magenta thoracic whip: lion-shoe-key = C5-C7</small></article>
+<article data-id="10"><b>10. Straight six-pack knight</b><span>emerald vertical six-pack shield crunching air upward</span><small>magenta Thor belt key→tie-Noah = Th7-Th12</small></article>
+<article data-id="11"><b>11. Horizontal corset master</b><span>emerald horizontal corset squeezing abdomen inward</span><small>magenta Thor belt key→tie-Noah plus lumber log = Th7-Th12 + L1</small></article>
+<article data-id="12"><b>12. Outer diagonal sash warrior</b><span>emerald down-and-in outside sash across abdomen</span><small>magenta Thor chain lion→tie-Noah = Th5-Th12</small></article>
+<article data-id="13"><b>13. Inner opposite sash warrior</b><span>emerald up-and-in inner sash crossing the other way</span><small>magenta Thor chain key→tie-Noah plus lumber log = Th7-Th12 + L1</small></article>
+<article data-id="14"><b>14. Square lumbar lumberjack</b><span>emerald square frame holding the 12th rib</span><small>magenta Thor tie-Noah + four lumber logs = Th12-L4</small></article>
+<article data-id="15"><b>15. Wide lat swimmer/climber</b><span>huge emerald lat-wing cloak pulling arms down</span><small>magenta thoracodorsal cable with shoe-key-ivy = C6-C8</small></article></div>
 </section>
 
 <script>
 const hotspots = {
-  1:{x:50,y:62,w:18,h:22}, 2:{x:50,y:37,w:24,h:20}, 3:{x:31,y:24,w:17,h:20}, 4:{x:22,y:37,w:18,h:22},
-  5:{x:20,y:73,w:18,h:22}, 6:{x:36,y:68,w:16,h:18}, 7:{x:65,y:34,w:17,h:22}, 8:{x:77,y:61,w:17,h:22},
-  9:{x:70,y:47,w:16,h:18}, 10:{x:53,y:55,w:16,h:20}, 11:{x:54,y:76,w:20,h:16}, 12:{x:38,y:82,w:18,h:16},
-  13:{x:67,y:78,w:18,h:16}, 14:{x:84,y:77,w:18,h:22}, 15:{x:88,y:35,w:18,h:24}
-};
+  1:{x:50,y:55,w:17,h:23,title:'Dome/parachute frog clown',muscle:'Diaphragma',inn:'N. phrenicus C3–5',mhook:'emerald parachute-dome + frog clown pulling the floor down',nhook:'magenta C-crown with mummy-rye-lion charms = C3-C5'},
+  2:{x:48,y:34,w:25,h:18,title:'Rib-ladder acrobats',muscle:'Mm. intercostales',inn:'Nn. intercostales Th1–11',mhook:'emerald bands stretched between rib-ladders',nhook:'magenta Thor rail from tie to two-ties = Th1-Th11'},
+  3:{x:27,y:20,w:16,h:19,title:'Sterno-cleido-mastoid sailor',muscle:'M. sternocleidomastoideus',inn:'N. accessorius XI + C2–3',mhook:'emerald diagonal sailor ropes: sternum anchor + clavicle key + mastoid mast',nhook:'magenta XI spirit flag + knee/mummy charms = C2-C3'},
+  4:{x:22,y:38,w:17,h:21,title:'Three scalene stair goblins',muscle:'Mm. scaleni',inn:'C3–8 variants',mhook:'emerald stair-straps lifting first/second ribs',nhook:'magenta cervical collar with mummy→ivy charms = C3-C8'},
+  5:{x:20,y:67,w:18,h:22,title:'Major pec strongman in Kutschersitz',muscle:'M. pectoralis major',inn:'Nn. pectorales C5–Th1',mhook:'emerald fan-shaped chest cape, arms fixed to lift ribs',nhook:'magenta pectoral medal chain: lion + Thor-tie = C5-Th1'},
+  6:{x:35,y:63,w:15,h:18,title:'Minor pec page/assistant',muscle:'M. pectoralis minor',inn:'N. pectoralis medialis C8–Th1',mhook:'small emerald chest strap tugging ribs 3-5/coracoid',nhook:'magenta medial glove with ivy + Thor-tie = C8-Th1'},
+  7:{x:68,y:27,w:17,h:21,title:'Upper serrated angel',muscle:'M. serratus posterior superior',inn:'Nn. intercostales Th2–5',mhook:'emerald saw-tooth angel wings lifting upper ribs',nhook:'magenta Thor hammer with knee→lion = Th2-Th5'},
+  8:{x:78,y:56,w:17,h:21,title:'Lower serrated imp',muscle:'M. serratus posterior inferior',inn:'Nn. intercostales Th9–12',mhook:'emerald saw-tooth imp pulling lower ribs down',nhook:'magenta Thor hammer with bee→tie-Noah = Th9-Th12'},
+  9:{x:71,y:43,w:16,h:18,title:'Anterior saw-shark boxer',muscle:'M. serratus anterior',inn:'N. thoracicus longus C5–7',mhook:'emerald saw teeth on lateral ribs fixing winged scapula',nhook:'long magenta thoracic whip: lion-shoe-key = C5-C7'},
+  10:{x:50,y:71,w:16,h:18,title:'Straight six-pack knight',muscle:'M. rectus abdominis',inn:'Th7–12',mhook:'emerald vertical six-pack shield crunching air upward',nhook:'magenta Thor belt key→tie-Noah = Th7-Th12'},
+  11:{x:58,y:73,w:19,h:16,title:'Horizontal corset master',muscle:'M. transversus abdominis',inn:'Th7–12 + L1',mhook:'emerald horizontal corset squeezing abdomen inward',nhook:'magenta Thor belt key→tie-Noah plus lumber log = Th7-Th12 + L1'},
+  12:{x:35,y:82,w:18,h:16,title:'Outer diagonal sash warrior',muscle:'M. obliquus externus abdominis',inn:'Th5–12',mhook:'emerald down-and-in outside sash across abdomen',nhook:'magenta Thor chain lion→tie-Noah = Th5-Th12'},
+  13:{x:69,y:80,w:18,h:16,title:'Inner opposite sash warrior',muscle:'M. obliquus internus abdominis',inn:'Th7–12 + L1',mhook:'emerald up-and-in inner sash crossing the other way',nhook:'magenta Thor chain key→tie-Noah plus lumber log = Th7-Th12 + L1'},
+  14:{x:84,y:76,w:18,h:22,title:'Square lumbar lumberjack',muscle:'M. quadratus lumborum',inn:'Th12–L4',mhook:'emerald square frame holding the 12th rib',nhook:'magenta Thor tie-Noah + four lumber logs = Th12-L4'},
+  15:{x:88,y:35,w:18,h:24,title:'Wide lat swimmer/climber',muscle:'M. latissimus dorsi',inn:'N. thoracodorsalis C6–8',mhook:'huge emerald lat-wing cloak pulling arms down',nhook:'magenta thoracodorsal cable with shoe-key-ivy = C6-C8'},};
 const ring=document.getElementById('ring');
+const callout=document.getElementById('callout');
 const rows=[...document.querySelectorAll('#legend tbody tr')];
-const tags=[...document.querySelectorAll('.tag')];
+const targets=[...document.querySelectorAll('.tag,.hook-dot,.story-grid article')];
 function setActive(id, lock=false){
   const h=hotspots[id]; if(!h) return;
   ring.style.left=`${h.x}%`; ring.style.top=`${h.y}%`; ring.style.width=`${h.w}%`; ring.style.height=`${h.h}%`; ring.classList.add('show');
+  callout.style.left=`${Math.min(88, Math.max(12, h.x))}%`; callout.style.top=`${Math.max(7, h.y - h.h/2 - 6)}%`;
+  callout.innerHTML=`<b>${id}. ${h.title}</b><span class="green-text">${h.mhook}</span><span class="magenta-text">${h.nhook}</span><em>${h.muscle} · ${h.inn}</em>`;
+  callout.classList.add('show');
   rows.forEach(r=>r.classList.toggle('active',r.dataset.id===String(id)));
-  tags.forEach(t=>t.classList.toggle('active',t.dataset.id===String(id)));
+  targets.forEach(t=>t.classList.toggle('active',t.dataset.id===String(id)));
   if(lock) history.replaceState(null,'','#muscle-'+id);
 }
-rows.forEach(r=>{r.tabIndex=0;r.onmouseenter=()=>setActive(r.dataset.id);r.onclick=()=>setActive(r.dataset.id,true);r.onfocus=()=>setActive(r.dataset.id);r.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setActive(r.dataset.id,true)}}});
-tags.forEach(t=>{t.onclick=()=>setActive(t.dataset.id,true);t.onmouseenter=()=>setActive(t.dataset.id)});
-document.getElementById('clearHighlight').onclick=()=>{ring.classList.remove('show');rows.forEach(r=>r.classList.remove('active'));tags.forEach(t=>t.classList.remove('active'));history.replaceState(null,'',location.pathname+location.search)};
+[...rows,...targets].forEach(el=>{el.tabIndex=0;el.onmouseenter=()=>setActive(el.dataset.id);el.onclick=()=>setActive(el.dataset.id,true);el.onfocus=()=>setActive(el.dataset.id);el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setActive(el.dataset.id,true)}}});
+document.getElementById('clearHighlight').onclick=()=>{ring.classList.remove('show');callout.classList.remove('show');rows.forEach(r=>r.classList.remove('active'));targets.forEach(t=>t.classList.remove('active'));history.replaceState(null,'',location.pathname+location.search)};
 if(location.hash.startsWith('#muscle-')) setActive(location.hash.replace('#muscle-',''));
 </script>
 </body>
