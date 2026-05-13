@@ -1,9 +1,3 @@
-# Atemmuskulatur Atemzug-Manufaktur
+# Atemmuskulatur vollständige Hook-Tafel
 
-Komplett neu gebaute, reduzierte Version des Atemmuskulatur-Gedächtnispalasts.
-
-- ein einziges gruppiertes Gesamtbild statt überladener 15-Figuren-Szene
-- 9 Lernstationen, ähnliche Muskeln zusammengefasst
-- rote klickbare Kreise zeigen direkt die passende Legende
-- Innervation als Höhe + Range-Endpunkte: C/Th/L/S als feste Zeichen, Zahlenrange nur Anfang–Ende
-- exakte Muskeln/Innervationen in der HTML-Tabelle
+15 kontrolliert generierte Einzelbilder, zu einem Poster zusammengesetzt. Jede Karte hat eine Muskel-Hauptfigur und eine magenta Innervations-Begleitfigur; die exakte Innervation ist zusätzlich deterministisch auf dem Poster eingeblendet.
