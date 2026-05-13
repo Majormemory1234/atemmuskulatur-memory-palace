@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Schema der Arteria carotis externa und ihrer Äste</title>
+  <desc id="desc">Selbst gezeichnetes Lernschema: A. carotis communis teilt sich in A. carotis interna und externa; die externe gibt Thyroidea superior, Lingualis, Facialis, Pharyngea ascendens, Ramus sternocleidomastoideus, Occipitalis, Auricularis posterior sowie Endäste Maxillaris und Temporalis superficialis ab.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 Z" fill="#b91c1c"/></marker>
+    <linearGradient id="artery" x1="0" x2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#991b1b"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".24"/></filter>
+    <style>
+      .artery{fill:none;stroke:url(#artery);stroke-width:24;stroke-linecap:round;stroke-linejoin:round;filter:url(#shadow)}
+      .branch{fill:none;stroke:#dc2626;stroke-width:15;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+      .thin{stroke-width:12}.label{font-family:Inter,Arial,sans-serif;font-size:27px;font-weight:800;fill:#35150f}.small{font-size:21px;font-weight:700;fill:#6b2b20}.tag{fill:#fff7ed;stroke:#7c2d12;stroke-width:3}.num{fill:#e11d48;stroke:white;stroke-width:5}.numtext{font-size:27px;font-weight:1000;fill:#fff;text-anchor:middle;dominant-baseline:central}.zone{font-size:20px;font-weight:900;letter-spacing:.08em;fill:#9a3412}.bone{fill:#fef3c7;stroke:#92400e;stroke-width:4;opacity:.92}.head{fill:#fde68a;stroke:#92400e;stroke-width:5}.soft{fill:#fee2e2;stroke:#991b1b;stroke-width:3;opacity:.9}.note{font-size:18px;fill:#6b2b20;font-weight:650}
+    </style>
+  </defs>
+  <rect width="1200" height="900" rx="38" fill="#fff4df"/>
+  <path d="M715 95 C855 135 945 250 950 405 C955 565 858 703 710 755 C778 660 805 535 778 405 C750 270 690 175 715 95Z" class="head"/>
+  <path d="M598 725 C690 725 760 760 800 835" class="bone" fill="none" stroke-width="30" stroke-linecap="round"/>
+  <path d="M478 790 C575 780 705 800 810 860" class="bone" fill="none" stroke-width="22" stroke-linecap="round"/>
+  <text x="60" y="72" class="label" style="font-size:38px">A. carotis externa – Äste</text>
+  <text x="62" y="105" class="small">Schema: ventrale, mediale, dorsale Gruppe + Endäste</text>
+
+  <!-- common, bifurcation, internal/external -->
+  <path d="M480 820 C488 720 500 620 515 530 C530 440 552 350 575 265 C592 205 613 153 642 110" class="artery"/>
+  <path d="M520 535 C460 460 418 365 398 250" class="artery" opacity=".58"/>
+  <text x="292" y="240" class="small">A. carotis interna</text>
+  <text x="356" y="845" class="small">A. carotis communis</text>
+  <text x="640" y="135" class="small">A. carotis externa</text>
+
+  <!-- branches in approximate order/groups -->
+  <path d="M514 548 C420 555 335 598 270 660" class="branch"/>
+  <path d="M532 472 C420 450 326 420 235 374" class="branch"/>
+  <path d="M552 395 C462 350 395 300 326 225" class="branch"/>
+  <path d="M545 430 C610 390 646 322 656 240" class="branch thin"/>
+  <path d="M565 350 C665 340 735 320 804 275" class="branch thin"/>
+  <path d="M584 285 C664 250 725 200 770 132" class="branch"/>
+  <path d="M615 225 C710 220 785 195 850 150" class="branch thin"/>
+  <path d="M641 112 C752 108 854 96 980 82" class="branch"/>
+  <path d="M640 112 C670 52 720 34 790 28" class="branch"/>
+
+  <!-- labels -->
+  <g transform="translate(66 632)"><rect class="tag" width="250" height="72" rx="18"/><circle class="num" cx="28" cy="36" r="24"/><text class="numtext" x="28" y="37">1</text><text class="label" x="62" y="31">A. thyroidea</text><text class="small" x="62" y="57">superior</text></g>
+  <g transform="translate(46 335)"><rect class="tag" width="205" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">2</text><text class="label" x="62" y="38">A. lingualis</text></g>
+  <g transform="translate(100 170)"><rect class="tag" width="195" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">3</text><text class="label" x="62" y="38">A. facialis</text></g>
+  <g transform="translate(650 205)"><rect class="tag" width="265" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">4</text><text class="label" x="62" y="38">A. pharyngea ↑</text></g>
+  <g transform="translate(790 250)"><rect class="tag" width="320" height="62" rx="18"/><circle class="num" cx="28" cy="31" r="23"/><text class="numtext" x="28" y="32">5</text><text class="label" x="62" y="27">R. sternocleido-</text><text class="small" x="62" y="51">mastoideus</text></g>
+  <g transform="translate(755 88)"><rect class="tag" width="225" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">6</text><text class="label" x="62" y="38">A. occipitalis</text></g>
+  <g transform="translate(850 130)"><rect class="tag" width="300" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">7</text><text class="label" x="62" y="38">A. auricularis post.</text></g>
+  <g transform="translate(958 44)"><rect class="tag" width="210" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">8</text><text class="label" x="62" y="38">A. maxillaris</text></g>
+  <g transform="translate(778 8)"><rect class="tag" width="310" height="58" rx="18"/><circle class="num" cx="28" cy="29" r="23"/><text class="numtext" x="28" y="30">9</text><text class="label" x="62" y="38">A. temporalis superfic.</text></g>
+
+  <text x="90" y="765" class="zone">VENTRAL: 1 · 2 · 3</text>
+  <text x="670" y="366" class="zone">MEDIAL: 4</text>
+  <text x="770" y="355" class="zone">DORSAL: 5 · 6 · 7</text>
+  <text x="800" y="205" class="zone">ENDÄSTE: 8 · 9</text>
+  <text x="62" y="876" class="note">Hinweis: Der R. sternocleidomastoideus wird in manchen klassischen 8-Ast-Merksprüchen weggelassen; DocCheck führt ihn in der dorsalen Gruppe.</text>
+</svg>

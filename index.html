@@ -1,81 +1,38 @@
 <!doctype html>
 <html lang="de">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atemmuskulatur integrierte Mnemonik-Szene</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medizinische Memory Palaces</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <p class="eyebrow">großes Einzelbild · Atem-Theater · darunter Detail-Atlas</p>
-  <h1>Atemmuskulatur: eine große Sketchy-artige Gedächtnisszene</h1>
-  <p>Oben ist jetzt wieder ein echtes großes Gesamtbild: ein zusammenhängendes Atem-Theater im Rippen-Luftschiff. Die kleinen/Detailbilder sind nicht mehr der Hauptposter-Ersatz, sondern dienen darunter als Zoom-/Wahrheitslayer für die exakten Innervations-Hooks.</p>
-  <div class="key"><span class="gdot"></span> grün = Muskel/Aktion <span class="mdot"></span> magenta = Innervation <span class="rdot"></span> rot = klickbare Nummer <span class="ydot"></span> gold = Atem-Route</div>
+<nav class="site-nav"><a href="index.html">Index</a><a href="pages/atemmuskulatur.html">Atemmuskulatur</a><a href="pages/carotis-externa.html">Carotis externa</a></nav>
+<header class="home-hero">
+  <p class="eyebrow">Memory Palaces · Merksprüche · Anatomie-Schemata</p>
+  <h1>Medizinische Gedächtnisorte</h1>
+  <p>Index für Sketchy-/Meditricks-artige Lernbilder, Merksprüche und saubere Wahrheitslayer. Neue Themen können hier als eigene Seiten ergänzt werden.</p>
 </header>
 <main>
-<section class="poster master-scene">
-  <h2>Großes Gesamtbild: das Atem-Theater</h2>
-  <p>Die 15 Figuren leben in derselben Szene: Rippen-Luftschiff, Bühnenboden, Lungenkammer, Seile, Treppen, Bauchdeck und Rücken-Zone. Die roten Nummern sind anklickbar; die Faktenbox liefert die exakte Innervation.</p>
-  <div class="integrated-wrap">
-    <img src="assets/atemmuskulatur_integrated_master_scene_v2.png" alt="Eine große integrierte Atemmuskulatur-Gedächtnisszene im Atem-Theater">
-    <button class="hotspot" data-id="1" style="left:39.0%;top:61.0%">1</button><button class="hotspot" data-id="2" style="left:18.0%;top:24.0%">2</button><button class="hotspot" data-id="3" style="left:50.0%;top:14.0%">3</button><button class="hotspot" data-id="4" style="left:69.0%;top:24.0%">4</button><button class="hotspot" data-id="5" style="left:83.0%;top:18.0%">5</button><button class="hotspot" data-id="6" style="left:91.0%;top:31.0%">6</button><button class="hotspot" data-id="7" style="left:28.0%;top:43.0%">7</button><button class="hotspot" data-id="8" style="left:18.0%;top:61.0%">8</button><button class="hotspot" data-id="9" style="left:75.0%;top:51.0%">9</button><button class="hotspot" data-id="10" style="left:25.0%;top:78.0%">10</button><button class="hotspot" data-id="11" style="left:50.0%;top:74.0%">11</button><button class="hotspot" data-id="12" style="left:57.0%;top:80.0%">12</button><button class="hotspot" data-id="13" style="left:66.0%;top:79.0%">13</button><button class="hotspot" data-id="14" style="left:77.0%;top:85.0%">14</button><button class="hotspot" data-id="15" style="left:88.0%;top:81.0%">15</button>
-    <aside id="sceneLegend" class="scene-legend" aria-live="polite"><b id="sceneLegendTitle"></b><span id="sceneLegendMuscle"></span><span id="sceneLegendInn"></span><span id="sceneLegendCode" class="magenta"></span><span id="sceneLegendAction" class="green"></span><a href="#legend">zur Tabelle</a></aside>
-  </div>
-  <p><a href="assets/atemmuskulatur_integrated_master_scene_v2.png" target="_blank">Gesamtbild groß öffnen</a></p>
-</section>
-<section class="focus">
-  <p class="zone" id="focusZone"></p>
-  <h2 id="focusTitle"></h2>
-  <p id="focusMuscle"></p>
-  <p id="focusInn"></p>
-  <p class="magenta" id="focusCode"></p>
-  <p class="green" id="focusAction"></p>
-  <div class="buttons"><button data-id="1">1</button><button data-id="2">2</button><button data-id="3">3</button><button data-id="4">4</button><button data-id="5">5</button><button data-id="6">6</button><button data-id="7">7</button><button data-id="8">8</button><button data-id="9">9</button><button data-id="10">10</button><button data-id="11">11</button><button data-id="12">12</button><button data-id="13">13</button><button data-id="14">14</button><button data-id="15">15</button></div>
-</section>
-<section class="poster detail-atlas">
-  <h2>Detail-Atlas: vollständige Hook-Tafel mit lesbarer Innervation</h2>
-  <p>Hier bleiben die 15 kontrollierten Einzelbilder als Lern-Zoom erhalten. Diese Tafel ist bewusst genauer/lesbarer als das große Stimmungsbild: C/Th/L, Range-Endpunkte und Nerven stehen deterministisch im Bild.</p>
-  <img src="assets/atemmuskulatur_complete_hooks_poster.jpg" alt="Detail-Atlas der Atemmuskulatur mit Innervations-Hooks">
-  <p><a href="assets/atemmuskulatur_complete_hooks_poster.jpg" target="_blank">Detail-Atlas groß öffnen</a></p>
-</section>
-<section id="legend" class="legend"><h2>Wahrheitslayer: Figuren, Muskeln, Innervation</h2><table><thead><tr><th>#</th><th>Figur / Muskel</th><th>Innervation</th><th>Hook-Code</th><th>Muskelaktion</th></tr></thead><tbody><tr data-id="1"><td>1</td><td><b>Zwerchfell-Kuppelkröte</b><br><em>Diaphragma</em></td><td>N. phrenicus C3–5</td><td><span class="magenta">C = Halskrone<br>3–5 = Mama → Löwe<br>Phrenicus-Fährmann/Phönix</span></td><td class="green">Kuppel senkt sich: Inspiration</td></tr>
-<tr data-id="2"><td>2</td><td><b>Zwischenrippen-Leiterakrobaten</b><br><em>Mm. intercostales</em></td><td>Nn. intercostales Th1–11</td><td><span class="magenta">Th = Thorhammer<br>1–11 = Krawatte → Doppel-Krawatte<br>Interkostal-Schienen</span></td><td class="green">zwischen den Rippen: Ziehharmonika</td></tr>
-<tr data-id="3"><td>3</td><td><b>Sterno-Kleido-Mastoid-Kapitän</b><br><em>M. sternocleidomastoideus</em></td><td>N. accessorius XI + C2–3</td><td><span class="magenta">C = Halskrone + XI-Accessoire<br>2–3 = Knie/Noah → Mama<br>Accessoire-Bote</span></td><td class="green">3 Seile: Sternum, Clavicula, Mastoid</td></tr>
-<tr data-id="4"><td>4</td><td><b>Skalenen-Treppengnome</b><br><em>Mm. scaleni</em></td><td>C3–8 variabel</td><td><span class="magenta">C = Halskrone<br>3–8 = Mama → Efeu<br>Halskronen-Bote</span></td><td class="green">Treppen heben 1./2. Rippe</td></tr>
-<tr data-id="5"><td>5</td><td><b>Großer Pectoralis-Strongman</b><br><em>M. pectoralis major</em></td><td>Nn. pectorales C5–T1</td><td><span class="magenta">C + Th = Krone + Thorhammer<br>C5–T1 = Löwe → Thor-Krawatte<br>Pectoralis-Duo-Bote</span></td><td class="green">großer Brustzug bei fixierten Armen</td></tr>
-<tr data-id="6"><td>6</td><td><b>Kleiner Pectoralis-Page</b><br><em>M. pectoralis minor</em></td><td>N. pectoralis medialis C8–T1</td><td><span class="magenta">C + Th = Krone + Thorhammer<br>C8–T1 = Efeu → Thor-Krawatte<br>medialer Pectoralis-Bote</span></td><td class="green">Coracoid-Haken zieht obere Rippen</td></tr>
-<tr data-id="7"><td>7</td><td><b>Oberer Sägezahn-Engel</b><br><em>M. serratus posterior superior</em></td><td>Nn. intercostales Th2–5</td><td><span class="magenta">Th = Thorhammer<br>2–5 = Knie/Noah → Löwe<br>Interkostal-Bote oben</span></td><td class="green">gezackter Engel hebt obere Rippen</td></tr>
-<tr data-id="8"><td>8</td><td><b>Unterer Sägezahn-Kobold</b><br><em>M. serratus posterior inferior</em></td><td>Nn. intercostales Th9–12</td><td><span class="magenta">Th = Thorhammer<br>9–12 = Biene → Noah<br>Interkostal-Bote unten</span></td><td class="green">gezackter Kobold zieht untere Rippen</td></tr>
-<tr data-id="9"><td>9</td><td><b>Vorderer Sägehai-Boxer</b><br><em>M. serratus anterior</em></td><td>N. thoracicus longus C5–7</td><td><span class="magenta">C = Halskrone<br>5–7 = Löwe → Schlüssel<br>LANGES Thorax-Seil</span></td><td class="green">Sägehai presst Scapula-Tür an</td></tr>
-<tr data-id="10"><td>10</td><td><b>Gerader Bauchritter</b><br><em>M. rectus abdominis</em></td><td>Th7–12</td><td><span class="magenta">Th = Thorhammer<br>7–12 = Schlüssel → Noah<br>Thor-Bauchast</span></td><td class="green">gerades Schild presst Bauch</td></tr>
-<tr data-id="11"><td>11</td><td><b>Quer-Korsettmeister</b><br><em>M. transversus abdominis</em></td><td>Th7–12 + L1</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th7–12 + L1 = Schlüssel→Noah + L-Krawatte<br>Thor/Lenden-Bote</span></td><td class="green">queres Korsett presst Bauch</td></tr>
-<tr data-id="12"><td>12</td><td><b>Äußerer Schrägschärpen-Krieger</b><br><em>M. obliquus externus abdominis</em></td><td>Th5–12</td><td><span class="magenta">Th = Thorhammer<br>5–12 = Löwe → Noah<br>Thor-Bauchast außen</span></td><td class="green">äußere Diagonale abwärts</td></tr>
-<tr data-id="13"><td>13</td><td><b>Innerer Gegenschärpen-Krieger</b><br><em>M. obliquus internus abdominis</em></td><td>Th7–12 + L1</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th7–12 + L1 = Schlüssel→Noah + L-Krawatte<br>Thor/Lenden-Bote innen</span></td><td class="green">innere Gegendiagonale</td></tr>
-<tr data-id="14"><td>14</td><td><b>Quadratischer Lenden-Holzfäller</b><br><em>M. quadratus lumborum</em></td><td>Th12–L4</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th12–L4 = Thor-Noah → Lenden-Reh<br>Grenzbote Thor/Lende</span></td><td class="green">Quadratrahmen stabilisiert 12. Rippe</td></tr>
-<tr data-id="15"><td>15</td><td><b>Breiter Rücken-Schwimmer</b><br><em>M. latissimus dorsi</em></td><td>N. thoracodorsalis C6–8</td><td><span class="magenta">C = Halskrone<br>6–8 = Schuh → Efeu<br>Thoracodorsal-Seil</span></td><td class="green">breiter Rücken zieht Armseile</td></tr></tbody></table></section>
-<section class="note"><h2>Aufbau</h2><p>Oben: ein großes zusammenhängendes Bild wie ein Sketchy-/Meditricks-Gedächtnisort. Darunter: die exakten Einzel-Hooks, damit nichts Medizinisches durch Bildgenerierungs-Artefakte verloren geht. Besonders Serratus anterior bleibt als Sägehai mit langem Thorax-Seil und C5–7-Code verankert.</p></section>
+  <section class="library-grid" aria-label="Memory-Palace Index">
+    <article class="library-card featured">
+      <p class="card-kicker">Memory Palace</p>
+      <h2>Atemmuskulatur</h2>
+      <p>Großes Atem-Theater im Rippen-Luftschiff plus Detail-Atlas mit allen Inspirations-/Exspirationsmuskeln und Innervationen.</p>
+      <a class="card-link" href="pages/atemmuskulatur.html">öffnen →</a>
+    </article>
+    <article class="library-card">
+      <p class="card-kicker">Merkspruch + Schema</p>
+      <h2>Carotis externa</h2>
+      <p>Äste der A. carotis externa mit deutschem Merkspruch, klassischer Variante und selbst gezeichnetem Arterienschema.</p>
+      <a class="card-link" href="pages/carotis-externa.html">öffnen →</a>
+    </article>
+    <article class="library-card ghost">
+      <p class="card-kicker">Platzhalter</p>
+      <h2>Nächster Palast</h2>
+      <p>Hier können weitere Themen folgen: Hirnnerven, Plexus brachialis, Beckenboden, Pharmaka, Embryologie usw.</p>
+    </article>
+  </section>
 </main>
-<script>
-const DATA=[{"id": "1", "title": "Zwerchfell-Kuppelkröte", "muscle": "Diaphragma", "inn": "N. phrenicus C3–5", "level": "C = Halskrone", "range": "3–5 = Mama → Löwe", "nerve": "Phrenicus-Fährmann/Phönix", "action": "Kuppel senkt sich: Inspiration"}, {"id": "2", "title": "Zwischenrippen-Leiterakrobaten", "muscle": "Mm. intercostales", "inn": "Nn. intercostales Th1–11", "level": "Th = Thorhammer", "range": "1–11 = Krawatte → Doppel-Krawatte", "nerve": "Interkostal-Schienen", "action": "zwischen den Rippen: Ziehharmonika"}, {"id": "3", "title": "Sterno-Kleido-Mastoid-Kapitän", "muscle": "M. sternocleidomastoideus", "inn": "N. accessorius XI + C2–3", "level": "C = Halskrone + XI-Accessoire", "range": "2–3 = Knie/Noah → Mama", "nerve": "Accessoire-Bote", "action": "3 Seile: Sternum, Clavicula, Mastoid"}, {"id": "4", "title": "Skalenen-Treppengnome", "muscle": "Mm. scaleni", "inn": "C3–8 variabel", "level": "C = Halskrone", "range": "3–8 = Mama → Efeu", "nerve": "Halskronen-Bote", "action": "Treppen heben 1./2. Rippe"}, {"id": "5", "title": "Großer Pectoralis-Strongman", "muscle": "M. pectoralis major", "inn": "Nn. pectorales C5–T1", "level": "C + Th = Krone + Thorhammer", "range": "C5–T1 = Löwe → Thor-Krawatte", "nerve": "Pectoralis-Duo-Bote", "action": "großer Brustzug bei fixierten Armen"}, {"id": "6", "title": "Kleiner Pectoralis-Page", "muscle": "M. pectoralis minor", "inn": "N. pectoralis medialis C8–T1", "level": "C + Th = Krone + Thorhammer", "range": "C8–T1 = Efeu → Thor-Krawatte", "nerve": "medialer Pectoralis-Bote", "action": "Coracoid-Haken zieht obere Rippen"}, {"id": "7", "title": "Oberer Sägezahn-Engel", "muscle": "M. serratus posterior superior", "inn": "Nn. intercostales Th2–5", "level": "Th = Thorhammer", "range": "2–5 = Knie/Noah → Löwe", "nerve": "Interkostal-Bote oben", "action": "gezackter Engel hebt obere Rippen"}, {"id": "8", "title": "Unterer Sägezahn-Kobold", "muscle": "M. serratus posterior inferior", "inn": "Nn. intercostales Th9–12", "level": "Th = Thorhammer", "range": "9–12 = Biene → Noah", "nerve": "Interkostal-Bote unten", "action": "gezackter Kobold zieht untere Rippen"}, {"id": "9", "title": "Vorderer Sägehai-Boxer", "muscle": "M. serratus anterior", "inn": "N. thoracicus longus C5–7", "level": "C = Halskrone", "range": "5–7 = Löwe → Schlüssel", "nerve": "LANGES Thorax-Seil", "action": "Sägehai presst Scapula-Tür an"}, {"id": "10", "title": "Gerader Bauchritter", "muscle": "M. rectus abdominis", "inn": "Th7–12", "level": "Th = Thorhammer", "range": "7–12 = Schlüssel → Noah", "nerve": "Thor-Bauchast", "action": "gerades Schild presst Bauch"}, {"id": "11", "title": "Quer-Korsettmeister", "muscle": "M. transversus abdominis", "inn": "Th7–12 + L1", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th7–12 + L1 = Schlüssel→Noah + L-Krawatte", "nerve": "Thor/Lenden-Bote", "action": "queres Korsett presst Bauch"}, {"id": "12", "title": "Äußerer Schrägschärpen-Krieger", "muscle": "M. obliquus externus abdominis", "inn": "Th5–12", "level": "Th = Thorhammer", "range": "5–12 = Löwe → Noah", "nerve": "Thor-Bauchast außen", "action": "äußere Diagonale abwärts"}, {"id": "13", "title": "Innerer Gegenschärpen-Krieger", "muscle": "M. obliquus internus abdominis", "inn": "Th7–12 + L1", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th7–12 + L1 = Schlüssel→Noah + L-Krawatte", "nerve": "Thor/Lenden-Bote innen", "action": "innere Gegendiagonale"}, {"id": "14", "title": "Quadratischer Lenden-Holzfäller", "muscle": "M. quadratus lumborum", "inn": "Th12–L4", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th12–L4 = Thor-Noah → Lenden-Reh", "nerve": "Grenzbote Thor/Lende", "action": "Quadratrahmen stabilisiert 12. Rippe"}, {"id": "15", "title": "Breiter Rücken-Schwimmer", "muscle": "M. latissimus dorsi", "inn": "N. thoracodorsalis C6–8", "level": "C = Halskrone", "range": "6–8 = Schuh → Efeu", "nerve": "Thoracodorsal-Seil", "action": "breiter Rücken zieht Armseile"}];
-function find(id){return DATA.find(x=>x.id===String(id));}
-function setActive(id){
- const d=find(id); if(!d) return;
- document.querySelectorAll('.hotspot').forEach(b=>b.classList.toggle('active',b.dataset.id===d.id));
- document.querySelectorAll('tr[data-id]').forEach(r=>r.classList.toggle('active',r.dataset.id===d.id));
- document.querySelectorAll('.buttons button').forEach(b=>b.classList.toggle('active',b.dataset.id===d.id));
- sceneLegendTitle.textContent=d.id+'. '+d.title;
- sceneLegendMuscle.textContent=d.muscle;
- sceneLegendInn.textContent=d.inn;
- sceneLegendCode.innerHTML=d.level+'<br>'+d.range+'<br>'+d.nerve;
- sceneLegendAction.textContent=d.action;
- focusZone.textContent='Station '+d.id;
- focusTitle.textContent=d.title;
- focusMuscle.innerHTML='<b>Muskel:</b> '+d.muscle;
- focusInn.innerHTML='<b>Innervation:</b> '+d.inn;
- focusCode.innerHTML=d.level+' · '+d.range+' · '+d.nerve;
- focusAction.textContent=d.action;
-}
-document.querySelectorAll('[data-id]').forEach(el=>el.addEventListener('click',()=>setActive(el.dataset.id)));
-setActive(1);
-</script>
-</body></html>
+</body>
+</html>
