@@ -1,3 +1,9 @@
-# Atemmuskulatur Story-Palast
+# Atemmuskulatur Atemzug-Manufaktur
 
-Deutsche GPT-image-2-high Story-Version: oben ein echtes integriertes Gesamtbild im Sketchy/Meditricks-Sinn, in dem alle 15 Figuren in einem zusammenhängenden Rippen-Opernhaus sichtbar sind; darunter schematische Route, Detail-Atlas und Wahrheitstabelle.
+Komplett neu gebaute, reduzierte Version des Atemmuskulatur-Gedächtnispalasts.
+
+- ein einziges gruppiertes Gesamtbild statt überladener 15-Figuren-Szene
+- 9 Lernstationen, ähnliche Muskeln zusammengefasst
+- rote klickbare Kreise zeigen direkt die passende Legende
+- Innervation als Höhe + Range-Endpunkte: C/Th/L/S als feste Zeichen, Zahlenrange nur Anfang–Ende
+- exakte Muskeln/Innervationen in der HTML-Tabelle
