@@ -1,3 +1,3 @@
-# Atemmuskulatur vollständige Hook-Tafel
+# Atemmuskulatur integrierte Mnemonik-Szene
 
-15 kontrolliert generierte Einzelbilder, zu einem Poster zusammengesetzt. Jede Karte hat eine Muskel-Hauptfigur und eine magenta Innervations-Begleitfigur; die exakte Innervation ist zusätzlich deterministisch auf dem Poster eingeblendet.
+Oben steht jetzt wieder ein großes zusammenhängendes Atem-Theater als Sketchy-/Meditricks-artiger Gedächtnisort. Der vollständige Detail-Atlas mit 15 kontrollierten Einzelbildern bleibt darunter als Wahrheits-/Zoom-Layer mit deterministisch lesbarer Innervation.
