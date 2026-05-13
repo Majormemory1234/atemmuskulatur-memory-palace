@@ -1,3 +1,3 @@
 # Atemmuskulatur Story-Palast
 
-Deutsche GPT-image-2-high Story-Version: 15 stärker variierte Einzelbilder, plus eine Ein-Bild-Routenkarte, in der alle Szenen gleichzeitig sichtbar sind und durch die goldene Atemperle verbunden werden.
+Deutsche GPT-image-2-high Story-Version: oben ein echtes integriertes Gesamtbild im Sketchy/Meditricks-Sinn, in dem alle 15 Figuren in einem zusammenhängenden Rippen-Opernhaus sichtbar sind; darunter schematische Route, Detail-Atlas und Wahrheitstabelle.
