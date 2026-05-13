@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "title": "Zwerchfell-Kuppelkröte",
+    "muscle": "Diaphragma",
+    "inn": "N. phrenicus C3–5",
+    "zone": "Akt I: Die Einatmung beginnt",
+    "scene": "Zentrale Kuppelbühne: die Kröte zieht den Bühnenboden nach unten und saugt die goldene Atemperle ein.",
+    "green": "Kuppel/Fallschirm + grüne Zugseile = Zwerchfell senkt sich.",
+    "magenta": "Halskrone Mama–Reh–Löwe = C3–C5 / Phrenicus.",
+    "image": "assets/gpt-image-2-story-panels/panel_01.png"
+  },
+  {
+    "id": 2,
+    "title": "Zwischenrippen-Leiterakrobaten",
+    "muscle": "Mm. intercostales",
+    "inn": "Nn. intercostales Th1–11",
+    "zone": "Akt I: Rippen öffnen",
+    "scene": "Rippen-Leiter-Gang: Akrobaten spreizen die Zwischenräume wie eine Ziehharmonika.",
+    "green": "Akrobaten wirklich zwischen den Rippen = Intercostales.",
+    "magenta": "Thor-Geländer mit Krawatten-Parade = Th1–Th11.",
+    "image": "assets/gpt-image-2-story-panels/panel_02.png"
+  },
+  {
+    "id": 3,
+    "title": "Sterno-Kleido-Mastoid-Kapitän",
+    "muscle": "M. sternocleidomastoideus",
+    "inn": "N. accessorius XI + C2–3",
+    "zone": "Akt II: Halshelfer ziehen",
+    "scene": "Hals-Balkon als Hafenmast: drei grüne Seile laufen zu Sternum, Clavicula und Mastoid.",
+    "green": "Drei Seile zum Namen + Brustkorb-Zug bei Atemnot.",
+    "magenta": "XI-Accessoire plus Knie/Noah–Mama = C2–C3.",
+    "image": "assets/gpt-image-2-story-panels/panel_03.png"
+  },
+  {
+    "id": 4,
+    "title": "Skalenen-Treppengnome",
+    "muscle": "Mm. scaleni",
+    "inn": "C3–8 variabel",
+    "zone": "Akt II: Halshelfer ziehen",
+    "scene": "Schiefe Treppenwerkstatt: drei Gnome heben die ersten Rippenstufen.",
+    "green": "Skalenen = Treppe; sie heben 1./2. Rippe.",
+    "magenta": "Mama–Reh–Löwe–Schuh–Schlüssel–Efeu = C3–C8.",
+    "image": "assets/gpt-image-2-story-panels/panel_04.png"
+  },
+  {
+    "id": 5,
+    "title": "Großer Pectoralis-Strongman",
+    "muscle": "M. pectoralis major",
+    "inn": "Nn. pectorales C5–T1",
+    "zone": "Akt III: Kutschersitz",
+    "scene": "Vorderbühne: Strongman im Kutschersitz zieht Vorhangseile und hebt die Rippenkulisse.",
+    "green": "Große Brustplatte + fixierte Arme = Atemhilfsmuskel.",
+    "magenta": "Löwe C5 + Thor-Krawatte T1.",
+    "image": "assets/gpt-image-2-story-panels/panel_05.png"
+  },
+  {
+    "id": 6,
+    "title": "Kleiner Pectoralis-Page",
+    "muscle": "M. pectoralis minor",
+    "inn": "N. pectoralis medialis C8–T1",
+    "zone": "Akt III: Kutschersitz",
+    "scene": "Kleiner Page unter dem Balkon zieht am Coracoid-Haken und klappt obere Rippen auf.",
+    "green": "Kleiner Brust-Helfer + Coracoid-Haken.",
+    "magenta": "Efeu C8 + Thor-Krawatte T1.",
+    "image": "assets/gpt-image-2-story-panels/panel_06.png"
+  },
+  {
+    "id": 7,
+    "title": "Oberer Sägezahn-Engel",
+    "muscle": "M. serratus posterior superior",
+    "inn": "Nn. intercostales Th2–5",
+    "zone": "Akt IV: Hintere Logen",
+    "scene": "Helle obere Loge: Sägezahn-Engel hebt obere Rippen wie Fensterläden.",
+    "green": "Oberer gezackter Flügel hebt obere Rippen.",
+    "magenta": "Thor + Knie/Noah–Mama–Reh–Löwe = Th2–Th5.",
+    "image": "assets/gpt-image-2-story-panels/panel_07.png"
+  },
+  {
+    "id": 8,
+    "title": "Unterer Sägezahn-Kobold",
+    "muscle": "M. serratus posterior inferior",
+    "inn": "Nn. intercostales Th9–12",
+    "zone": "Akt IV: Hintere Logen",
+    "scene": "Dunkle untere Kellerloge: Sägezahn-Kobold zieht untere Rippen an Ketten hinab.",
+    "green": "Unterer gezackter Kobold zieht untere Rippen nach unten.",
+    "magenta": "Thor + Biene–Säge/Krawatte–zwei Krawatten–Krawatte/Noah = Th9–Th12.",
+    "image": "assets/gpt-image-2-story-panels/panel_08.png"
+  },
+  {
+    "id": 9,
+    "title": "Vorderer Sägehai-Boxer",
+    "muscle": "M. serratus anterior",
+    "inn": "N. thoracicus longus C5–7",
+    "zone": "Akt V: Seitliche Wand",
+    "scene": "Seitliche Boxarena: Sägehai-Boxer presst die Scapula-Tür flach an die Rippenwand.",
+    "green": "Vorderer Sägezahn fixiert Scapula an den Rippen.",
+    "magenta": "Langes Thorax-Seil mit Löwe–Schuh–Schlüssel = C5–C7.",
+    "image": "assets/gpt-image-2-story-panels/panel_09.png"
+  },
+  {
+    "id": 10,
+    "title": "Gerader Bauchritter",
+    "muscle": "M. rectus abdominis",
+    "inn": "Th7–12",
+    "zone": "Akt VI: Bauch-Maschinenraum",
+    "scene": "Dampfmaschinenraum: Ritter mit geradem Sixpack-Schild presst den Bauch-Kessel gerade zusammen.",
+    "green": "Gerades vertikales Schild = Rectus; Bauchpresse.",
+    "magenta": "Thor: Schlüssel–Efeu–Biene–Säge/Krawatte–2 Krawatten–Krawatte/Noah = Th7–Th12.",
+    "image": "assets/gpt-image-2-story-panels/panel_10.png"
+  },
+  {
+    "id": 11,
+    "title": "Querer Korsettmeister",
+    "muscle": "M. transversus abdominis",
+    "inn": "Th7–12 + L1",
+    "zone": "Akt VI: Bauch-Maschinenraum",
+    "scene": "Schneider-Mechaniker schnürt ein horizontales Korsett quer um den Bauch-Kessel.",
+    "green": "Quer verlaufendes Korsett = Transversus; Luft wird herausgedrückt.",
+    "magenta": "Thor Th7–Th12 + Lenden-Krawatte L1.",
+    "image": "assets/gpt-image-2-story-panels/panel_11.png"
+  },
+  {
+    "id": 12,
+    "title": "Äußerer Schrägschärpen-Krieger",
+    "muscle": "M. obliquus externus abdominis",
+    "inn": "Th5–12",
+    "zone": "Akt VI: Bauch-Maschinenraum",
+    "scene": "Außenfassade: Krieger zieht die äußere diagonale Schärpe wie eine Rutsche abwärts.",
+    "green": "Äußere absteigende Diagonale = Obliquus externus.",
+    "magenta": "Thor + Löwe bis Krawatte/Noah = Th5–Th12.",
+    "image": "assets/gpt-image-2-story-panels/panel_12.png"
+  },
+  {
+    "id": 13,
+    "title": "Innerer Gegenschärpen-Krieger",
+    "muscle": "M. obliquus internus abdominis",
+    "inn": "Th7–12 + L1",
+    "zone": "Akt VI: Bauch-Maschinenraum",
+    "scene": "Innenfassade: Gegenkrieger zieht die entgegengesetzte innere Diagonale; zusammen entsteht ein X.",
+    "green": "Innere Gegendiagonale = Obliquus internus.",
+    "magenta": "Thor Th7–Th12 + Lenden-Krawatte L1.",
+    "image": "assets/gpt-image-2-story-panels/panel_13.png"
+  },
+  {
+    "id": 14,
+    "title": "Quadratischer Lenden-Holzfäller",
+    "muscle": "M. quadratus lumborum",
+    "inn": "Th12–L4",
+    "zone": "Akt VII: Fundament",
+    "scene": "Quadratische Holzwerkstatt: würfelförmiger Holzfäller stabilisiert Becken–12.-Rippe mit grünem Rahmen.",
+    "green": "Quadratischer Rahmen an der Lende = Quadratus lumborum.",
+    "magenta": "Th12 + L1–L4: Krawatte/Noah + Krawatte–Knie–Mama–Reh.",
+    "image": "assets/gpt-image-2-story-panels/panel_14.png"
+  },
+  {
+    "id": 15,
+    "title": "Breiter Rücken-Schwimmer",
+    "muscle": "M. latissimus dorsi",
+    "inn": "N. thoracodorsalis C6–8",
+    "zone": "Finale: Wasserbühne",
+    "scene": "Hintere Wasserbühne: breiter Schwimmer zieht Arm-Seile und presst die Atemperle als Fontäne heraus.",
+    "green": "Breite Rückenflossen + Zug = Latissimus bei forcierter Exspiration.",
+    "magenta": "Thoracodorsal-Seil mit Schuh–Schlüssel–Efeu = C6–C8.",
+    "image": "assets/gpt-image-2-story-panels/panel_15.png"
+  }
+]

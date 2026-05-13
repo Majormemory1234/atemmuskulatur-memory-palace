@@ -1,3 +1,3 @@
-# Atemmuskulatur Gedächtnispalast
+# Atemmuskulatur Story-Palast
 
-Deutscher GPT-image-2-high Gedächtnispalast für Atemmuskulatur mit Riesenposter, Einzelpanels und interaktiver Legende.
+Deutsche GPT-image-2-high Story-Version: 15 stärker variierte Einzelbilder, verbunden durch die Reise der goldenen Atemperle im Rippen-Opernhaus.
