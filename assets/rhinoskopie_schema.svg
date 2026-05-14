@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1240" role="img" aria-labelledby="title desc">
+  <title id="title">Rhinoskopie Schema: vordere, mittlere, hintere und endoskopische Untersuchung</title>
+  <desc id="desc">Dracula-themed self-drawn educational diagram showing anterior rhinoscopy, nasal endoscopy, posterior rhinoscopy, visible anatomy, instruments and exam traps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#282a36"/>
+      <stop offset="0.55" stop-color="#1e1f29"/>
+      <stop offset="1" stop-color="#343746"/>
+    </linearGradient>
+    <linearGradient id="mucosa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff79c6" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#bd93f9" stop-opacity="0.72"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
+    <marker id="arrowPink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ff79c6"/></marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8be9fd"/></marker>
+    <marker id="arrowYellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#f1fa8c"/></marker>
+    <style>
+      .bg{fill:url(#bg)} .panel{fill:#2f3140;stroke:#6272a4;stroke-width:2.5;rx:34;filter:url(#soft)}
+      .mini{fill:#343746;stroke:#6272a4;stroke-width:2;rx:24}.title{font:bold 40px system-ui,Segoe UI,sans-serif;fill:#f8f8f2}.subtitle{font:23px system-ui,Segoe UI,sans-serif;fill:#c7c9d9}
+      .label{font:bold 24px system-ui,Segoe UI,sans-serif;fill:#f8f8f2}.small{font:19px system-ui,Segoe UI,sans-serif;fill:#f8f8f2}.tiny{font:17px system-ui,Segoe UI,sans-serif;fill:#c7c9d9}.pill{fill:#44475a;stroke:#8be9fd;stroke-width:1.8;rx:14}
+      .nose{fill:url(#mucosa);stroke:#ff79c6;stroke-width:4}.cart{fill:#50fa7b;stroke:#50fa7b;stroke-width:3;opacity:.9}.bone{fill:#f1fa8c;stroke:#f1fa8c;stroke-width:3;opacity:.82}
+      .air{fill:none;stroke:#8be9fd;stroke-width:7;stroke-linecap:round;stroke-dasharray:16 15}.scope{stroke:#8be9fd;stroke-width:10;stroke-linecap:round;fill:none}.metal{stroke:#c7c9d9;stroke-width:8;stroke-linecap:round;fill:none}.mirror{fill:#f8f8f2;stroke:#8be9fd;stroke-width:4}.pathPink{fill:none;stroke:#ff79c6;stroke-width:5;stroke-linecap:round;marker-end:url(#arrowPink)}.pathCyan{fill:none;stroke:#8be9fd;stroke-width:5;stroke-linecap:round;marker-end:url(#arrowCyan)}.pathYellow{fill:none;stroke:#f1fa8c;stroke-width:5;stroke-linecap:round;marker-end:url(#arrowYellow)}
+      .warn{fill:#ff5555}.ok{fill:#50fa7b}.accent{fill:#bd93f9}.cyan{fill:#8be9fd}.pink{fill:#ff79c6}.yellow{fill:#f1fa8c}.green{fill:#50fa7b}.num{fill:#ff5555;stroke:#f8f8f2;stroke-width:3}.numText{font:bold 25px system-ui;fill:#f8f8f2;text-anchor:middle;dominant-baseline:central}
+    </style>
+  </defs>
+  <rect class="bg" width="1920" height="1240"/>
+  <text x="80" y="76" class="title">Rhinoskopie: Was sieht man wo?</text>
+  <text x="80" y="114" class="subtitle">Merker: vorne = Spekulum/Keyhole · Mitte = Endoskop/Tür in die Nasengänge · hinten = Choanen-Spiegel</text>
+
+  <rect class="panel" x="60" y="155" width="555" height="470"/>
+  <text x="95" y="205" class="label"><tspan class="pink">1</tspan> Vordere Rhinoskopie</text>
+  <text x="95" y="237" class="tiny">Nasenspekulum + Licht: vorderer Abschnitt, orientierend</text>
+  <path class="nose" d="M190 352 C245 240 410 245 465 350 C520 455 430 560 318 555 C205 552 140 455 190 352Z"/>
+  <path d="M230 360 C290 320 380 320 430 365 C382 384 290 383 230 360Z" fill="#282a36" stroke="#8be9fd" stroke-width="4"/>
+  <path d="M300 330 C315 382 312 430 296 486" class="metal"/>
+  <path d="M370 330 C355 382 358 430 374 486" class="metal"/>
+  <path d="M300 486 C265 525 230 548 182 555" class="metal"/>
+  <path d="M374 486 C415 520 460 540 512 542" class="metal"/>
+  <path class="air" d="M238 430 C300 403 375 404 445 432"/>
+  <circle class="num" cx="152" cy="305" r="24"/><text class="numText" x="152" y="305">A</text>
+  <rect class="pill" x="88" y="456" width="182" height="42"/><text class="small" x="106" y="484">Septum vorne</text>
+  <rect class="pill" x="360" y="456" width="202" height="42"/><text class="small" x="378" y="484">untere Muschel</text>
+  <path class="pathCyan" d="M271 456 C280 435 296 414 316 395"/>
+  <path class="pathCyan" d="M415 456 C402 435 385 416 366 398"/>
+  <text x="94" y="585" class="small"><tspan class="yellow">Sieht gut:</tspan> Schleimhautfarbe, Sekret, Krusten, Blut,</text>
+  <text x="94" y="612" class="small">Septumvorderkante, untere Nasenmuschel/-gang.</text>
+
+  <rect class="panel" x="682" y="155" width="575" height="470"/>
+  <text x="717" y="205" class="label"><tspan class="cyan">2</tspan> Mittlere Rhinoskopie / Nasenendoskopie</text>
+  <text x="717" y="237" class="tiny">starres/flexibles Endoskop: tiefere Nasenhaupthöhle + Meatus</text>
+  <path class="nose" d="M784 438 C830 315 1000 267 1138 330 C1180 350 1174 420 1130 452 C1018 540 880 555 784 438Z"/>
+  <path d="M820 456 C890 420 1000 408 1128 420" class="air"/>
+  <path d="M760 490 C855 438 990 423 1160 435" class="scope"/>
+  <circle cx="755" cy="490" r="18" fill="#8be9fd"/>
+  <path d="M930 350 C1010 328 1080 337 1135 368" fill="none" stroke="#f1fa8c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M892 421 C980 392 1060 399 1122 430" fill="none" stroke="#bd93f9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M860 492 C950 468 1040 470 1115 496" fill="none" stroke="#50fa7b" stroke-width="8" stroke-linecap="round"/>
+  <rect class="pill" x="727" y="284" width="192" height="42"/><text class="small" x="745" y="312">obere Muschel</text>
+  <rect class="pill" x="712" y="374" width="208" height="42"/><text class="small" x="730" y="402">mittlere Muschel</text>
+  <rect class="pill" x="718" y="533" width="200" height="42"/><text class="small" x="736" y="561">untere Muschel</text>
+  <path class="pathYellow" d="M913 305 C960 323 993 338 1016 350"/>
+  <path class="pathPink" d="M913 394 C960 408 994 418 1017 423"/>
+  <path class="pathCyan" d="M913 552 C958 526 1000 506 1040 490"/>
+  <rect class="mini" x="1003" y="520" width="220" height="76"/>
+  <text x="1021" y="550" class="small"><tspan class="green">OMK:</tspan> Polyp/Eiter?</text>
+  <text x="1021" y="578" class="tiny">Ausgänge NNH prüfen</text>
+
+  <rect class="panel" x="1325" y="155" width="535" height="470"/>
+  <text x="1360" y="205" class="label"><tspan class="yellow">3</tspan> Hintere Rhinoskopie</text>
+  <text x="1360" y="237" class="tiny">Mund + Spatel + abgewinkelter Spiegel: Choanen/Nasopharynx</text>
+  <path d="M1425 480 C1508 418 1660 418 1740 480 C1658 535 1515 535 1425 480Z" fill="#282a36" stroke="#ff79c6" stroke-width="4"/>
+  <path d="M1460 492 C1538 467 1630 468 1710 492" fill="none" stroke="#bd93f9" stroke-width="9" stroke-linecap="round"/>
+  <path d="M1505 432 C1588 382 1672 380 1740 430" fill="none" stroke="#8be9fd" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1470 545 C1560 575 1655 572 1742 540" fill="none" stroke="#f1fa8c" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1390 560 L1570 495" class="metal"/>
+  <ellipse class="mirror" cx="1585" cy="490" rx="42" ry="30" transform="rotate(-18 1585 490)"/>
+  <path d="M1348 595 C1430 630 1510 634 1600 604" stroke="#ff79c6" stroke-width="16" stroke-linecap="round" fill="none" opacity=".7"/>
+  <rect class="pill" x="1360" y="300" width="150" height="42"/><text class="small" x="1378" y="328">Choanen</text>
+  <rect class="pill" x="1640" y="300" width="178" height="42"/><text class="small" x="1658" y="328">Nasopharynx</text>
+  <path class="pathCyan" d="M1444 342 C1495 382 1530 418 1558 464"/>
+  <path class="pathPink" d="M1670 342 C1658 385 1634 424 1608 466"/>
+  <text x="1360" y="585" class="small"><tspan class="yellow">Klassiker:</tspan> Adenoide, Choanenatresie, Tumor,</text>
+  <text x="1360" y="612" class="small">posteriore Epistaxis-/Sekretquelle.</text>
+
+  <rect class="panel" x="60" y="680" width="880" height="430"/>
+  <text x="95" y="730" class="label">Prüfungs-Landkarte: sichtbare Strukturen</text>
+  <path d="M150 945 C245 742 570 730 755 858 C835 913 810 1000 710 1035 C515 1105 270 1065 150 945Z" fill="#282a36" stroke="#ff79c6" stroke-width="5"/>
+  <path d="M214 950 C348 910 523 900 720 925" class="air"/>
+  <path d="M347 810 C498 762 642 784 742 842" fill="none" stroke="#f1fa8c" stroke-width="9" stroke-linecap="round"/>
+  <path d="M305 900 C476 848 625 858 756 906" fill="none" stroke="#bd93f9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M292 1000 C485 950 625 963 742 1010" fill="none" stroke="#50fa7b" stroke-width="10" stroke-linecap="round"/>
+  <path d="M235 820 C245 920 244 1008 230 1060" stroke="#ff79c6" stroke-width="8" fill="none"/>
+  <circle class="num" cx="262" cy="818" r="22"/><text class="numText" x="262" y="818">1</text>
+  <text x="285" y="824" class="small">Septum: Deviation, Perforation, Blutungsquelle</text>
+  <circle class="num" cx="722" cy="840" r="22"/><text class="numText" x="722" y="840">2</text>
+  <text x="745" y="846" class="small">obere Muschel/Meatus: posterior ethmoid</text>
+  <circle class="num" cx="760" cy="907" r="22"/><text class="numText" x="760" y="907">3</text>
+  <text x="783" y="913" class="small">mittlere Muschel/Meatus: OMK, Polyp/Eiter</text>
+  <circle class="num" cx="750" cy="1012" r="22"/><text class="numText" x="750" y="1012">4</text>
+  <text x="773" y="1018" class="small">untere Muschel/Meatus: Tränengang-Falle</text>
+  <rect class="mini" x="100" y="1042" width="780" height="48"/><text x="122" y="1073" class="small"><tspan class="pink">Merksatz:</tspan> „Spekulum sieht vorne; Scope findet Mitte; Spiegel schaut von hinten auf die Choanen.“</text>
+
+  <rect class="panel" x="980" y="680" width="880" height="430"/>
+  <text x="1015" y="730" class="label">Befund-Hooks: was wird abgefragt?</text>
+  <g transform="translate(1015,770)">
+    <rect class="mini" x="0" y="0" width="385" height="78"/><circle cx="34" cy="39" r="18" class="warn"/><text x="68" y="31" class="small">Epistaxis?</text><text x="68" y="58" class="tiny">vorn: Locus Kiesselbachi · hinten: gefährlicher</text>
+    <rect class="mini" x="420" y="0" width="385" height="78"/><circle cx="454" cy="39" r="18" class="accent"/><text x="488" y="31" class="small">Polypen?</text><text x="488" y="58" class="tiny">blass/grau, oft mittlerer Nasengang/OMK</text>
+    <rect class="mini" x="0" y="104" width="385" height="78"/><circle cx="34" cy="143" r="18" class="green"/><text x="68" y="135" class="small">Allergisch?</text><text x="68" y="162" class="tiny">blass-livide, wässriges Sekret, Ödem</text>
+    <rect class="mini" x="420" y="104" width="385" height="78"/><circle cx="454" cy="143" r="18" class="yellow"/><text x="488" y="135" class="small">Bakteriell?</text><text x="488" y="162" class="tiny">eitriges Sekret, oft aus mittlerem Meatus</text>
+    <rect class="mini" x="0" y="208" width="385" height="78"/><circle cx="34" cy="247" r="18" class="cyan"/><text x="68" y="239" class="small">Septumdeviation?</text><text x="68" y="266" class="tiny">Engstelle, Kontaktpunkt, OP-/Intubationsfalle</text>
+    <rect class="mini" x="420" y="208" width="385" height="78"/><circle cx="454" cy="247" r="18" class="warn"/><text x="488" y="239" class="small">Fremdkörper/Tumor?</text><text x="488" y="266" class="tiny">einseitig, übelriechend, blutig = Red flag</text>
+  </g>
+
+  <rect class="mini" x="80" y="1140" width="1760" height="62"/>
+  <text x="108" y="1178" class="small"><tspan class="yellow">Exam-Algorithmus:</tspan> 1 Instrument/Technik erkennen → 2 Blickfeld nennen → 3 Struktur im Bild lokalisieren → 4 typischen Befund interpretieren → 5 Red flags/Komplikationen wissen.</text>
+</svg>
