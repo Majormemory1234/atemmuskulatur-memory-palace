@@ -1,183 +1,99 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1760 1120" role="img" aria-labelledby="title desc">
-  <title id="title">Topographisches Schema der Arteria carotis externa und ihrer Äste</title>
-  <desc id="desc">Übersichtliches Lernschema der Arteria carotis externa: Äste plus dezente topographische Nachbarschaften wie Venen, wichtige Hirnnerven und Lymphknoten/Lymphwege.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1220" role="img" aria-labelledby="title desc">
+  <title id="title">Dracula-Schema der Arteria carotis externa mit aufgeräumter Topographie</title>
+  <desc id="desc">Aufgeräumtes Lernschema: A. carotis externa und Äste zentral; Venen, Nerven und Lymphknoten als getrennte, beschriftete Rand- und Inset-Layer ohne Überlappung.</desc>
   <defs>
-    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#fdebd0"/>
-    </linearGradient>
-    <linearGradient id="artery" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#ef4444"/>
-      <stop offset="0.58" stop-color="#c81e2b"/>
-      <stop offset="1" stop-color="#7f1d1d"/>
-    </linearGradient>
-    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M1,1 L9,5 L1,9 Z" fill="#b91c1c"/>
-    </marker>
-    <marker id="arrowMuted" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
-      <path d="M1,1 L9,5 L1,9 Z" fill="#9f1239"/>
-    </marker>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#7c2d12" flood-opacity=".16"/>
-    </filter>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#282a36"/><stop offset="1" stop-color="#1e1f29"/></linearGradient>
+    <linearGradient id="artery" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffb86c"/><stop offset=".28" stop-color="#ff5555"/><stop offset="1" stop-color="#c83f4a"/></linearGradient>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#ff5555"/></marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#ff79c6"/></marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".38"/></filter>
     <style>
-      .bg{fill:url(#paper)}
-      .silhouette{fill:#fff2d9;stroke:#e9c89d;stroke-width:4;opacity:.78}
-      .jaw{fill:none;stroke:#d8b384;stroke-width:18;stroke-linecap:round;opacity:.55}
-      .main{fill:none;stroke:url(#artery);stroke-width:26;stroke-linecap:round;stroke-linejoin:round;filter:url(#softShadow)}
-      .internal{fill:none;stroke:#f4a6a6;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0;opacity:.9}
-      .branch{fill:none;stroke:#dc2626;stroke-width:11;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}
-      .branch.med{stroke:#be185d;stroke-width:10;marker-end:url(#arrowMuted)}
-      .branch.dorsal{stroke:#b91c1c;stroke-width:10.5}
-      .branch.end{stroke:#991b1b;stroke-width:11}
-      .guide{fill:none;stroke:#d6b98c;stroke-width:2;stroke-dasharray:7 9;opacity:.55}
-      .labelBox{fill:#fffdf8;stroke:#d6b98c;stroke-width:2.5;filter:url(#softShadow)}
-      .labelBox.ventral{stroke:#f97316}.labelBox.med{stroke:#be185d}.labelBox.dorsal{stroke:#dc2626}.labelBox.end{stroke:#7f1d1d}
-      .num{fill:#e11d48;stroke:#fff;stroke-width:5}.numTxt{font-family:Inter,Arial,sans-serif;font-size:27px;font-weight:1000;fill:#fff;text-anchor:middle;dominant-baseline:central}
-      .title{font-family:Inter,Arial,sans-serif;font-size:42px;font-weight:950;fill:#3a2117}.subtitle{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:700;fill:#7c3f24}.lbl{font-family:Inter,Arial,sans-serif;font-size:25px;font-weight:900;fill:#30160f}.sub{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:750;fill:#79432b}.tiny{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:700;fill:#7c3f24}.group{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:1000;letter-spacing:.12em;fill:#fff}.groupPill{rx:15;filter:url(#softShadow)}
-      .vein{fill:none;stroke:#2563eb;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;opacity:.58;stroke-dasharray:18 13}
-      .veinThin{fill:none;stroke:#60a5fa;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.52;stroke-dasharray:12 10}
-      .nerve{fill:none;stroke:#7c3aed;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.62;stroke-dasharray:3 12}
-      .nerveGold{fill:none;stroke:#d97706;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;opacity:.66;stroke-dasharray:3 12}
-      .lymph{fill:none;stroke:#16a34a;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;opacity:.43;stroke-dasharray:8 12}
-      .node{fill:#dcfce7;stroke:#15803d;stroke-width:2.5;opacity:.86}
-      .topoBox{fill:#fffdf8;stroke-width:2;filter:url(#softShadow);opacity:.96}
-      .topoText{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:850;fill:#3a2117}.topoSmall{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:750;fill:#6b4b38}.veinLabel{fill:#1d4ed8}.nerveLabel{fill:#6d28d9}.nerveGoldLabel{fill:#92400e}.lymphLabel{fill:#166534}
-      .callout{fill:#fffdf8;stroke:#c9b08a;stroke-width:2;filter:url(#softShadow);opacity:.97}.callLine{fill:none;stroke:#8b6f4e;stroke-width:2;stroke-dasharray:5 7;opacity:.72}.insetBox{fill:#fffaf0;stroke:#c9b08a;stroke-width:2.5;filter:url(#softShadow)}.insetTitle{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:950;fill:#3a2117}.insetLbl{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:850;fill:#3a2117}.topoDotV{fill:#2563eb}.topoDotN{fill:#7c3aed}.topoDotG{fill:#16a34a}.topoDotA{fill:#d97706}
+      .bg{fill:url(#bg)}.panel{fill:#44475a;stroke:#6272a4;stroke-width:2.5;filter:url(#shadow)}.panel2{fill:#343746;stroke:#6272a4;stroke-width:2}
+      .title{font-family:Inter,Arial,sans-serif;font-size:44px;font-weight:950;fill:#f8f8f2}.subtitle{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:750;fill:#c7c9d9}.tiny{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:750;fill:#c7c9d9}.small{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:800;fill:#c7c9d9}.lbl{font-family:Inter,Arial,sans-serif;font-size:24px;font-weight:950;fill:#f8f8f2}.sub{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:800;fill:#c7c9d9}
+      .main{fill:none;stroke:url(#artery);stroke-width:24;stroke-linecap:round;stroke-linejoin:round;filter:url(#shadow)}.internal{fill:none;stroke:#ffb86c;stroke-width:14;stroke-linecap:round;stroke-linejoin:round;opacity:.72}.branch{fill:none;stroke:#ff5555;stroke-width:9.5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowRed)}.branch.med{stroke:#ff79c6;stroke-width:9;marker-end:url(#arrowPink)}.branch.dorsal{stroke:#ff6e6e}.branch.end{stroke:#ff5555;stroke-width:10}
+      .guide{fill:none;stroke:#8be9fd;stroke-width:2.4;stroke-dasharray:7 8;opacity:.78}.silhouette{fill:#343746;stroke:#6272a4;stroke-width:4;opacity:.55}.jaw{fill:none;stroke:#6272a4;stroke-width:14;stroke-linecap:round;opacity:.42}
+      .labelBox{fill:#343746;stroke:#6272a4;stroke-width:2.5;filter:url(#shadow)}.labelBox.ventral{stroke:#ffb86c}.labelBox.med{stroke:#ff79c6}.labelBox.dorsal{stroke:#ff5555}.labelBox.end{stroke:#f1fa8c}.num{fill:#ff5555;stroke:#f8f8f2;stroke-width:4}.numTxt{font-family:Inter,Arial,sans-serif;font-size:25px;font-weight:1000;fill:#f8f8f2;text-anchor:middle;dominant-baseline:central}
+      .vein{fill:none;stroke:#8be9fd;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;opacity:.82;stroke-dasharray:18 12}.veinThin{fill:none;stroke:#8be9fd;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round;opacity:.55;stroke-dasharray:12 10}.nerve{fill:none;stroke:#bd93f9;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;opacity:.68;stroke-dasharray:3 11}.nerveGold{fill:none;stroke:#f1fa8c;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;opacity:.68;stroke-dasharray:3 11}.lymph{fill:none;stroke:#50fa7b;stroke-width:4.5;stroke-linecap:round;stroke-linejoin:round;opacity:.50;stroke-dasharray:7 11}.node{fill:#50fa7b;stroke:#282a36;stroke-width:2.5;opacity:.95}
+      .callout{fill:#343746;stroke:#6272a4;stroke-width:2.2;filter:url(#shadow)}.callLine{fill:none;stroke:#6272a4;stroke-width:2.2;stroke-dasharray:5 8;opacity:.85}.veinLabel{fill:#8be9fd}.nerveLabel{fill:#bd93f9}.nerveGoldLabel{fill:#f1fa8c}.lymphLabel{fill:#50fa7b}.callTitle{font-family:Inter,Arial,sans-serif;font-size:19px;font-weight:950}.callText{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:750;fill:#c7c9d9}
+      .group{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:1000;letter-spacing:.10em;fill:#282a36}.groupPill{filter:url(#shadow)}
     </style>
   </defs>
 
-  <rect class="bg" width="1760" height="1120" rx="42"/>
-  <text x="70" y="72" class="title">A. carotis externa – Äste</text>
-  <text x="72" y="108" class="subtitle">Merkspruch-Reihenfolge plus Topographie: Arterien rot · Venen blau · Nerven violett/gold · Lymphwege grün · rechts: Karotisscheiden-Inset</text>
+  <rect class="bg" width="1920" height="1220" rx="0"/>
+  <text x="64" y="70" class="title">A. carotis externa – Äste + saubere Topographie</text>
+  <text x="66" y="108" class="subtitle">Dracula Theme · Arterien rot/orange · Venen cyan · Nerven violett/gelb · Lymph grün · Topographie als Rand-Callouts statt Überlappung</text>
 
-  <!-- subtle anatomical context -->
-  <path class="silhouette" d="M815 112 C970 150 1078 286 1080 456 C1084 640 962 786 790 838 C878 720 906 574 870 430 C836 294 773 197 815 112Z"/>
-  <path class="jaw" d="M853 690 C942 692 1018 666 1070 614"/>
-  <path class="jaw" d="M690 850 C806 838 933 866 1030 930"/>
+  <!-- central neat drawing area -->
+  <rect class="panel" x="455" y="145" width="830" height="835" rx="34"/>
+  <path class="silhouette" d="M870 172 C1015 214 1098 338 1095 494 C1092 655 990 788 842 838 C912 710 925 590 895 462 C864 330 806 235 870 172Z"/>
+  <path class="jaw" d="M908 700 C995 696 1060 670 1105 620"/>
+  <path class="jaw" d="M682 858 C790 844 910 866 1015 932"/>
 
+  <!-- carotid trunk and ICA -->
+  <path class="main" d="M760 928 C768 810 778 704 797 596 C817 480 854 365 895 250 C912 204 935 168 965 128"/>
+  <path class="internal" d="M798 596 C730 516 684 420 660 298 C653 262 650 228 649 190"/>
+  <text x="552" y="190" class="sub">A. carotis interna</text>
+  <text x="596" y="956" class="sub">A. carotis communis</text>
+  <text x="982" y="138" class="sub">A. carotis externa</text>
 
+  <!-- branches only, no text overlap -->
+  <path class="branch" d="M795 640 C695 655 600 707 500 790"/>
+  <path class="branch" d="M816 532 C700 520 608 474 510 398"/>
+  <path class="branch" d="M848 450 C742 410 665 340 596 242"/>
+  <path class="branch med" d="M832 490 C912 456 978 390 1036 310"/>
+  <path class="branch dorsal" d="M864 406 C960 410 1035 456 1120 532"/>
+  <path class="branch dorsal" d="M890 342 C970 292 1040 230 1125 178"/>
+  <path class="branch dorsal" d="M920 272 C1030 262 1128 225 1215 178"/>
+  <path class="branch end" d="M962 128 C1085 144 1195 190 1265 250"/>
+  <path class="branch end" d="M962 128 C1025 70 1105 54 1198 70"/>
 
-  <!-- corrected topographic layer: clinically useful relationships -->
-  <g id="topography" aria-label="Korrigierte topographische Nachbarschaften">
-    <!-- Carotid sheath: IJV lateral, vagus posterior between vein and artery -->
-    <path class="vein" d="M566 900 C570 790 578 684 594 575 C611 458 637 328 680 184"/>
-    <path class="nerve" d="M604 900 C610 790 620 684 638 572 C657 454 688 323 728 170"/>
-    <path class="callLine" d="M575 566 C510 545 455 535 395 528"/>
-    <g transform="translate(86 468)"><rect class="callout" width="360" height="78" rx="16"/><text x="18" y="28" class="topoText veinLabel">V. jugularis interna</text><text x="18" y="52" class="topoSmall">lateral der A. carotis communis/interna</text><text x="235" y="28" class="topoText nerveLabel">N. vagus X</text><text x="235" y="52" class="topoSmall">posterior dazwischen</text></g>
+  <!-- subtle topography paths within central panel, routed away from labels -->
+  <path class="vein" d="M690 930 C696 805 708 690 730 574 C750 455 785 320 826 176"/>
+  <path class="nerve" d="M728 930 C737 807 752 690 777 572 C802 450 835 318 880 168"/>
+  <path class="nerveGold" d="M1112 402 C1010 385 930 398 850 438 C775 475 706 492 620 492"/>
+  <path class="nerve" d="M760 260 C825 235 900 210 985 160"/>
+  <path class="nerve" d="M720 684 C650 710 585 750 520 812"/>
+  <path class="veinThin" d="M540 362 C640 402 735 430 828 494"/>
+  <ellipse cx="1110" cy="214" rx="92" ry="70" fill="#44475a" stroke="#6272a4" stroke-width="3" opacity=".72"/>
+  <path class="veinThin" d="M1134 140 C1124 185 1117 225 1112 276 C1106 326 1088 374 1062 420"/>
+  <path class="nerveGold" d="M1082 190 C1145 194 1200 215 1250 246"/>
+  <path class="nerveGold" d="M1082 190 C1138 172 1184 145 1230 112"/>
+  <path class="lymph" d="M655 880 C654 750 666 620 690 500 C710 400 745 288 792 190"/>
+  <circle class="node" cx="662" cy="765" r="10"/><circle class="node" cx="676" cy="645" r="10"/><circle class="node" cx="702" cy="520" r="10"/><circle class="node" cx="604" cy="410" r="9"/><circle class="node" cx="1110" cy="292" r="9"/>
 
-    <!-- Hypoglossal nerve crosses carotid bifurcation region -->
-    <path class="nerveGold" d="M1018 404 C930 390 840 401 755 438 C690 466 626 486 548 486"/>
-    <path class="callLine" d="M548 486 C462 494 392 522 328 555"/>
-    <g transform="translate(92 550)"><rect class="callout" width="385" height="72" rx="16"/><text x="18" y="27" class="topoText nerveGoldLabel">N. hypoglossus XII</text><text x="18" y="50" class="topoSmall">kreuzt ACI/ACE oberhalb der Bifurkation → Zunge</text></g>
+  <!-- labels placed outside central drawing, with clear guide lines -->
+  <path class="guide" d="M500 790 C455 805 410 820 372 838"/>
+  <g transform="translate(78 805)"><rect class="labelBox ventral" width="310" height="78" rx="18"/><circle class="num" cx="38" cy="39" r="25"/><text class="numTxt" x="38" y="40">1</text><text class="lbl" x="80" y="34">A. thyroidea</text><text class="sub" x="80" y="60">superior</text></g>
+  <path class="guide" d="M510 398 C455 392 410 392 366 394"/>
+  <g transform="translate(98 362)"><rect class="labelBox ventral" width="260" height="66" rx="18"/><circle class="num" cx="38" cy="33" r="25"/><text class="numTxt" x="38" y="34">2</text><text class="lbl" x="80" y="42">A. lingualis</text></g>
+  <path class="guide" d="M596 242 C520 230 456 220 388 206"/>
+  <g transform="translate(105 174)"><rect class="labelBox ventral" width="248" height="66" rx="18"/><circle class="num" cx="38" cy="33" r="25"/><text class="numTxt" x="38" y="34">3</text><text class="lbl" x="80" y="42">A. facialis</text></g>
 
-    <!-- Glossopharyngeal nerve between ICA and ECA -->
-    <path class="nerve" d="M633 258 C675 245 725 234 782 220 C850 204 922 182 990 142"/>
-    <path class="callLine" d="M720 230 C718 182 742 150 795 128"/>
-    <g transform="translate(760 116)"><rect class="callout" width="290" height="62" rx="16"/><text x="16" y="25" class="topoText nerveLabel">N. glossopharyngeus IX</text><text x="16" y="47" class="topoSmall">zwischen ACI und ACE zur Pharynxwand</text></g>
+  <path class="guide" d="M1036 310 C1100 302 1168 300 1230 304"/>
+  <g transform="translate(1248 292)"><rect class="labelBox med" width="325" height="78" rx="18"/><circle class="num" cx="38" cy="39" r="25"/><text class="numTxt" x="38" y="40">4</text><text class="lbl" x="80" y="34">A. pharyngea</text><text class="sub" x="80" y="60">ascendens ↑</text></g>
+  <path class="guide" d="M1120 532 C1182 548 1235 580 1280 632"/>
+  <g transform="translate(1290 608)"><rect class="labelBox dorsal" width="330" height="82" rx="18"/><circle class="num" cx="38" cy="41" r="25"/><text class="numTxt" x="38" y="42">5</text><text class="lbl" x="80" y="35">R. sterno-</text><text class="sub" x="80" y="63">cleidomastoideus</text></g>
+  <path class="guide" d="M1125 178 C1184 138 1238 116 1295 102"/>
+  <g transform="translate(1310 76)"><rect class="labelBox dorsal" width="258" height="66" rx="18"/><circle class="num" cx="38" cy="33" r="25"/><text class="numTxt" x="38" y="34">6</text><text class="lbl" x="80" y="42">A. occipitalis</text></g>
+  <path class="guide" d="M1215 178 C1270 162 1322 158 1372 166"/>
+  <g transform="translate(1385 154)"><rect class="labelBox dorsal" width="300" height="70" rx="18"/><circle class="num" cx="38" cy="35" r="25"/><text class="numTxt" x="38" y="36">7</text><text class="lbl" x="80" y="31">A. auricularis</text><text class="sub" x="80" y="58">posterior</text></g>
+  <path class="guide" d="M1265 250 C1325 270 1372 306 1410 356"/>
+  <g transform="translate(1420 356)"><rect class="labelBox end" width="240" height="66" rx="18"/><circle class="num" cx="38" cy="33" r="25"/><text class="numTxt" x="38" y="34">8</text><text class="lbl" x="80" y="42">A. maxillaris</text></g>
+  <path class="guide" d="M1198 70 C1268 48 1328 40 1390 42"/>
+  <g transform="translate(1400 34)"><rect class="labelBox end" width="310" height="78" rx="18"/><circle class="num" cx="38" cy="39" r="25"/><text class="numTxt" x="38" y="40">9</text><text class="lbl" x="80" y="34">A. temporalis</text><text class="sub" x="80" y="60">superficialis</text></g>
 
-    <!-- Superior laryngeal nerve branches near superior thyroid artery -->
-    <path class="nerve" d="M604 642 C520 658 440 704 352 774"/>
-    <path class="callLine" d="M352 774 C300 744 255 724 208 706"/>
-    <g transform="translate(72 624)"><rect class="callout" width="420" height="68" rx="16"/><text x="18" y="26" class="topoText nerveLabel">N. laryngeus superior</text><text x="18" y="49" class="topoSmall">R. externus begleitet A. thyroidea superior</text></g>
+  <!-- topography callouts in clean rows -->
+  <g transform="translate(64 970)"><rect class="callout" width="640" height="178" rx="22"/><text x="24" y="34" class="callTitle veinLabel">Venen</text><text x="24" y="64" class="callText">V. jugularis interna: lateral in der Karotisscheide.</text><text x="24" y="91" class="callText">V. facialis / communis: Gesichtsabfluss zur VJI.</text><text x="24" y="118" class="callText">V. retromandibularis: in der Parotis, oberflächlicher als ACE.</text><text x="24" y="150" class="callText">Cyan gestrichelt = venöse Leitstruktur/Drainage.</text></g>
+  <g transform="translate(720 970)"><rect class="callout" width="640" height="178" rx="22"/><text x="24" y="34" class="callTitle nerveLabel">Nerven</text><text x="24" y="64" class="callText">N. vagus X: posterior zwischen Arterie und VJI.</text><text x="24" y="91" class="callText">N. hypoglossus XII: kreuzt oberhalb der Bifurkation zur Zunge.</text><text x="24" y="118" class="callText">N. glossopharyngeus IX: zwischen ACI und ACE zur Pharynxwand.</text><text x="24" y="145" class="callText">R. externus N. laryngeus sup.: mit A. thyroidea superior.</text></g>
 
-    <!-- Facial vein/common facial vein drains to IJV -->
-    <path class="veinThin" d="M318 315 C410 355 500 390 606 420 C668 438 710 456 760 492"/>
-    <path class="callLine" d="M382 342 C320 332 265 330 208 334"/>
-    <g transform="translate(76 278)"><rect class="callout" width="330" height="62" rx="16"/><text x="16" y="25" class="topoText veinLabel">V. facialis / V. facialis communis</text><text x="16" y="47" class="topoSmall">Gesichtsabfluss → V. jugularis interna</text></g>
+  <!-- exact cross-section and parotid inset -->
+  <g transform="translate(1510 720)"><rect class="panel2" width="330" height="220" rx="22"/><text x="22" y="32" class="small" fill="#f8f8f2">Karotisscheide – Querschnitt</text><circle cx="115" cy="112" r="42" fill="#ff5555" opacity=".25" stroke="#ff5555" stroke-width="6"/><text x="115" y="118" text-anchor="middle" class="small">A. carotis</text><circle cx="224" cy="110" r="48" fill="#8be9fd" opacity=".20" stroke="#8be9fd" stroke-width="6"/><text x="224" y="116" text-anchor="middle" class="small">VJI</text><circle cx="172" cy="166" r="19" fill="#bd93f9" opacity=".35" stroke="#bd93f9" stroke-width="5"/><text x="172" y="172" text-anchor="middle" class="small">X</text><text x="34" y="204" class="tiny">medial A. · lateral VJI · posterior X</text></g>
+  <g transform="translate(1510 970)"><rect class="callout" width="330" height="178" rx="22"/><text x="22" y="34" class="callTitle nerveGoldLabel">Parotis-Schichten</text><text x="22" y="64" class="callText">oberflächlich: N. facialis VII</text><text x="22" y="91" class="callText">mittig: V. retromandibularis</text><text x="22" y="118" class="callText">tief: ACE-Endäste</text><text x="22" y="150" class="callText">+ parotideale/präaurikuläre LK</text></g>
 
-    <!-- Parotid topography near terminal ECA: facial nerve superficial, retromandibular vein, ECA deep -->
-    <ellipse cx="1055" cy="210" rx="105" ry="82" fill="#ffe8c7" stroke="#d8b384" stroke-width="3" opacity=".60"/>
-    <path class="veinThin" d="M1084 128 C1075 168 1067 210 1060 256 C1052 307 1038 350 1017 390"/>
-    <path class="nerveGold" d="M1030 178 C1094 182 1152 202 1215 238"/>
-    <path class="nerveGold" d="M1030 178 C1094 164 1148 143 1204 112"/>
-    <path class="nerveGold" d="M1030 178 C1080 214 1115 252 1156 296"/>
-    <path class="callLine" d="M1160 210 C1240 188 1305 176 1384 170"/>
-    <g transform="translate(1374 124)"><rect class="callout" width="335" height="95" rx="16"/><text x="16" y="25" class="topoText nerveGoldLabel">Parotis-Topographie</text><text x="16" y="49" class="topoSmall">N. facialis VII am oberflächlichsten</text><text x="16" y="70" class="topoSmall">V. retromandibularis mittig</text><text x="16" y="91" class="topoSmall">ACE/Endäste tiefer in der Drüse</text></g>
+  <rect class="groupPill" x="464" y="740" width="150" height="32" rx="15" fill="#ffb86c"/><text x="539" y="762" class="group" text-anchor="middle">VENTRAL</text>
+  <rect class="groupPill" x="1050" y="338" width="130" height="32" rx="15" fill="#ff79c6"/><text x="1115" y="360" class="group" text-anchor="middle">MEDIAL</text>
+  <rect class="groupPill" x="1145" y="490" width="125" height="32" rx="15" fill="#ff5555"/><text x="1208" y="512" class="group" text-anchor="middle">DORSAL</text>
+  <rect class="groupPill" x="1190" y="72" width="125" height="32" rx="15" fill="#f1fa8c"/><text x="1253" y="94" class="group" text-anchor="middle">ENDÄSTE</text>
 
-    <!-- lymph nodes remain secondary -->
-    <path class="lymph" d="M526 850 C525 740 533 628 552 520 C572 420 600 316 636 218"/>
-    <circle class="node" cx="536" cy="744" r="11"/><circle class="node" cx="548" cy="662" r="10"/><circle class="node" cx="562" cy="575" r="10"/><circle class="node" cx="585" cy="452" r="10"/>
-    <text x="92" y="740" class="topoText lymphLabel">tiefe zervikale LK</text><text x="94" y="762" class="topoSmall">entlang der V. jugularis interna</text>
-    <circle class="node" cx="450" cy="382" r="9"/><circle class="node" cx="482" cy="397" r="8"/><text x="154" y="398" class="topoText lymphLabel">submandibuläre LK</text>
-    <circle class="node" cx="992" cy="250" r="9"/><circle class="node" cx="1020" cy="270" r="8"/><text x="1210" y="310" class="topoText lymphLabel">Parotis-/präaurikuläre LK</text>
-  </g>
-
-  <!-- trunk and bifurcation -->
-  <path class="main" d="M642 888 C650 780 658 682 673 584 C690 474 720 367 759 255 C777 204 799 157 830 111"/>
-  <path class="internal" d="M674 584 C612 507 562 412 536 284 C528 246 523 212 520 180"/>
-  <text x="493" y="171" class="sub">A. carotis interna</text>
-  <text x="472" y="922" class="sub">A. carotis communis</text>
-  <text x="843" y="128" class="sub">A. carotis externa</text>
-
-  <!-- group pills -->
-  <rect class="groupPill" x="86" y="742" width="190" height="34" fill="#f97316"/><text x="181" y="765" class="group" text-anchor="middle">VENTRAL</text>
-  <rect class="groupPill" x="930" y="348" width="160" height="34" fill="#be185d"/><text x="1010" y="371" class="group" text-anchor="middle">MEDIAL</text>
-  <rect class="groupPill" x="1010" y="518" width="155" height="34" fill="#dc2626"/><text x="1087" y="541" class="group" text-anchor="middle">DORSAL</text>
-  <rect class="groupPill" x="1110" y="62" width="165" height="34" fill="#7f1d1d"/><text x="1192" y="85" class="group" text-anchor="middle">ENDÄSTE</text>
-
-  <!-- branches: ventral left -->
-  <path class="branch" d="M671 600 C565 614 450 668 330 762"/>
-  <path class="branch" d="M691 505 C573 489 456 444 330 365"/>
-  <path class="branch" d="M716 424 C596 386 486 314 382 210"/>
-
-  <!-- medial/dorsal/right -->
-  <path class="branch med" d="M709 464 C800 434 868 374 925 314"/>
-  <path class="branch dorsal" d="M731 382 C835 386 917 422 1000 500"/>
-  <path class="branch dorsal" d="M757 320 C845 268 910 199 988 145"/>
-  <path class="branch dorsal" d="M782 258 C908 247 1030 211 1135 168"/>
-
-  <!-- end branches -->
-  <path class="branch end" d="M829 112 C990 128 1130 172 1270 242"/>
-  <path class="branch end" d="M829 112 C910 45 1015 30 1148 42"/>
-
-  <!-- soft guide lines from labels to branches -->
-  <path class="guide" d="M312 775 C330 770 335 765 350 755"/>
-  <path class="guide" d="M295 366 C315 365 325 365 345 365"/>
-  <path class="guide" d="M350 210 C365 211 375 212 390 214"/>
-  <path class="guide" d="M924 315 C940 309 956 304 972 298"/>
-  <path class="guide" d="M1015 503 C1032 502 1048 503 1064 505"/>
-  <path class="guide" d="M990 145 C1004 141 1018 137 1033 133"/>
-  <path class="guide" d="M1138 168 C1154 164 1170 160 1187 157"/>
-  <path class="guide" d="M1274 244 C1288 246 1300 250 1312 256"/>
-  <path class="guide" d="M1152 42 C1168 41 1184 42 1200 44"/>
-
-  <!-- labels left -->
-  <g transform="translate(70 785)"><rect class="labelBox ventral" width="285" height="74" rx="18"/><circle class="num" cx="36" cy="37" r="25"/><text class="numTxt" x="36" y="38">1</text><text class="lbl" x="76" y="32">A. thyroidea</text><text class="sub" x="76" y="58">superior</text></g>
-  <g transform="translate(70 330)"><rect class="labelBox ventral" width="242" height="62" rx="18"/><circle class="num" cx="36" cy="31" r="25"/><text class="numTxt" x="36" y="32">2</text><text class="lbl" x="76" y="40">A. lingualis</text></g>
-  <g transform="translate(95 170)"><rect class="labelBox ventral" width="225" height="62" rx="18"/><circle class="num" cx="36" cy="31" r="25"/><text class="numTxt" x="36" y="32">3</text><text class="lbl" x="76" y="40">A. facialis</text></g>
-
-  <!-- labels right -->
-  <g transform="translate(965 288)"><rect class="labelBox med" width="300" height="74" rx="18"/><circle class="num" cx="36" cy="37" r="25"/><text class="numTxt" x="36" y="38">4</text><text class="lbl" x="76" y="32">A. pharyngea</text><text class="sub" x="76" y="58">ascendens ↑</text></g>
-  <g transform="translate(1032 472)"><rect class="labelBox dorsal" width="315" height="78" rx="18"/><circle class="num" cx="36" cy="39" r="25"/><text class="numTxt" x="36" y="40">5</text><text class="lbl" x="76" y="34">R. sterno-</text><text class="sub" x="76" y="61">cleidomastoideus</text></g>
-  <g transform="translate(890 118)"><rect class="labelBox dorsal" width="245" height="62" rx="18"/><circle class="num" cx="36" cy="31" r="25"/><text class="numTxt" x="36" y="32">6</text><text class="lbl" x="76" y="40">A. occipitalis</text></g>
-  <g transform="translate(1188 190)"><rect class="labelBox dorsal" width="280" height="66" rx="18"/><circle class="num" cx="36" cy="33" r="25"/><text class="numTxt" x="36" y="34">7</text><text class="lbl" x="76" y="30">A. auricularis</text><text class="sub" x="76" y="55">posterior</text></g>
-  <g transform="translate(1310 246)"><rect class="labelBox end" width="224" height="62" rx="18"/><circle class="num" cx="36" cy="31" r="25"/><text class="numTxt" x="36" y="32">8</text><text class="lbl" x="76" y="40">A. maxillaris</text></g>
-  <g transform="translate(1135 24)"><rect class="labelBox end" width="285" height="74" rx="18"/><circle class="num" cx="36" cy="37" r="25"/><text class="numTxt" x="36" y="38">9</text><text class="lbl" x="76" y="32">A. temporalis</text><text class="sub" x="76" y="58">superficialis</text></g>
-
-
-  <!-- topology legend and exact sheath inset -->
-  <g transform="translate(80 900)">
-    <rect x="0" y="0" width="640" height="108" rx="18" fill="#fffdf8" stroke="#ead5b5" stroke-width="2" opacity=".95"/>
-    <circle cx="24" cy="25" r="8" class="topoDotV"/><text x="43" y="31" class="topoSmall">Venen blau: v.a. VJI lateral, V. facialis/communis, V. retromandibularis</text>
-    <circle cx="24" cy="53" r="8" class="topoDotN"/><text x="43" y="59" class="topoSmall">Nerven violett/gold: X, XII, IX, N. laryngeus sup., VII in der Parotis</text>
-    <circle cx="24" cy="80" r="8" class="topoDotG"/><text x="43" y="86" class="topoSmall">Lymph grün: tiefe zervikale, submandibuläre, parotideale/präaurikuläre LK</text>
-  </g>
-
-  <g transform="translate(1370 646)">
-    <rect class="insetBox" width="330" height="230" rx="22"/>
-    <text x="22" y="32" class="insetTitle">Karotisscheide – Querschnitt</text>
-    <circle cx="118" cy="115" r="42" fill="#fee2e2" stroke="#b91c1c" stroke-width="6"/><text x="118" y="121" text-anchor="middle" class="insetLbl">A. carotis</text>
-    <circle cx="220" cy="112" r="48" fill="#dbeafe" stroke="#2563eb" stroke-width="6"/><text x="220" y="118" text-anchor="middle" class="insetLbl">VJI</text>
-    <circle cx="173" cy="167" r="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="5"/><text x="173" y="172" text-anchor="middle" class="insetLbl">X</text>
-    <text x="40" y="205" class="topoSmall">medial: Arterie · lateral: VJI · posterior dazwischen: X</text>
-  </g>
-
-  <!-- compact orientation notes -->
-  <g transform="translate(80 660)">
-    <rect x="0" y="0" width="360" height="116" rx="20" fill="#fffdf8" stroke="#ead5b5" stroke-width="2" opacity=".95"/>
-    <text x="22" y="34" class="sub">Leserichtung</text>
-    <text x="22" y="64" class="tiny">kaudal → kranial: 1–3 ventral,</text>
-    <text x="22" y="90" class="tiny">4 medial, 5–7 dorsal, 8–9 Endäste.</text>
-  </g>
-  <text x="70" y="1086" class="tiny">Selbst gezeichnetes Lernschema; Äste/Gruppen nach DocCheck Flexikon. Topographie korrigiert, aber schematisch: Lagebeziehungen/Schichten, keine maßstabsgetreue Präparation.</text>
+  <text x="64" y="1190" class="tiny">Selbst gezeichnetes Lernschema; Äste/Gruppen nach DocCheck Flexikon. Topographie ist bewusst schematisch: genaue Beziehungen als Rand-Callouts und Insets, nicht als überlappende Präparationszeichnung.</text>
 </svg>
