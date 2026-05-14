@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1220" role="img" aria-labelledby="title desc">
+  <title id="title">Nasennebenhöhlen: Schema der Lage, Drainage und Prüfungsfallen</title>
+  <desc id="desc">Dracula-themed self-drawn study schema showing paranasal sinuses, meatus drainage, ostiomeatal complex, innervation and high-yield anatomic relations.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#282a36"/><stop offset="1" stop-color="#1e1f29"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".38"/></filter>
+    <marker id="arrowCyan" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#8be9fd"/></marker>
+    <marker id="arrowPink" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#ff79c6"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L9,5 L1,9 Z" fill="#50fa7b"/></marker>
+    <style>
+      .bg{fill:url(#bg)}.panel{fill:#343746;stroke:#6272a4;stroke-width:2.6;filter:url(#shadow)}.subpanel{fill:#44475a;stroke:#6272a4;stroke-width:2}.title{font-family:Inter,Arial,sans-serif;font-size:44px;font-weight:950;fill:#f8f8f2}.subtitle{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:750;fill:#c7c9d9}.h{font-family:Inter,Arial,sans-serif;font-size:25px;font-weight:950;fill:#f8f8f2}.lbl{font-family:Inter,Arial,sans-serif;font-size:21px;font-weight:900;fill:#f8f8f2}.small{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:760;fill:#c7c9d9}.tiny{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:740;fill:#c7c9d9}.tag{font-family:Inter,Arial,sans-serif;font-size:17px;font-weight:1000;fill:#282a36}.box{fill:#282a36;stroke:#6272a4;stroke-width:2.2;filter:url(#shadow)}.guide{fill:none;stroke:#6272a4;stroke-width:2;stroke-dasharray:7 8;opacity:.88}.drain{fill:none;stroke:#8be9fd;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowCyan)}.danger{fill:none;stroke:#ff79c6;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowPink);stroke-dasharray:6 10}.green{fill:none;stroke:#50fa7b;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowGreen)}.nerve{fill:none;stroke:#bd93f9;stroke-width:5.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:3 10;opacity:.86}.sinusF{fill:#f1fa8c;stroke:#282a36;stroke-width:3;opacity:.92}.sinusE{fill:#bd93f9;stroke:#282a36;stroke-width:3;opacity:.88}.sinusM{fill:#ffb86c;stroke:#282a36;stroke-width:3;opacity:.92}.sinusS{fill:#ff79c6;stroke:#282a36;stroke-width:3;opacity:.88}.bone{fill:#44475a;stroke:#6272a4;stroke-width:4}.cavity{fill:#282a36;stroke:#8be9fd;stroke-width:4}.meatus{fill:none;stroke:#c7c9d9;stroke-width:5;stroke-linecap:round}.ostio{fill:none;stroke:#50fa7b;stroke-width:6;stroke-linecap:round;stroke-dasharray:9 8}.num{fill:#ff5555;stroke:#f8f8f2;stroke-width:4}.numTxt{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:1000;fill:#f8f8f2;text-anchor:middle;dominant-baseline:central}.cyan{fill:#8be9fd}.pink{fill:#ff79c6}.greenText{fill:#50fa7b}.yellow{fill:#f1fa8c}.orange{fill:#ffb86c}.purple{fill:#bd93f9}.red{fill:#ff5555}
+    </style>
+  </defs>
+  <rect class="bg" width="1920" height="1220"/>
+  <text x="64" y="70" class="title">Nasennebenhöhlen – Lage, Drainage, Prüfungsfallen</text>
+  <text x="66" y="108" class="subtitle">Merkschema: vordere Gruppe → mittlerer Nasengang; hintere Gruppe → oberer Nasengang/Recessus sphenoethmoidalis; Tränenkanal unten ist die Falle.</text>
+
+  <!-- left: skull/sinus overview -->
+  <rect class="panel" x="55" y="150" width="790" height="710" rx="34"/>
+  <text x="90" y="195" class="h">1) Sagittale Lage: „Stirn–Sieb–Keil–Kiefer“</text>
+  <path class="bone" d="M205 560 C225 330 385 222 565 240 C704 254 762 360 730 486 C702 590 610 682 488 704 C368 727 248 675 205 560Z"/>
+  <path class="cavity" d="M285 520 C310 360 430 294 556 310 C638 320 672 386 650 470 C630 548 548 610 444 617 C356 623 300 590 285 520Z"/>
+  <path class="bone" d="M215 575 C156 575 118 548 112 507 C108 474 132 452 180 450"/>
+  <path class="bone" d="M650 455 C725 468 775 512 806 585"/>
+  <path class="sinusF" d="M438 260 C495 226 568 232 605 280 C580 322 497 332 438 305Z"/>
+  <path class="sinusE" d="M510 340 C555 325 608 338 636 375 C610 420 548 430 506 400Z"/>
+  <path class="sinusS" d="M636 355 C690 346 725 372 730 416 C700 452 650 455 620 424Z"/>
+  <path class="sinusM" d="M382 445 C462 410 555 430 590 500 C548 585 420 610 350 548 C344 500 355 470 382 445Z"/>
+  <path class="guide" d="M524 282 C620 235 676 218 748 206"/><g transform="translate(640 160)"><rect class="box" width="180" height="58" rx="15"/><text x="16" y="25" class="lbl yellow">Sinus frontalis</text><text x="16" y="47" class="tiny">Stirnhöhle</text></g>
+  <path class="guide" d="M566 382 C642 360 690 340 750 322"/><g transform="translate(630 300)"><rect class="box" width="190" height="58" rx="15"/><text x="16" y="25" class="lbl purple">Cellulae ethmoidales</text><text x="16" y="47" class="tiny">Siebbeinzellen</text></g>
+  <path class="guide" d="M682 405 C725 420 755 450 792 485"/><g transform="translate(604 487)"><rect class="box" width="210" height="58" rx="15"/><text x="16" y="25" class="lbl pink">Sinus sphenoidalis</text><text x="16" y="47" class="tiny">Keilbeinhöhle</text></g>
+  <path class="guide" d="M446 520 C355 622 285 668 185 706"/><g transform="translate(105 705)"><rect class="box" width="210" height="58" rx="15"/><text x="16" y="25" class="lbl orange">Sinus maxillaris</text><text x="16" y="47" class="tiny">Kieferhöhle</text></g>
+  <path class="danger" d="M445 600 C438 660 438 718 446 785"/><text x="335" y="815" class="small pink">Zahnwurzel-/Orbitnähe = klinische Klassiker</text>
+
+  <!-- center: lateral nasal wall drainage -->
+  <rect class="panel" x="875" y="150" width="990" height="710" rx="34"/>
+  <text x="910" y="195" class="h">2) Lateralwand der Nasenhöhle: Drainage-Routen</text>
+  <path class="subpanel" d="M1010 270 C1130 205 1350 225 1490 310 C1585 368 1630 470 1610 588 C1592 695 1488 770 1348 790 C1198 812 1060 764 998 662 C924 542 920 345 1010 270Z"/>
+  <path class="meatus" d="M1080 355 C1230 318 1410 330 1545 392"/>
+  <path class="meatus" d="M1060 500 C1235 450 1420 468 1562 548"/>
+  <path class="meatus" d="M1060 650 C1215 620 1390 630 1520 690"/>
+  <text x="1580" y="392" class="small">oberer Nasengang</text>
+  <text x="1580" y="550" class="small">mittlerer Nasengang</text>
+  <text x="1580" y="692" class="small">unterer Nasengang</text>
+  <path class="ostio" d="M1182 455 C1270 415 1398 430 1494 494"/><text x="1200" y="432" class="small greenText">ostiomeataler Komplex</text><text x="1210" y="460" class="tiny">Infundibulum · Hiatus semilunaris · Bulla · Proc. uncinatus</text>
+  <circle class="num" cx="1048" cy="548" r="24"/><text class="numTxt" x="1048" y="550">M</text><text x="1084" y="556" class="lbl cyan">Mittelgang = große Sammelstelle</text>
+  <path class="drain" d="M1100 250 C1140 330 1220 392 1325 480"/><text x="1040" y="245" class="small yellow">Frontalis</text>
+  <path class="drain" d="M1038 500 C1160 510 1270 515 1388 508"/><text x="950" y="512" class="small orange">Maxillaris</text>
+  <path class="drain" d="M1150 365 C1240 405 1288 440 1370 505"/><text x="1038" y="368" class="small purple">vordere/mittlere Ethmoidalzellen</text>
+  <path class="drain" d="M1220 310 C1340 318 1440 340 1530 376"/><text x="1148" y="292" class="small purple">post. Ethmoid → oberer Gang</text>
+  <path class="drain" d="M1410 245 C1490 270 1550 305 1610 355"/><text x="1378" y="230" class="small pink">Sphenoid → Recessus sphenoethmoidalis</text>
+  <path class="danger" d="M1045 725 C1180 690 1325 686 1470 725"/><text x="1038" y="745" class="small red">Falle: Ductus nasolacrimalis → unterer Gang, nicht NNH</text>
+
+  <!-- bottom compact truth/mnemonic strips -->
+  <g transform="translate(60 900)"><rect class="box" width="560" height="230" rx="24"/><text x="24" y="38" class="h">Merksatz Drainage</text><text x="24" y="74" class="small"><tspan class="yellow">Front</tspan> + <tspan class="orange">Max</tspan> + <tspan class="purple">vorderes Sieb</tspan> treffen</text><text x="24" y="104" class="small">sich im <tspan class="cyan">mittleren Markt</tspan>.</text><text x="24" y="145" class="small"><tspan class="purple">Hinteres Sieb</tspan> geht <tspan class="cyan">oben</tspan>.</text><text x="24" y="175" class="small"><tspan class="pink">Sphinx</tspan> sitzt ganz hinten im <tspan class="pink">Spheno-Eck</tspan>.</text><text x="24" y="207" class="tiny">Kurz: F + Max + vord./mittl. Ethmoid → Mittelgang; post. Ethmoid → oberer Gang; Sphenoid → Recessus.</text></g>
+  <g transform="translate(680 900)"><rect class="box" width="560" height="230" rx="24"/><text x="24" y="38" class="h">Innervation: V1 oben/hinten, V2 Kiefer</text><path class="nerve" d="M34 78 C160 55 245 56 355 82"/><text x="24" y="98" class="small purple">V1: Frontalis, Ethmoidalis, Sphenoidalis</text><text x="24" y="128" class="tiny">Nn. supraorbitalis/supratrochlearis, ethmoidales ant./post.</text><path class="nerve" d="M34 158 C160 182 245 182 355 158"/><text x="24" y="180" class="small orange">V2: Maxillaris</text><text x="24" y="210" class="tiny">N. infraorbitalis + Nn. alveolares superiores → Zahnschmerz-Falle.</text></g>
+  <g transform="translate(1300 900)"><rect class="box" width="560" height="230" rx="24"/><text x="24" y="38" class="h">Oft geprüfte Bild-Fallen</text><text x="24" y="75" class="small">1. Osteomeataler Komplex blockiert → Frontal/Max/ant. Ethmoid stauen.</text><text x="24" y="108" class="small">2. Maxillarostium liegt hoch → Drainage schlecht gegen Schwerkraft.</text><text x="24" y="141" class="small">3. Lamina papyracea: Ethmoiditis → Orbitakomplikation.</text><text x="24" y="174" class="small">4. Onodi-Zellen nahe N. opticus/A. carotis interna.</text><text x="24" y="207" class="small">5. Sinusitis kann Zahn-, Stirn-, Orbitaschmerz imitieren.</text></g>
+  <text x="64" y="1185" class="tiny">Selbst gezeichnetes Lernschema. Quellen: DocCheck Nasennebenhöhlen/Nasengang, StatPearls/NCBI Paranasal Sinuses, TeachMeAnatomy Paranasal Sinuses. Schematisch, nicht maßstabsgetreu.</text>
+</svg>
