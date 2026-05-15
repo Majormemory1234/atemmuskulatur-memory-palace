@@ -2,80 +2,262 @@
 <html lang="de">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Atemmuskulatur integrierte Mnemonik-Szene</title>
+<title>Atemmuskulatur: Inspirations- und Exspirations-Palast</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+  .phase-strip{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+  .phase-card{border-radius:22px;padding:16px 18px;border:1px solid rgba(248,248,242,.16);background:rgba(40,42,54,.55)}
+  .phase-card h2{margin:.1rem 0 .35rem;font-size:clamp(24px,3vw,38px)}
+  .phase-card.insp{box-shadow:inset 0 0 0 2px rgba(80,250,123,.28)}
+  .phase-card.exsp{box-shadow:inset 0 0 0 2px rgba(255,184,108,.32)}
+  .phase-card.insp h2{color:var(--green)} .phase-card.exsp h2{color:var(--orange)}
+  .memory-map{background:linear-gradient(180deg,rgba(40,42,54,.95),rgba(30,31,41,.95));}
+  .map-wrap{position:relative;border-radius:22px;overflow:hidden;border:3px solid rgba(98,114,164,.8);background:#1e1f29}
+  .breath-svg{display:block;width:100%;height:auto;background:#1e1f29}
+  .breath-svg text{font-family:Inter,system-ui,sans-serif}
+  .map-title{font-weight:1000;letter-spacing:.08em;text-transform:uppercase}
+  .zone-title{font-size:34px;font-weight:1000}
+  .zone-sub{font-size:18px;fill:#c7c9d9}
+  .rib{fill:none;stroke:#f8f8f2;stroke-width:6;opacity:.34;stroke-linecap:round}
+  .route{fill:none;stroke:#f1fa8c;stroke-width:7;stroke-dasharray:14 15;stroke-linecap:round;filter:url(#glow)}
+  .arrow{stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+  .inArrow{stroke:#50fa7b} .outArrow{stroke:#ffb86c}
+  .station{cursor:pointer;outline:none} .station .badge{fill:#ff5555;stroke:#f8f8f2;stroke-width:3}
+  .station .badgeText{fill:white;font-size:15px;font-weight:1000;text-anchor:middle}
+  .station .tinyLabel{fill:#f8f8f2;font-size:12px;font-weight:900;text-anchor:middle;paint-order:stroke;stroke:#282a36;stroke-width:4px;stroke-linejoin:round}
+  .station.active .halo{opacity:.42} .station.active .badge{fill:#ff79c6} .station:hover .halo{opacity:.34}
+  .fact-dock{display:grid;grid-template-columns:minmax(220px,.8fr) 1.2fr;gap:16px;margin-top:16px}
+  .fact-box,.route-box{background:rgba(52,55,70,.95);border:1px solid rgba(98,114,164,.85);border-radius:20px;padding:16px}
+  .fact-box h2{color:var(--yellow);margin-bottom:.35rem} .fact-box p{margin:.45rem 0}
+  .rowpick{border:0;border-radius:999px;background:var(--red);color:white;font-weight:1000;min-width:34px;min-height:34px;cursor:pointer}
+  tr.active .rowpick,.rowpick:hover{background:var(--pink);color:#282a36}
+  .mini-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .mini-card{background:rgba(52,55,70,.9);border:1px solid rgba(98,114,164,.75);border-radius:18px;padding:14px}
+  .mini-card h3{margin:.1rem 0 .35rem}
+  @media(max-width:850px){.phase-strip,.fact-dock{grid-template-columns:1fr}.zone-title{font-size:24px}.zone-sub{font-size:14px}.station .tinyLabel{display:none}}
+</style>
 </head>
 <body><nav class="site-nav"><a href="../index.html">← Index</a><a href="atemmuskulatur.html">Atemmuskulatur</a><a href="carotis-externa.html">Carotis externa</a><a href="nasennebenhoehlen.html">Nasennebenhöhlen</a><a href="rhinoskopie.html">Rhinoskopie</a></nav>
 <header>
-  <p class="eyebrow">großes Einzelbild · Atem-Theater · darunter Detail-Atlas</p>
-  <h1>Atemmuskulatur: eine große Sketchy-artige Gedächtnisszene</h1>
-  <p>Oben ist jetzt wieder ein echtes großes Gesamtbild: ein zusammenhängendes Atem-Theater im Rippen-Luftschiff. Die kleinen/Detailbilder sind nicht mehr der Hauptposter-Ersatz, sondern dienen darunter als Zoom-/Wahrheitslayer für die exakten Innervations-Hooks.</p>
-  <div class="key"><span class="gdot"></span> grün = Muskel/Aktion <span class="mdot"></span> magenta = Innervation <span class="rdot"></span> rot = klickbare Nummer <span class="ydot"></span> gold = Atem-Route</div>
+  <p class="eyebrow">komplett neu · geordnet nach Funktion · Flexikon-Liste + Innervation</p>
+  <h1>Atemmuskulatur: Einatmen links, Ausatmen rechts</h1>
+  <p>Neuer Gesamtpalast: eine saubere Atemzug-Manufaktur. Links zieht die grüne Inspirations-Crew den Thorax auf; rechts presst die orange Exspirations-Crew Bauchwand, Rippen und Hustenmechanik zusammen. Die roten Zahlen folgen der Flexikon-Reihenfolge; die Tabelle ist der exakte Wahrheitslayer.</p>
+  <div class="key"><span class="gdot"></span> grün = Inspiration / Thorax öffnet <span class="ydot"></span> cyan/gold = Basis-Atemmechanik <span class="mdot"></span> magenta = Innervations-Hook <span class="rdot"></span> rot = klickbare Station</div>
+  <div class="phase-strip">
+    <article class="phase-card insp"><h2>INSPIRATION</h2><p>Diaphragma senkt sich, Rippen heben sich, Hals-/Brust-/Serratus-Helfer ziehen den Thorax auf. Merke: <b>ziehen, heben, öffnen</b>.</p></article>
+    <article class="phase-card exsp"><h2>FORCIERTE EXSPIRATION</h2><p>Ruhe-Exspiration ist überwiegend passiv. Diese Figuren sind die aktive Ausatem-/Husten-Crew: <b>pressen, senken, komprimieren</b>.</p></article>
+  </div>
 </header>
 <main>
-<section class="poster master-scene">
-  <h2>Großes Gesamtbild: das Atem-Theater</h2>
-  <p>Die 15 Figuren leben in derselben Szene: Rippen-Luftschiff, Bühnenboden, Lungenkammer, Seile, Treppen, Bauchdeck und Rücken-Zone. Die roten Nummern sind anklickbar; die Faktenbox liefert die exakte Innervation.</p>
-  <div class="integrated-wrap">
-    <img src="../assets/atemmuskulatur_integrated_master_scene_v2.png" alt="Eine große integrierte Atemmuskulatur-Gedächtnisszene im Atem-Theater">
-    <button class="hotspot" data-id="1" style="left:39.0%;top:61.0%">1</button><button class="hotspot" data-id="2" style="left:18.0%;top:24.0%">2</button><button class="hotspot" data-id="3" style="left:50.0%;top:14.0%">3</button><button class="hotspot" data-id="4" style="left:69.0%;top:24.0%">4</button><button class="hotspot" data-id="5" style="left:83.0%;top:18.0%">5</button><button class="hotspot" data-id="6" style="left:91.0%;top:31.0%">6</button><button class="hotspot" data-id="7" style="left:28.0%;top:43.0%">7</button><button class="hotspot" data-id="8" style="left:18.0%;top:61.0%">8</button><button class="hotspot" data-id="9" style="left:75.0%;top:51.0%">9</button><button class="hotspot" data-id="10" style="left:25.0%;top:78.0%">10</button><button class="hotspot" data-id="11" style="left:50.0%;top:74.0%">11</button><button class="hotspot" data-id="12" style="left:57.0%;top:80.0%">12</button><button class="hotspot" data-id="13" style="left:66.0%;top:79.0%">13</button><button class="hotspot" data-id="14" style="left:77.0%;top:85.0%">14</button><button class="hotspot" data-id="15" style="left:88.0%;top:81.0%">15</button>
-    <aside id="sceneLegend" class="scene-legend" aria-live="polite"><b id="sceneLegendTitle"></b><span id="sceneLegendMuscle"></span><span id="sceneLegendInn"></span><span id="sceneLegendCode" class="magenta"></span><span id="sceneLegendAction" class="green"></span><a href="#legend">zur Tabelle</a></aside>
+<section class="poster memory-map">
+  <h2>Gesamtbild: Atemzug-Manufaktur im Rippenbogen</h2>
+  <p>Links oben/unten: Inspirationshelfer. Unten rechts: Bauchpresse. Rechts außen: Lendenanker und Husten-Schwimmer. In der Mitte sitzt das Diaphragma als Kuppelkröte; die Interkostal-Leiter verbindet beide Phasen.</p>
+  <div class="map-wrap">
+  <svg class="breath-svg" viewBox="0 0 1200 930" aria-labelledby="svgTitle svgDesc" role="img">
+    <title id="svgTitle">Atemmuskulatur-Gedächtnisbild mit Inspirations- und Exspirationsgruppen</title>
+    <desc id="svgDesc">Links grüne Inspiration, rechts orange forcierte Exspiration, rote nummerierte Stationen für alle Muskeln und Innervationen.</desc>
+    <defs>
+      <filter id="glow"><feGaussianBlur stdDeviation="3" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      <linearGradient id="inspBg" x1="0" x2="1"><stop stop-color="#50fa7b" stop-opacity=".18"/><stop offset="1" stop-color="#8be9fd" stop-opacity=".06"/></linearGradient>
+      <linearGradient id="exspBg" x1="0" x2="1"><stop stop-color="#ffb86c" stop-opacity=".08"/><stop offset="1" stop-color="#ff5555" stop-opacity=".18"/></linearGradient>
+    </defs>
+    <rect x="0" y="0" width="1200" height="930" fill="#1e1f29"/>
+    <rect x="35" y="70" width="550" height="805" rx="36" fill="url(#inspBg)" stroke="#50fa7b" stroke-width="3" opacity=".92"/>
+    <rect x="615" y="70" width="550" height="805" rx="36" fill="url(#exspBg)" stroke="#ffb86c" stroke-width="3" opacity=".92"/>
+    <text class="zone-title" x="70" y="124" fill="#50fa7b">EINATMEN: öffnen</text>
+    <text class="zone-sub" x="72" y="152">Kuppel runter · Rippen hoch/außen · Helfer ziehen</text>
+    <text class="zone-title" x="645" y="124" fill="#ffb86c">AUSATMEN: pressen</text>
+    <text class="zone-sub" x="647" y="152">aktiv nur bei forcierter Exspiration / Husten</text>
+    <path class="rib" d="M145 190 C80 340 80 610 165 780"/><path class="rib" d="M1055 190 C1120 340 1120 610 1035 780"/>
+    <path class="rib" d="M205 165 C420 80 780 80 995 165"/><path class="rib" d="M235 760 C420 865 790 865 975 760"/>
+    <path d="M205 660 C320 610 430 610 500 660 C580 715 665 715 745 660 C815 610 930 610 1030 660" fill="none" stroke="#8be9fd" stroke-width="10" opacity=".55"/>
+    <ellipse cx="603" cy="615" rx="165" ry="56" fill="#8be9fd" opacity=".13" stroke="#8be9fd" stroke-width="3"/>
+    <path d="M90 445 C210 170 440 150 600 440 C735 670 930 530 1110 790" class="route"/>
+    <path d="M505 560 C505 655 505 690 505 735" class="arrow inArrow" marker-end="url(#none)"/><path d="M485 715 L505 745 L525 715" class="inArrow" fill="none"/>
+    <path d="M700 785 C760 750 840 700 920 620" class="arrow outArrow"/><path d="M900 622 L935 600 L920 638" class="outArrow" fill="none"/>
+    <text class="map-title" x="500" y="70" fill="#f1fa8c">ATEMZUG-MANUFAKTUR</text>
+    <text x="505" y="485" fill="#8be9fd" font-size="21" font-weight="1000" text-anchor="middle">Basis</text>
+    <text x="300" y="690" fill="#50fa7b" font-size="20" font-weight="900" text-anchor="middle">Rippen auf</text>
+    <text x="730" y="700" fill="#ffb86c" font-size="20" font-weight="900" text-anchor="middle">Bauchpresse</text>
+    <text x="1010" y="690" fill="#ffb86c" font-size="18" font-weight="900" text-anchor="middle">Husten / Rücken</text>
+    
+    <g class="station basis" data-id="1" tabindex="0" role="button" aria-label="1. Zwerchfell-Kuppelkröte">
+      <circle class="halo" cx="500" cy="520" r="37" fill="#8be9fd" opacity="0.13"/>
+      <circle class="badge" cx="474" cy="492" r="17"/><text class="badgeText" x="474" y="497">1</text>
+      <circle cx="500" cy="520" r="24" fill="#8be9fd" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 476 538 Q 500 566 524 538" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="500" y="578">Diaphragma</text>
+    </g>
+    <g class="station basis" data-id="2" tabindex="0" role="button" aria-label="2. Interkostal-Leiterakrobaten">
+      <circle class="halo" cx="260" cy="355" r="37" fill="#8be9fd" opacity="0.13"/>
+      <circle class="badge" cx="234" cy="327" r="17"/><text class="badgeText" x="234" y="332">2</text>
+      <circle cx="260" cy="355" r="24" fill="#8be9fd" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 236 373 Q 260 401 284 373" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="260" y="413">Interkostalmuskulatur</text>
+    </g>
+    <g class="station insp" data-id="3" tabindex="0" role="button" aria-label="3. Sterno-Kleido-Mastoid-Kapitän">
+      <circle class="halo" cx="455" cy="175" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="429" cy="147" r="17"/><text class="badgeText" x="429" y="152">3</text>
+      <circle cx="455" cy="175" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 431 193 Q 455 221 479 193" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="455" y="233">sternocleidomastoideus</text>
+    </g>
+    <g class="station insp" data-id="4" tabindex="0" role="button" aria-label="4. Vordere Skalenen-Stufe">
+      <circle class="halo" cx="585" cy="205" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="559" cy="177" r="17"/><text class="badgeText" x="559" y="182">4</text>
+      <circle cx="585" cy="205" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 561 223 Q 585 251 609 223" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="585" y="263">scalenus anterior</text>
+    </g>
+    <g class="station insp" data-id="5" tabindex="0" role="button" aria-label="5. Mittlere Skalenen-Stufe">
+      <circle class="halo" cx="660" cy="210" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="634" cy="182" r="17"/><text class="badgeText" x="634" y="187">5</text>
+      <circle cx="660" cy="210" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 636 228 Q 660 256 684 228" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="660" y="268">scalenus medius</text>
+    </g>
+    <g class="station insp" data-id="6" tabindex="0" role="button" aria-label="6. Hintere Skalenen-Stufe">
+      <circle class="halo" cx="735" cy="220" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="709" cy="192" r="17"/><text class="badgeText" x="709" y="197">6</text>
+      <circle cx="735" cy="220" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 711 238 Q 735 266 759 238" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="735" y="278">scalenus posterior</text>
+    </g>
+    <g class="station insp" data-id="7" tabindex="0" role="button" aria-label="7. Großer Pectoralis-Kran">
+      <circle class="halo" cx="930" cy="290" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="904" cy="262" r="17"/><text class="badgeText" x="904" y="267">7</text>
+      <circle cx="930" cy="290" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 906 308 Q 930 336 954 308" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="930" y="348">pectoralis major</text>
+    </g>
+    <g class="station insp" data-id="8" tabindex="0" role="button" aria-label="8. Kleiner Pectoralis-Page">
+      <circle class="halo" cx="995" cy="380" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="969" cy="352" r="17"/><text class="badgeText" x="969" y="357">8</text>
+      <circle cx="995" cy="380" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 971 398 Q 995 426 1019 398" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="995" y="438">pectoralis minor</text>
+    </g>
+    <g class="station insp" data-id="9" tabindex="0" role="button" aria-label="9. Oberer Sägezahn-Engel">
+      <circle class="halo" cx="220" cy="235" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="194" cy="207" r="17"/><text class="badgeText" x="194" y="212">9</text>
+      <circle cx="220" cy="235" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 196 253 Q 220 281 244 253" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="220" y="293">serratus posterior superior</text>
+    </g>
+    <g class="station insp" data-id="10" tabindex="0" role="button" aria-label="10. Unterer Sägezahn-Kobold">
+      <circle class="halo" cx="180" cy="555" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="154" cy="527" r="17"/><text class="badgeText" x="154" y="532">10</text>
+      <circle cx="180" cy="555" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 156 573 Q 180 601 204 573" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="180" y="613">serratus posterior inferior</text>
+    </g>
+    <g class="station insp" data-id="11" tabindex="0" role="button" aria-label="11. Vorderer Sägehai-Boxer">
+      <circle class="halo" cx="1065" cy="520" r="37" fill="#50fa7b" opacity="0.13"/>
+      <circle class="badge" cx="1039" cy="492" r="17"/><text class="badgeText" x="1039" y="497">11</text>
+      <circle cx="1065" cy="520" r="24" fill="#50fa7b" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 1041 538 Q 1065 566 1089 538" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="1065" y="578">serratus anterior</text>
+    </g>
+    <g class="station exsp" data-id="12" tabindex="0" role="button" aria-label="12. Gerader Bauchritter">
+      <circle class="halo" cx="470" cy="790" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="444" cy="762" r="17"/><text class="badgeText" x="444" y="767">12</text>
+      <circle cx="470" cy="790" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 446 808 Q 470 836 494 808" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="470" y="848">rectus abdominis</text>
+    </g>
+    <g class="station exsp" data-id="13" tabindex="0" role="button" aria-label="13. Quer-Korsettmeister">
+      <circle class="halo" cx="595" cy="835" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="569" cy="807" r="17"/><text class="badgeText" x="569" y="812">13</text>
+      <circle cx="595" cy="835" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 571 853 Q 595 881 619 853" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="595" y="893">transversus abdominis</text>
+    </g>
+    <g class="station exsp" data-id="14" tabindex="0" role="button" aria-label="14. Äußerer Schrägschärpen-Krieger">
+      <circle class="halo" cx="705" cy="810" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="679" cy="782" r="17"/><text class="badgeText" x="679" y="787">14</text>
+      <circle cx="705" cy="810" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 681 828 Q 705 856 729 828" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="705" y="868">obliquus externus abdominis</text>
+    </g>
+    <g class="station exsp" data-id="15" tabindex="0" role="button" aria-label="15. Innerer Gegenschärpen-Krieger">
+      <circle class="halo" cx="815" cy="835" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="789" cy="807" r="17"/><text class="badgeText" x="789" y="812">15</text>
+      <circle cx="815" cy="835" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 791 853 Q 815 881 839 853" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="815" y="893">obliquus internus abdominis</text>
+    </g>
+    <g class="station exsp" data-id="16" tabindex="0" role="button" aria-label="16. Quadratischer Lendenanker">
+      <circle class="halo" cx="995" cy="735" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="969" cy="707" r="17"/><text class="badgeText" x="969" y="712">16</text>
+      <circle cx="995" cy="735" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 971 753 Q 995 781 1019 753" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="995" y="793">quadratus lumborum</text>
+    </g>
+    <g class="station exsp" data-id="17" tabindex="0" role="button" aria-label="17. Breiter Husten-Schwimmer">
+      <circle class="halo" cx="1085" cy="815" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="1059" cy="787" r="17"/><text class="badgeText" x="1059" y="792">17</text>
+      <circle cx="1085" cy="815" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 1061 833 Q 1085 861 1109 833" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="1085" y="873">latissimus dorsi</text>
+    </g>
+    <g class="station exsp" data-id="18" tabindex="0" role="button" aria-label="18. Querer Brustbein-Schilddrücker">
+      <circle class="halo" cx="885" cy="615" r="37" fill="#ffb86c" opacity="0.13"/>
+      <circle class="badge" cx="859" cy="587" r="17"/><text class="badgeText" x="859" y="592">18</text>
+      <circle cx="885" cy="615" r="24" fill="#ffb86c" opacity="0.88" stroke="#f8f8f2" stroke-width="3"/>
+      <path d="M 861 633 Q 885 661 909 633" fill="none" stroke="#f8f8f2" stroke-width="5" stroke-linecap="round" opacity=".88"/>
+      <text class="tinyLabel" x="885" y="673">transversus thoracis</text>
+    </g>
+  </svg>
   </div>
-  <p><a href="../assets/atemmuskulatur_integrated_master_scene_v2.png" target="_blank">Gesamtbild groß öffnen</a></p>
+  <div class="fact-dock">
+    <aside class="fact-box" id="factBox" aria-live="polite"><p>Station anklicken.</p></aside>
+    <div class="route-box"><h2>Route in einem Satz</h2><p><b>Kuppelkröte</b> öffnet die Luftfabrik; <b>Interkostal-Akrobaten</b>, <b>Halskapitän</b>, <b>Skalenen-Treppe</b>, <b>Pectoralis-Kran</b> und <b>Sägezähne</b> ziehen den Thorax auf — danach pressen <b>Bauchritter/Korsett/Schärpen</b>, <b>Lendenanker</b>, <b>Husten-Schwimmer</b> und <b>Brustbein-Schild</b> die Luft heraus.</p></div>
+  </div>
 </section>
-<section class="focus">
-  <p class="zone" id="focusZone"></p>
-  <h2 id="focusTitle"></h2>
-  <p id="focusMuscle"></p>
-  <p id="focusInn"></p>
-  <p class="magenta" id="focusCode"></p>
-  <p class="green" id="focusAction"></p>
-  <div class="buttons"><button data-id="1">1</button><button data-id="2">2</button><button data-id="3">3</button><button data-id="4">4</button><button data-id="5">5</button><button data-id="6">6</button><button data-id="7">7</button><button data-id="8">8</button><button data-id="9">9</button><button data-id="10">10</button><button data-id="11">11</button><button data-id="12">12</button><button data-id="13">13</button><button data-id="14">14</button><button data-id="15">15</button></div>
+<section class="mini-grid" aria-label="Gruppenlogik">
+  <article class="mini-card"><h3>1) Basis-Atemmuskeln</h3><p><b>Diaphragma</b> = Hauptmotor. <b>Interkostalmuskulatur</b> = Rippenmechanik; je nach Faser/Lage inspiratorisch oder exspiratorisch.</p></article>
+  <article class="mini-card"><h3>2) Inspirationshelfer</h3><p>Bei Dyspnoe/Kutschersitz: Hals und Schultergürtel fixieren, dann ziehen SCM, Scaleni, Pectorales und Serrati den Thorax auf.</p></article>
+  <article class="mini-card"><h3>3) Exspirationshelfer</h3><p>Ruheausatmung passiv; aktive Ausatmung/Husten nutzt Bauchpresse, Rippen-Senker und Rücken-/Lendenfixatoren.</p></article>
 </section>
-<section class="poster detail-atlas">
-  <h2>Detail-Atlas: vollständige Hook-Tafel mit lesbarer Innervation</h2>
-  <p>Hier bleiben die 15 kontrollierten Einzelbilder als Lern-Zoom erhalten. Diese Tafel ist bewusst genauer/lesbarer als das große Stimmungsbild: C/Th/L, Range-Endpunkte und Nerven stehen deterministisch im Bild.</p>
-  <img src="../assets/atemmuskulatur_complete_hooks_poster.jpg" alt="Detail-Atlas der Atemmuskulatur mit Innervations-Hooks">
-  <p><a href="../assets/atemmuskulatur_complete_hooks_poster.jpg" target="_blank">Detail-Atlas groß öffnen</a></p>
-</section>
-<section id="legend" class="legend"><h2>Wahrheitslayer: Figuren, Muskeln, Innervation</h2><table><thead><tr><th>#</th><th>Figur / Muskel</th><th>Innervation</th><th>Hook-Code</th><th>Muskelaktion</th></tr></thead><tbody><tr data-id="1"><td>1</td><td><b>Zwerchfell-Kuppelkröte</b><br><em>Diaphragma</em></td><td>N. phrenicus C3–5</td><td><span class="magenta">C = Halskrone<br>3–5 = Mama → Löwe<br>Phrenicus-Fährmann/Phönix</span></td><td class="green">Kuppel senkt sich: Inspiration</td></tr>
-<tr data-id="2"><td>2</td><td><b>Zwischenrippen-Leiterakrobaten</b><br><em>Mm. intercostales</em></td><td>Nn. intercostales Th1–11</td><td><span class="magenta">Th = Thorhammer<br>1–11 = Krawatte → Doppel-Krawatte<br>Interkostal-Schienen</span></td><td class="green">zwischen den Rippen: Ziehharmonika</td></tr>
-<tr data-id="3"><td>3</td><td><b>Sterno-Kleido-Mastoid-Kapitän</b><br><em>M. sternocleidomastoideus</em></td><td>N. accessorius XI + C2–3</td><td><span class="magenta">C = Halskrone + XI-Accessoire<br>2–3 = Knie/Noah → Mama<br>Accessoire-Bote</span></td><td class="green">3 Seile: Sternum, Clavicula, Mastoid</td></tr>
-<tr data-id="4"><td>4</td><td><b>Skalenen-Treppengnome</b><br><em>Mm. scaleni</em></td><td>C3–8 variabel</td><td><span class="magenta">C = Halskrone<br>3–8 = Mama → Efeu<br>Halskronen-Bote</span></td><td class="green">Treppen heben 1./2. Rippe</td></tr>
-<tr data-id="5"><td>5</td><td><b>Großer Pectoralis-Strongman</b><br><em>M. pectoralis major</em></td><td>Nn. pectorales C5–T1</td><td><span class="magenta">C + Th = Krone + Thorhammer<br>C5–T1 = Löwe → Thor-Krawatte<br>Pectoralis-Duo-Bote</span></td><td class="green">großer Brustzug bei fixierten Armen</td></tr>
-<tr data-id="6"><td>6</td><td><b>Kleiner Pectoralis-Page</b><br><em>M. pectoralis minor</em></td><td>N. pectoralis medialis C8–T1</td><td><span class="magenta">C + Th = Krone + Thorhammer<br>C8–T1 = Efeu → Thor-Krawatte<br>medialer Pectoralis-Bote</span></td><td class="green">Coracoid-Haken zieht obere Rippen</td></tr>
-<tr data-id="7"><td>7</td><td><b>Oberer Sägezahn-Engel</b><br><em>M. serratus posterior superior</em></td><td>Nn. intercostales Th2–5</td><td><span class="magenta">Th = Thorhammer<br>2–5 = Knie/Noah → Löwe<br>Interkostal-Bote oben</span></td><td class="green">gezackter Engel hebt obere Rippen</td></tr>
-<tr data-id="8"><td>8</td><td><b>Unterer Sägezahn-Kobold</b><br><em>M. serratus posterior inferior</em></td><td>Nn. intercostales Th9–12</td><td><span class="magenta">Th = Thorhammer<br>9–12 = Biene → Noah<br>Interkostal-Bote unten</span></td><td class="green">gezackter Kobold zieht untere Rippen</td></tr>
-<tr data-id="9"><td>9</td><td><b>Vorderer Sägehai-Boxer</b><br><em>M. serratus anterior</em></td><td>N. thoracicus longus C5–7</td><td><span class="magenta">C = Halskrone<br>5–7 = Löwe → Schlüssel<br>LANGES Thorax-Seil</span></td><td class="green">Sägehai presst Scapula-Tür an</td></tr>
-<tr data-id="10"><td>10</td><td><b>Gerader Bauchritter</b><br><em>M. rectus abdominis</em></td><td>Th7–12</td><td><span class="magenta">Th = Thorhammer<br>7–12 = Schlüssel → Noah<br>Thor-Bauchast</span></td><td class="green">gerades Schild presst Bauch</td></tr>
-<tr data-id="11"><td>11</td><td><b>Quer-Korsettmeister</b><br><em>M. transversus abdominis</em></td><td>Th7–12 + L1</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th7–12 + L1 = Schlüssel→Noah + L-Krawatte<br>Thor/Lenden-Bote</span></td><td class="green">queres Korsett presst Bauch</td></tr>
-<tr data-id="12"><td>12</td><td><b>Äußerer Schrägschärpen-Krieger</b><br><em>M. obliquus externus abdominis</em></td><td>Th5–12</td><td><span class="magenta">Th = Thorhammer<br>5–12 = Löwe → Noah<br>Thor-Bauchast außen</span></td><td class="green">äußere Diagonale abwärts</td></tr>
-<tr data-id="13"><td>13</td><td><b>Innerer Gegenschärpen-Krieger</b><br><em>M. obliquus internus abdominis</em></td><td>Th7–12 + L1</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th7–12 + L1 = Schlüssel→Noah + L-Krawatte<br>Thor/Lenden-Bote innen</span></td><td class="green">innere Gegendiagonale</td></tr>
-<tr data-id="14"><td>14</td><td><b>Quadratischer Lenden-Holzfäller</b><br><em>M. quadratus lumborum</em></td><td>Th12–L4</td><td><span class="magenta">Th + L = Thorhammer + Lendenstamm<br>Th12–L4 = Thor-Noah → Lenden-Reh<br>Grenzbote Thor/Lende</span></td><td class="green">Quadratrahmen stabilisiert 12. Rippe</td></tr>
-<tr data-id="15"><td>15</td><td><b>Breiter Rücken-Schwimmer</b><br><em>M. latissimus dorsi</em></td><td>N. thoracodorsalis C6–8</td><td><span class="magenta">C = Halskrone<br>6–8 = Schuh → Efeu<br>Thoracodorsal-Seil</span></td><td class="green">breiter Rücken zieht Armseile</td></tr></tbody></table></section>
-<section class="note"><h2>Aufbau</h2><p>Oben: ein großes zusammenhängendes Bild wie ein Sketchy-/Meditricks-Gedächtnisort. Darunter: die exakten Einzel-Hooks, damit nichts Medizinisches durch Bildgenerierungs-Artefakte verloren geht. Besonders Serratus anterior bleibt als Sägehai mit langem Thorax-Seil und C5–7-Code verankert.</p></section>
+<section id="legend" class="legend"><h2>Wahrheitslayer: Figuren, Muskeln, Innervation</h2><table><thead><tr><th>#</th><th>Figur / Muskel</th><th>Gruppe</th><th>Innervation</th><th>Hook-Code</th><th>Aktion</th></tr></thead><tbody>
+<tr data-id="1"><td><button class="rowpick" data-id="1">1</button></td><td><b>Zwerchfell-Kuppelkröte</b><br><em>Diaphragma</em></td><td>Basis / Inspiration</td><td>N. phrenicus C3–5</td><td><span class="magenta">C-Halskrone + Mama→Löwe (3–5); Phrenicus = Phönix-Fährmann</span></td><td class="green">senkt die Kuppel → Thoraxvolumen ↑</td></tr>
+<tr data-id="2"><td><button class="rowpick" data-id="2">2</button></td><td><b>Interkostal-Leiterakrobaten</b><br><em>Interkostalmuskulatur</em></td><td>Basis / Rippenmechanik</td><td>Nn. intercostales Th1–11 (unterhalb: N. subcostalis Th12)</td><td><span class="magenta">Thorhammer + Rippen-Schienen 1→11</span></td><td class="green">äußere Fasern heben Rippen; innere/interosseöse Anteile helfen forcierter Exspiration</td></tr>
+<tr data-id="3"><td><button class="rowpick" data-id="3">3</button></td><td><b>Sterno-Kleido-Mastoid-Kapitän</b><br><em>M. sternocleidomastoideus</em></td><td>Inspiratorische Atemhilfe</td><td>N. accessorius XI + Rr. ventrales C2–3</td><td><span class="magenta">Accessoire-Säbel XI + Halskrone 2→3</span></td><td class="green">zieht Sternum/Clavicula/Mastoid-Seile: oberer Thorax hebt</td></tr>
+<tr data-id="4"><td><button class="rowpick" data-id="4">4</button></td><td><b>Vordere Skalenen-Stufe</b><br><em>M. scalenus anterior</em></td><td>Inspiratorische Atemhilfe</td><td>Rr. ventrales C4–6</td><td><span class="magenta">Halskrone 4→6; erste Treppenstufe an Rippe 1</span></td><td class="green">hebt 1. Rippe</td></tr>
+<tr data-id="5"><td><button class="rowpick" data-id="5">5</button></td><td><b>Mittlere Skalenen-Stufe</b><br><em>M. scalenus medius</em></td><td>Inspiratorische Atemhilfe</td><td>Rr. ventrales C3–8</td><td><span class="magenta">Halskrone 3→8; Mittelstufe</span></td><td class="green">hebt 1. Rippe</td></tr>
+<tr data-id="6"><td><button class="rowpick" data-id="6">6</button></td><td><b>Hintere Skalenen-Stufe</b><br><em>M. scalenus posterior</em></td><td>Inspiratorische Atemhilfe</td><td>Rr. ventrales C6–8</td><td><span class="magenta">Halskrone 6→8; hintere Stufe zu Rippe 2</span></td><td class="green">hebt 2. Rippe</td></tr>
+<tr data-id="7"><td><button class="rowpick" data-id="7">7</button></td><td><b>Großer Pectoralis-Kran</b><br><em>M. pectoralis major</em></td><td>Inspiratorische Atemhilfe</td><td>Nn. pectorales medialis/lateralis C5–Th1</td><td><span class="magenta">Brust-Kran mit C-Löwe bis Thor-Krawatte</span></td><td class="green">bei fixierten Armen starker Inspirationshelfer (Kutschersitz)</td></tr>
+<tr data-id="8"><td><button class="rowpick" data-id="8">8</button></td><td><b>Kleiner Pectoralis-Page</b><br><em>M. pectoralis minor</em></td><td>Inspiratorische Atemhilfe</td><td>N. pectoralis medialis C8–Th1</td><td><span class="magenta">kleiner Page mit C-Efeu→Thor-Krawatte</span></td><td class="green">zieht Rippen 3–5 über Proc. coracoideus nach oben</td></tr>
+<tr data-id="9"><td><button class="rowpick" data-id="9">9</button></td><td><b>Oberer Sägezahn-Engel</b><br><em>M. serratus posterior superior</em></td><td>Inspiratorische Atemhilfe</td><td>Nn. intercostales Th2–5</td><td><span class="magenta">Thorhammer 2→5; oberer Sägeflügel</span></td><td class="green">hebt obere Rippen</td></tr>
+<tr data-id="10"><td><button class="rowpick" data-id="10">10</button></td><td><b>Unterer Sägezahn-Kobold</b><br><em>M. serratus posterior inferior</em></td><td>Inspiratorische Atemhilfe</td><td>Nn. intercostales Th9–12</td><td><span class="magenta">Thorhammer 9→12; unterer Sägekobold</span></td><td class="green">zieht untere Rippen nach kaudal/lateral; in vielen Listen inspiratorische Atemhilfe</td></tr>
+<tr data-id="11"><td><button class="rowpick" data-id="11">11</button></td><td><b>Vorderer Sägehai-Boxer</b><br><em>M. serratus anterior</em></td><td>Inspiratorische Atemhilfe</td><td>N. thoracicus longus C5–7</td><td><span class="magenta">LANGES magenta Thorax-Seil + C-Löwe→Schlüssel</span></td><td class="green">fixiert Scapula; bei fixiertem Schultergürtel Rippenhebung</td></tr>
+<tr data-id="12"><td><button class="rowpick" data-id="12">12</button></td><td><b>Gerader Bauchritter</b><br><em>M. rectus abdominis</em></td><td>Exspiratorische Atemhilfe</td><td>Nn. thoracoabdominales Th7–12</td><td><span class="magenta">Thorhammer Schlüssel→Noah (7–12)</span></td><td class="green">Bauchpresse: Rippen runter, Bauchdruck rauf</td></tr>
+<tr data-id="13"><td><button class="rowpick" data-id="13">13</button></td><td><b>Quer-Korsettmeister</b><br><em>M. transversus abdominis</em></td><td>Exspiratorische Atemhilfe</td><td>Nn. thoracoabdominales Th7–12 + L1</td><td><span class="magenta">Korsett quer; Thor 7→12 + Lenden-Krawatte</span></td><td class="green">stärkste Kompression der Bauchwand</td></tr>
+<tr data-id="14"><td><button class="rowpick" data-id="14">14</button></td><td><b>Äußerer Schrägschärpen-Krieger</b><br><em>M. obliquus externus abdominis</em></td><td>Exspiratorische Atemhilfe</td><td>Th5–12</td><td><span class="magenta">äußere Schärpe: Thor-Löwe→Noah</span></td><td class="green">Bauchpresse + Rotation; Rippen nach kaudal</td></tr>
+<tr data-id="15"><td><button class="rowpick" data-id="15">15</button></td><td><b>Innerer Gegenschärpen-Krieger</b><br><em>M. obliquus internus abdominis</em></td><td>Exspiratorische Atemhilfe</td><td>Th7–12 + L1</td><td><span class="magenta">innere Gegenschärpe: Thor 7→12 + Lenden-Krawatte</span></td><td class="green">Bauchpresse + Rotation; mit transversus gekoppelt</td></tr>
+<tr data-id="16"><td><button class="rowpick" data-id="16">16</button></td><td><b>Quadratischer Lendenanker</b><br><em>M. quadratus lumborum</em></td><td>Exspiratorische Atemhilfe</td><td>N. subcostalis Th12 + Plexus lumbalis L1–4</td><td><span class="magenta">Quadratblock: Thor-Noah → Lenden-Reh (12→4)</span></td><td class="green">fixiert 12. Rippe; Rumpfstütze bei forcierter Atmung</td></tr>
+<tr data-id="17"><td><button class="rowpick" data-id="17">17</button></td><td><b>Breiter Husten-Schwimmer</b><br><em>M. latissimus dorsi</em></td><td>Exspiratorische Atemhilfe</td><td>N. thoracodorsalis C6–8</td><td><span class="magenta">breiter Schwimmer mit Thoraco-dorsalem Seil + C-Schuh→Efeu</span></td><td class="green">„Hustenmuskel“; komprimiert Thorax bei fixierten Armen</td></tr>
+<tr data-id="18"><td><button class="rowpick" data-id="18">18</button></td><td><b>Querer Brustbein-Schilddrücker</b><br><em>M. transversus thoracis</em></td><td>Exspiratorische Atemhilfe</td><td>Nn. intercostales Th2–6</td><td><span class="magenta">Sternum-Schild quer + Thorhammer 2→6</span></td><td class="green">senkt Rippenknorpel; kleine Hilfe bei forcierter Exspiration</td></tr>
+</tbody></table></section>
+<section class="note topo-note"><h2>Merksätze & High-Yield</h2><ul>
+<li><b>C3–5 keeps the diaphragm alive</b> = N. phrenicus für das Diaphragma.</li>
+<li><b>Kutschersitz</b>: Arme fixiert → M. pectoralis major/minor und Serratus anterior können die Rippen/den Thorax besser heben.</li>
+<li><b>Ruhe-Exspiration ist passiv</b>; die Flexikon-Exspiratoren sind vor allem für forcierte Ausatmung, Husten, Pressen.</li>
+<li><b>Thorakalnerven dominieren Bauch und Interkostalräume</b>: Th7–12/L1 ist der typische Bauchwand-Code.</li>
+<li><b>Innervationsbereiche variieren leicht nach Quelle</b>; für Prüfung immer mit Kurs-/AMBOSS-/Atlasvorgabe abgleichen.</li>
+</ul></section>
+<section class="note"><h2>Quelle / Abgleich</h2><p>Muskelreihenfolge und Einteilung nach DocCheck Flexikon „Atemmuskulatur“: Basis-Atemmuskulatur, inspiratorische Atemhilfsmuskulatur, exspiratorische Atemhilfsmuskulatur. Innervationen nach gängigen anatomischen Angaben; kleine Segmentbereich-Unterschiede sind möglich.</p><p><a href="https://flexikon.doccheck.com/de/Atemmuskulatur" target="_blank" rel="noopener">Flexikon: Atemmuskulatur</a></p></section>
 </main>
 <script>
-const DATA=[{"id": "1", "title": "Zwerchfell-Kuppelkröte", "muscle": "Diaphragma", "inn": "N. phrenicus C3–5", "level": "C = Halskrone", "range": "3–5 = Mama → Löwe", "nerve": "Phrenicus-Fährmann/Phönix", "action": "Kuppel senkt sich: Inspiration"}, {"id": "2", "title": "Zwischenrippen-Leiterakrobaten", "muscle": "Mm. intercostales", "inn": "Nn. intercostales Th1–11", "level": "Th = Thorhammer", "range": "1–11 = Krawatte → Doppel-Krawatte", "nerve": "Interkostal-Schienen", "action": "zwischen den Rippen: Ziehharmonika"}, {"id": "3", "title": "Sterno-Kleido-Mastoid-Kapitän", "muscle": "M. sternocleidomastoideus", "inn": "N. accessorius XI + C2–3", "level": "C = Halskrone + XI-Accessoire", "range": "2–3 = Knie/Noah → Mama", "nerve": "Accessoire-Bote", "action": "3 Seile: Sternum, Clavicula, Mastoid"}, {"id": "4", "title": "Skalenen-Treppengnome", "muscle": "Mm. scaleni", "inn": "C3–8 variabel", "level": "C = Halskrone", "range": "3–8 = Mama → Efeu", "nerve": "Halskronen-Bote", "action": "Treppen heben 1./2. Rippe"}, {"id": "5", "title": "Großer Pectoralis-Strongman", "muscle": "M. pectoralis major", "inn": "Nn. pectorales C5–T1", "level": "C + Th = Krone + Thorhammer", "range": "C5–T1 = Löwe → Thor-Krawatte", "nerve": "Pectoralis-Duo-Bote", "action": "großer Brustzug bei fixierten Armen"}, {"id": "6", "title": "Kleiner Pectoralis-Page", "muscle": "M. pectoralis minor", "inn": "N. pectoralis medialis C8–T1", "level": "C + Th = Krone + Thorhammer", "range": "C8–T1 = Efeu → Thor-Krawatte", "nerve": "medialer Pectoralis-Bote", "action": "Coracoid-Haken zieht obere Rippen"}, {"id": "7", "title": "Oberer Sägezahn-Engel", "muscle": "M. serratus posterior superior", "inn": "Nn. intercostales Th2–5", "level": "Th = Thorhammer", "range": "2–5 = Knie/Noah → Löwe", "nerve": "Interkostal-Bote oben", "action": "gezackter Engel hebt obere Rippen"}, {"id": "8", "title": "Unterer Sägezahn-Kobold", "muscle": "M. serratus posterior inferior", "inn": "Nn. intercostales Th9–12", "level": "Th = Thorhammer", "range": "9–12 = Biene → Noah", "nerve": "Interkostal-Bote unten", "action": "gezackter Kobold zieht untere Rippen"}, {"id": "9", "title": "Vorderer Sägehai-Boxer", "muscle": "M. serratus anterior", "inn": "N. thoracicus longus C5–7", "level": "C = Halskrone", "range": "5–7 = Löwe → Schlüssel", "nerve": "LANGES Thorax-Seil", "action": "Sägehai presst Scapula-Tür an"}, {"id": "10", "title": "Gerader Bauchritter", "muscle": "M. rectus abdominis", "inn": "Th7–12", "level": "Th = Thorhammer", "range": "7–12 = Schlüssel → Noah", "nerve": "Thor-Bauchast", "action": "gerades Schild presst Bauch"}, {"id": "11", "title": "Quer-Korsettmeister", "muscle": "M. transversus abdominis", "inn": "Th7–12 + L1", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th7–12 + L1 = Schlüssel→Noah + L-Krawatte", "nerve": "Thor/Lenden-Bote", "action": "queres Korsett presst Bauch"}, {"id": "12", "title": "Äußerer Schrägschärpen-Krieger", "muscle": "M. obliquus externus abdominis", "inn": "Th5–12", "level": "Th = Thorhammer", "range": "5–12 = Löwe → Noah", "nerve": "Thor-Bauchast außen", "action": "äußere Diagonale abwärts"}, {"id": "13", "title": "Innerer Gegenschärpen-Krieger", "muscle": "M. obliquus internus abdominis", "inn": "Th7–12 + L1", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th7–12 + L1 = Schlüssel→Noah + L-Krawatte", "nerve": "Thor/Lenden-Bote innen", "action": "innere Gegendiagonale"}, {"id": "14", "title": "Quadratischer Lenden-Holzfäller", "muscle": "M. quadratus lumborum", "inn": "Th12–L4", "level": "Th + L = Thorhammer + Lendenstamm", "range": "Th12–L4 = Thor-Noah → Lenden-Reh", "nerve": "Grenzbote Thor/Lende", "action": "Quadratrahmen stabilisiert 12. Rippe"}, {"id": "15", "title": "Breiter Rücken-Schwimmer", "muscle": "M. latissimus dorsi", "inn": "N. thoracodorsalis C6–8", "level": "C = Halskrone", "range": "6–8 = Schuh → Efeu", "nerve": "Thoracodorsal-Seil", "action": "breiter Rücken zieht Armseile"}];
+const DATA=[{"id": "1", "phase": "Basis / Inspiration", "title": "Zwerchfell-Kuppelkröte", "muscle": "Diaphragma", "inn": "N. phrenicus C3–5", "hook": "C-Halskrone + Mama→Löwe (3–5); Phrenicus = Phönix-Fährmann", "action": "senkt die Kuppel → Thoraxvolumen ↑", "x": 500, "y": 520, "zone": "basis"}, {"id": "2", "phase": "Basis / Rippenmechanik", "title": "Interkostal-Leiterakrobaten", "muscle": "Interkostalmuskulatur", "inn": "Nn. intercostales Th1–11 (unterhalb: N. subcostalis Th12)", "hook": "Thorhammer + Rippen-Schienen 1→11", "action": "äußere Fasern heben Rippen; innere/interosseöse Anteile helfen forcierter Exspiration", "x": 260, "y": 355, "zone": "basis"}, {"id": "3", "phase": "Inspiratorische Atemhilfe", "title": "Sterno-Kleido-Mastoid-Kapitän", "muscle": "M. sternocleidomastoideus", "inn": "N. accessorius XI + Rr. ventrales C2–3", "hook": "Accessoire-Säbel XI + Halskrone 2→3", "action": "zieht Sternum/Clavicula/Mastoid-Seile: oberer Thorax hebt", "x": 455, "y": 175, "zone": "insp"}, {"id": "4", "phase": "Inspiratorische Atemhilfe", "title": "Vordere Skalenen-Stufe", "muscle": "M. scalenus anterior", "inn": "Rr. ventrales C4–6", "hook": "Halskrone 4→6; erste Treppenstufe an Rippe 1", "action": "hebt 1. Rippe", "x": 585, "y": 205, "zone": "insp"}, {"id": "5", "phase": "Inspiratorische Atemhilfe", "title": "Mittlere Skalenen-Stufe", "muscle": "M. scalenus medius", "inn": "Rr. ventrales C3–8", "hook": "Halskrone 3→8; Mittelstufe", "action": "hebt 1. Rippe", "x": 660, "y": 210, "zone": "insp"}, {"id": "6", "phase": "Inspiratorische Atemhilfe", "title": "Hintere Skalenen-Stufe", "muscle": "M. scalenus posterior", "inn": "Rr. ventrales C6–8", "hook": "Halskrone 6→8; hintere Stufe zu Rippe 2", "action": "hebt 2. Rippe", "x": 735, "y": 220, "zone": "insp"}, {"id": "7", "phase": "Inspiratorische Atemhilfe", "title": "Großer Pectoralis-Kran", "muscle": "M. pectoralis major", "inn": "Nn. pectorales medialis/lateralis C5–Th1", "hook": "Brust-Kran mit C-Löwe bis Thor-Krawatte", "action": "bei fixierten Armen starker Inspirationshelfer (Kutschersitz)", "x": 930, "y": 290, "zone": "insp"}, {"id": "8", "phase": "Inspiratorische Atemhilfe", "title": "Kleiner Pectoralis-Page", "muscle": "M. pectoralis minor", "inn": "N. pectoralis medialis C8–Th1", "hook": "kleiner Page mit C-Efeu→Thor-Krawatte", "action": "zieht Rippen 3–5 über Proc. coracoideus nach oben", "x": 995, "y": 380, "zone": "insp"}, {"id": "9", "phase": "Inspiratorische Atemhilfe", "title": "Oberer Sägezahn-Engel", "muscle": "M. serratus posterior superior", "inn": "Nn. intercostales Th2–5", "hook": "Thorhammer 2→5; oberer Sägeflügel", "action": "hebt obere Rippen", "x": 220, "y": 235, "zone": "insp"}, {"id": "10", "phase": "Inspiratorische Atemhilfe", "title": "Unterer Sägezahn-Kobold", "muscle": "M. serratus posterior inferior", "inn": "Nn. intercostales Th9–12", "hook": "Thorhammer 9→12; unterer Sägekobold", "action": "zieht untere Rippen nach kaudal/lateral; in vielen Listen inspiratorische Atemhilfe", "x": 180, "y": 555, "zone": "insp"}, {"id": "11", "phase": "Inspiratorische Atemhilfe", "title": "Vorderer Sägehai-Boxer", "muscle": "M. serratus anterior", "inn": "N. thoracicus longus C5–7", "hook": "LANGES magenta Thorax-Seil + C-Löwe→Schlüssel", "action": "fixiert Scapula; bei fixiertem Schultergürtel Rippenhebung", "x": 1065, "y": 520, "zone": "insp"}, {"id": "12", "phase": "Exspiratorische Atemhilfe", "title": "Gerader Bauchritter", "muscle": "M. rectus abdominis", "inn": "Nn. thoracoabdominales Th7–12", "hook": "Thorhammer Schlüssel→Noah (7–12)", "action": "Bauchpresse: Rippen runter, Bauchdruck rauf", "x": 470, "y": 790, "zone": "exsp"}, {"id": "13", "phase": "Exspiratorische Atemhilfe", "title": "Quer-Korsettmeister", "muscle": "M. transversus abdominis", "inn": "Nn. thoracoabdominales Th7–12 + L1", "hook": "Korsett quer; Thor 7→12 + Lenden-Krawatte", "action": "stärkste Kompression der Bauchwand", "x": 595, "y": 835, "zone": "exsp"}, {"id": "14", "phase": "Exspiratorische Atemhilfe", "title": "Äußerer Schrägschärpen-Krieger", "muscle": "M. obliquus externus abdominis", "inn": "Th5–12", "hook": "äußere Schärpe: Thor-Löwe→Noah", "action": "Bauchpresse + Rotation; Rippen nach kaudal", "x": 705, "y": 810, "zone": "exsp"}, {"id": "15", "phase": "Exspiratorische Atemhilfe", "title": "Innerer Gegenschärpen-Krieger", "muscle": "M. obliquus internus abdominis", "inn": "Th7–12 + L1", "hook": "innere Gegenschärpe: Thor 7→12 + Lenden-Krawatte", "action": "Bauchpresse + Rotation; mit transversus gekoppelt", "x": 815, "y": 835, "zone": "exsp"}, {"id": "16", "phase": "Exspiratorische Atemhilfe", "title": "Quadratischer Lendenanker", "muscle": "M. quadratus lumborum", "inn": "N. subcostalis Th12 + Plexus lumbalis L1–4", "hook": "Quadratblock: Thor-Noah → Lenden-Reh (12→4)", "action": "fixiert 12. Rippe; Rumpfstütze bei forcierter Atmung", "x": 995, "y": 735, "zone": "exsp"}, {"id": "17", "phase": "Exspiratorische Atemhilfe", "title": "Breiter Husten-Schwimmer", "muscle": "M. latissimus dorsi", "inn": "N. thoracodorsalis C6–8", "hook": "breiter Schwimmer mit Thoraco-dorsalem Seil + C-Schuh→Efeu", "action": "„Hustenmuskel“; komprimiert Thorax bei fixierten Armen", "x": 1085, "y": 815, "zone": "exsp"}, {"id": "18", "phase": "Exspiratorische Atemhilfe", "title": "Querer Brustbein-Schilddrücker", "muscle": "M. transversus thoracis", "inn": "Nn. intercostales Th2–6", "hook": "Sternum-Schild quer + Thorhammer 2→6", "action": "senkt Rippenknorpel; kleine Hilfe bei forcierter Exspiration", "x": 885, "y": 615, "zone": "exsp"}];
 function find(id){return DATA.find(x=>x.id===String(id));}
 function setActive(id){
  const d=find(id); if(!d) return;
- document.querySelectorAll('.hotspot').forEach(b=>b.classList.toggle('active',b.dataset.id===d.id));
- document.querySelectorAll('tr[data-id]').forEach(r=>r.classList.toggle('active',r.dataset.id===d.id));
- document.querySelectorAll('.buttons button').forEach(b=>b.classList.toggle('active',b.dataset.id===d.id));
- sceneLegendTitle.textContent=d.id+'. '+d.title;
- sceneLegendMuscle.textContent=d.muscle;
- sceneLegendInn.textContent=d.inn;
- sceneLegendCode.innerHTML=d.level+'<br>'+d.range+'<br>'+d.nerve;
- sceneLegendAction.textContent=d.action;
- focusZone.textContent='Station '+d.id;
- focusTitle.textContent=d.title;
- focusMuscle.innerHTML='<b>Muskel:</b> '+d.muscle;
- focusInn.innerHTML='<b>Innervation:</b> '+d.inn;
- focusCode.innerHTML=d.level+' · '+d.range+' · '+d.nerve;
- focusAction.textContent=d.action;
+ document.querySelectorAll('[data-id]').forEach(el=>el.classList.toggle('active',el.dataset.id===d.id));
+ const fact=document.getElementById('factBox');
+ fact.innerHTML=`<p class="zone">Station ${d.id} · ${d.phase}</p><h2>${d.title}</h2><p><b>Muskel:</b> ${d.muscle}</p><p><b>Innervation:</b> ${d.inn}</p><p class="magenta"><b>Hook:</b> ${d.hook}</p><p class="green"><b>Aktion:</b> ${d.action}</p><p><a href="#legend">zur Tabelle</a></p>`;
 }
-document.querySelectorAll('[data-id]').forEach(el=>el.addEventListener('click',()=>setActive(el.dataset.id)));
+document.querySelectorAll('[data-id]').forEach(el=>{el.addEventListener('click',()=>setActive(el.dataset.id));el.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();setActive(el.dataset.id)}})});
 setActive(1);
 </script>
 </body></html>
