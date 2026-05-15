@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+<title id="title">RAAS Ablaufdiagramm</title>
+<desc id="desc">Renin-Angiotensin-Aldosteron-System: Renin aus juxtaglomerulären Zellen, Angiotensinogen aus der Leber, ACE, Angiotensin II, AT1-Rezeptor, Aldosteron und Effekte.</desc>
+<style>
+.bg{fill:#1e1f29}.panel{fill:#282a36;stroke:#6272a4;stroke-width:3}.box{fill:#343746;stroke:#6272a4;stroke-width:3}.trigger{fill:#3b2850;stroke:#ff79c6;stroke-width:3}.enzyme{fill:#213d45;stroke:#8be9fd;stroke-width:3}.hormone{fill:#3f3320;stroke:#f1fa8c;stroke-width:3}.receptor{fill:#2d442f;stroke:#50fa7b;stroke-width:3}.effect{fill:#4a2e24;stroke:#ffb86c;stroke-width:3}.label{font-family:Inter,Segoe UI,sans-serif;font-weight:900;fill:#f8f8f2}.small{font-size:20px}.mini{font-size:17px}.med{font-size:27px}.big{font-size:44px}.muted{fill:#c7c9d9}.cyan{fill:#8be9fd}.pink{fill:#ff79c6}.yellow{fill:#f1fa8c}.green{fill:#50fa7b}.orange{fill:#ffb86c}.red{fill:#ff5555}.arrow{fill:none;stroke:#f8f8f2;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.inhib{fill:none;stroke:#ff5555;stroke-width:5;stroke-dasharray:11 9;marker-end:url(#bar)}
+</style>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#f8f8f2"/></marker><marker id="bar" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M8 1 L8 11" stroke="#ff5555" stroke-width="4"/></marker></defs>
+<rect class="bg" width="1600" height="980"/><rect x="35" y="35" width="1530" height="910" rx="34" class="panel"/>
+<text x="70" y="95" class="label big yellow">RAAS: Druck runter → Renin hoch → Ang II/Aldosteron → Druck rauf</text>
+<text x="72" y="130" class="label small muted">Merke: <tspan class="pink">Niere misst</tspan> · <tspan class="cyan">Renin schneidet</tspan> · <tspan class="yellow">Ang II befiehlt</tspan> · <tspan class="orange">Aldosteron speichert Salz</tspan></text>
+
+<rect x="65" y="175" width="310" height="160" rx="22" class="trigger"/>
+<text x="92" y="214" class="label med pink">Auslöser in der Niere</text>
+<text x="92" y="250" class="label small">↓ Perfusion afferente Arteriole</text>
+<text x="92" y="280" class="label small">↓ NaCl an Macula densa</text>
+<text x="92" y="310" class="label small">β1-Sympathikus</text>
+
+<rect x="455" y="170" width="310" height="170" rx="22" class="enzyme"/>
+<text x="485" y="210" class="label med cyan">RENIN</text>
+<text x="485" y="245" class="label small">aspartyl-Protease / Enzym</text>
+<text x="485" y="277" class="label small">juxtaglomeruläre Granulazellen</text>
+<text x="485" y="309" class="label mini muted">in afferenter Arteriole</text>
+
+<rect x="455" y="420" width="310" height="140" rx="22" class="hormone"/>
+<text x="485" y="460" class="label med yellow">Angiotensinogen</text>
+<text x="485" y="494" class="label small">Leber · α2-Globulin</text>
+<text x="485" y="527" class="label small">Plasma-Vorläuferprotein</text>
+
+<rect x="870" y="420" width="255" height="140" rx="22" class="hormone"/>
+<text x="905" y="460" class="label med yellow">Angiotensin I</text>
+<text x="905" y="494" class="label small">Decapeptid</text>
+<text x="905" y="527" class="label small muted">relativ inaktiv</text>
+
+<rect x="890" y="170" width="290" height="155" rx="22" class="enzyme"/>
+<text x="925" y="210" class="label med cyan">ACE</text>
+<text x="925" y="244" class="label small">Endothel: v.a. Lunge</text>
+<text x="925" y="276" class="label small">Zink-Metalloprotease</text>
+<text x="925" y="306" class="label mini muted">baut auch Bradykinin ab</text>
+
+<rect x="1235" y="420" width="280" height="140" rx="22" class="hormone"/>
+<text x="1265" y="460" class="label med yellow">Angiotensin II</text>
+<text x="1265" y="494" class="label small">Octapeptid-Hormon</text>
+<text x="1265" y="527" class="label small">starker Vasokonstriktor</text>
+
+<rect x="1040" y="650" width="250" height="135" rx="22" class="receptor"/>
+<text x="1075" y="690" class="label med green">AT1-Rezeptor</text>
+<text x="1075" y="724" class="label small">GPCR: Gq</text>
+<text x="1075" y="756" class="label small muted">Gefäße, Niere, Nebenniere</text>
+
+<rect x="1325" y="650" width="210" height="135" rx="22" class="hormone"/>
+<text x="1352" y="690" class="label med yellow">Aldosteron</text>
+<text x="1352" y="724" class="label small">Steroidhormon</text>
+<text x="1352" y="756" class="label small muted">Zona glomerulosa</text>
+
+<rect x="65" y="650" width="890" height="220" rx="24" class="effect"/>
+<text x="95" y="695" class="label med orange">Effekte von Ang II + Aldosteron</text>
+<text x="95" y="735" class="label small">• Gefäße: Vasokonstriktion → TPR ↑ → Blutdruck ↑</text>
+<text x="95" y="768" class="label small">• Niere: efferente Arteriole > afferente → GFR kurzfristig erhalten, Filtrationsfraktion ↑</text>
+<text x="95" y="801" class="label small">• Nebennierenrinde: Aldosteron → ENaC/Na⁺K⁺-ATPase ↑ → Na⁺/Wasser rein, K⁺/H⁺ raus</text>
+<text x="95" y="834" class="label small">• ZNS/Hypophyse: Durst + ADH ↑ → Wasserretention</text>
+
+<path class="arrow" d="M375 255 L455 255"/>
+<path class="arrow" d="M610 340 L610 420"/>
+<path class="arrow" d="M765 490 L870 490"/>
+<path class="arrow" d="M1125 490 L1235 490"/>
+<path class="arrow" d="M1035 325 C1035 370 1035 390 1015 420"/>
+<path class="arrow" d="M1375 560 L1210 650"/>
+<path class="arrow" d="M1290 715 L1325 715"/>
+<path class="arrow" d="M1165 785 C1120 860 850 890 560 870"/>
+<path class="arrow" d="M1430 785 C1370 880 1020 900 680 870"/>
+<text x="780" y="455" class="label mini cyan">Renin schneidet</text>
+<text x="1138" y="455" class="label mini cyan">ACE schneidet 2 AS ab</text>
+
+<path class="inhib" d="M430 118 C520 112 550 140 570 170"/><text x="258" y="115" class="label mini red">β-Blocker ↓ Renin</text>
+<path class="inhib" d="M1110 135 C1080 145 1055 160 1035 170"/><text x="1115" y="137" class="label mini red">ACE-Hemmer</text>
+<path class="inhib" d="M1350 610 C1300 622 1242 640 1200 665"/><text x="1315" y="610" class="label mini red">ARB blockiert AT1</text>
+<path class="inhib" d="M1455 812 C1435 795 1428 780 1430 785"/><text x="1280" y="835" class="label mini red">Spironolacton/Eplerenon blocken MR</text>
+</svg>

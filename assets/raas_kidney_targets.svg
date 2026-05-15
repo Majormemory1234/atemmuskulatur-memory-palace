@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 880" role="img" aria-labelledby="title desc">
+<title id="title">RAAS Niere und Zielorgane</title>
+<desc id="desc">Juxtaglomerulärer Apparat, Reninfreisetzung und Zielorgane von Angiotensin II und Aldosteron.</desc>
+<style>
+.bg{fill:#1e1f29}.panel{fill:#282a36;stroke:#6272a4;stroke-width:3}.kidney{fill:#3b2850;stroke:#ff79c6;stroke-width:5}.vesselA{fill:none;stroke:#ff5555;stroke-width:18;stroke-linecap:round}.vesselE{fill:none;stroke:#ffb86c;stroke-width:14;stroke-linecap:round}.tubule{fill:none;stroke:#8be9fd;stroke-width:16;stroke-linecap:round}.macula{fill:#f1fa8c;stroke:#282a36;stroke-width:3}.jg{fill:#50fa7b;stroke:#282a36;stroke-width:3}.label{font-family:Inter,Segoe UI,sans-serif;font-weight:900;fill:#f8f8f2}.big{font-size:42px}.med{font-size:28px}.small{font-size:20px}.mini{font-size:17px}.muted{fill:#c7c9d9}.cyan{fill:#8be9fd}.pink{fill:#ff79c6}.yellow{fill:#f1fa8c}.green{fill:#50fa7b}.orange{fill:#ffb86c}.red{fill:#ff5555}.box{fill:#343746;stroke:#6272a4;stroke-width:3}.effect{fill:#4a2e24;stroke:#ffb86c;stroke-width:3}.arrow{fill:none;stroke:#f8f8f2;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}
+</style><defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#f8f8f2"/></marker></defs>
+<rect class="bg" width="1500" height="880"/><rect x="35" y="35" width="1430" height="810" rx="34" class="panel"/>
+<text x="70" y="95" class="label big yellow">Wo entsteht Renin? Juxtaglomerulärer Apparat</text>
+<text x="72" y="130" class="label small muted">Drei Sensoren: Drucksensor in afferenter Arteriole · Salzsensor Macula densa · β1-Nervensignal</text>
+
+<path class="kidney" d="M250 205 C110 270 95 520 235 665 C350 785 510 710 515 560 C520 410 640 340 530 230 C455 160 345 160 250 205 Z"/>
+<path d="M360 260 C260 330 245 520 350 610 C405 655 470 620 470 560 C470 465 560 390 500 300 C465 250 410 235 360 260 Z" fill="#282a36" stroke="#ff79c6" stroke-width="3" opacity=".75"/>
+<text x="160" y="200" class="label med pink">Niere</text>
+
+<circle cx="410" cy="430" r="78" fill="#343746" stroke="#f8f8f2" stroke-width="5"/>
+<path class="vesselA" d="M170 405 C245 395 305 410 340 430"/><path class="vesselE" d="M480 430 C560 430 620 410 700 380"/>
+<path class="tubule" d="M665 245 C560 250 510 285 480 350 C450 415 505 470 570 495 C660 530 710 600 640 675"/>
+<circle cx="340" cy="425" r="15" class="jg"/><circle cx="316" cy="414" r="14" class="jg"/><circle cx="360" cy="445" r="14" class="jg"/>
+<rect x="510" y="322" width="78" height="44" rx="12" class="macula"/>
+<text x="140" y="372" class="label small red">afferente Arteriole</text>
+<text x="545" y="365" class="label small orange">efferent</text>
+<text x="238" y="500" class="label small green">JG-Granulazellen</text><text x="238" y="528" class="label mini muted">produzieren/sezernieren Renin</text>
+<text x="585" y="315" class="label small yellow">Macula densa</text><text x="585" y="342" class="label mini muted">misst NaCl im distalen Tubulus</text>
+
+<rect x="770" y="190" width="320" height="155" rx="22" class="box"/>
+<text x="800" y="232" class="label med green">Renin-Freisetzung ↑</text>
+<text x="800" y="268" class="label small">1. ↓ Dehnung/Druck</text>
+<text x="800" y="300" class="label small">2. ↓ NaCl an Macula densa</text>
+<text x="800" y="332" class="label small">3. β1-Sympathikus</text>
+<path class="arrow" d="M405 505 C520 600 705 455 770 310"/>
+
+<rect x="810" y="430" width="265" height="145" rx="22" class="effect"/>
+<text x="838" y="472" class="label med orange">Efferente Klemme</text>
+<text x="838" y="508" class="label small">Ang II konstrigiert</text>
+<text x="838" y="540" class="label small">efferent > afferent</text>
+<text x="838" y="568" class="label mini muted">GFR kurzfristig erhalten</text>
+<path class="arrow" d="M700 380 C765 390 810 420 850 455"/>
+
+<rect x="1150" y="190" width="270" height="145" rx="22" class="effect"/>
+<text x="1180" y="232" class="label med orange">Nebenniere</text>
+<text x="1180" y="268" class="label small">Zona glomerulosa</text>
+<text x="1180" y="300" class="label small">→ Aldosteron</text>
+<path class="arrow" d="M1090 265 L1150 265"/>
+
+<rect x="1150" y="410" width="270" height="205" rx="22" class="effect"/>
+<text x="1180" y="452" class="label med orange">Sammelrohr</text>
+<text x="1180" y="488" class="label small">MR in Hauptzellen</text>
+<text x="1180" y="520" class="label small">ENaC ↑ · Na/K-ATPase ↑</text>
+<text x="1180" y="552" class="label small">Na⁺/H₂O rein</text>
+<text x="1180" y="584" class="label small">K⁺ + H⁺ raus</text>
+<path class="arrow" d="M1285 335 L1285 410"/>
+
+<rect x="770" y="655" width="650" height="130" rx="22" class="box"/>
+<text x="800" y="695" class="label med cyan">Prüfungsfolge</text>
+<text x="800" y="731" class="label small">Aldosteron-Überschuss → Hypertonie</text>
+<text x="800" y="763" class="label small">+ Hypokaliämie + metabolische Alkalose</text>
+</svg>
