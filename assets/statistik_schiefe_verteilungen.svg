@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 720" role="img" aria-labelledby="title desc">
+<title id="title">Rechtsschiefe und linksschiefe Verteilung mit Mittelwert, Median und Modus</title>
+<desc id="desc">Zwei Dichtekurven: rechtsschief mit langem rechten Schwanz und Reihenfolge Modus Median Mittelwert; linksschief mit langem linken Schwanz und Reihenfolge Mittelwert Median Modus.</desc>
+<defs>
+ <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+ <linearGradient id="rightFill" x1="0" x2="1"><stop stop-color="#50fa7b" stop-opacity=".72"/><stop offset="1" stop-color="#50fa7b" stop-opacity=".08"/></linearGradient>
+ <linearGradient id="leftFill" x1="0" x2="1"><stop stop-color="#ff79c6" stop-opacity=".08"/><stop offset="1" stop-color="#ff79c6" stop-opacity=".72"/></linearGradient>
+ <style>
+  .bg{fill:#1e1f29}.panel{fill:#343746;stroke:#6272a4;stroke-width:3}.axis{stroke:#f8f8f2;stroke-width:4;opacity:.8}.curve{fill:none;stroke-width:7;stroke-linecap:round}.label{font-family:Inter,system-ui,sans-serif;font-weight:900;fill:#f8f8f2}.small{font-family:Inter,system-ui,sans-serif;font-weight:800;fill:#c7c9d9}.mean{stroke:#ff5555}.median{stroke:#f1fa8c}.mode{stroke:#8be9fd}.v{stroke-width:6;stroke-dasharray:12 8}.tail{font-size:18px;fill:#c7c9d9;font-family:Inter,system-ui,sans-serif;font-weight:800}.badge{fill:#282a36;stroke-width:3}.arrow{fill:none;stroke:#f8f8f2;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;opacity:.55}
+ </style>
+</defs>
+<rect width="1500" height="720" class="bg"/>
+<text x="750" y="58" text-anchor="middle" class="label" font-size="42">Schiefe Verteilungen: der Schwanz zieht den Mittelwert</text>
+<text x="750" y="96" text-anchor="middle" class="small" font-size="22">Merke: Der Mittelwert wandert am stärksten zur Schwanz-/Ausreißer-Seite.</text>
+<!-- right skew panel -->
+<g transform="translate(60,130)">
+ <rect width="650" height="500" rx="26" class="panel"/>
+ <text x="32" y="52" class="label" font-size="34" fill="#50fa7b">Rechtsschief / positive Schiefe</text>
+ <text x="32" y="84" class="small" font-size="20">Schwanz rechts: hohe Ausreißer ziehen den Mittelwert →</text>
+ <line x1="70" y1="410" x2="590" y2="410" class="axis"/><line x1="70" y1="410" x2="70" y2="120" class="axis"/>
+ <path d="M95 410 C115 300 150 170 220 160 C280 150 315 255 350 315 C410 410 520 407 575 410 L95 410 Z" fill="url(#rightFill)" opacity=".72"/>
+ <path d="M95 410 C115 300 150 170 220 160 C280 150 315 255 350 315 C410 410 520 407 575 410" class="curve" stroke="#50fa7b"/>
+ <path d="M358 294 C450 345 520 365 575 382" class="arrow"/><text x="486" y="330" class="tail">rechter Schwanz</text>
+ <line x1="220" y1="156" x2="220" y2="410" class="v mode"/><line x1="300" y1="235" x2="300" y2="410" class="v median"/><line x1="390" y1="340" x2="390" y2="410" class="v mean"/>
+ <g transform="translate(134,436)"><rect width="172" height="40" rx="20" class="badge" stroke="#8be9fd"/><text x="86" y="28" text-anchor="middle" class="label" font-size="20" fill="#8be9fd">Modus</text></g>
+ <g transform="translate(254,486)"><rect width="172" height="40" rx="20" class="badge" stroke="#f1fa8c"/><text x="86" y="28" text-anchor="middle" class="label" font-size="20" fill="#f1fa8c">Median</text></g>
+ <g transform="translate(365,436)"><rect width="190" height="40" rx="20" class="badge" stroke="#ff5555"/><text x="95" y="28" text-anchor="middle" class="label" font-size="20" fill="#ff5555">Mittelwert</text></g>
+ <text x="325" y="382" text-anchor="middle" class="label" font-size="27">Modus &lt; Median &lt; Mittelwert</text>
+</g>
+<!-- left skew panel -->
+<g transform="translate(790,130)">
+ <rect width="650" height="500" rx="26" class="panel"/>
+ <text x="32" y="52" class="label" font-size="34" fill="#ff79c6">Linksschief / negative Schiefe</text>
+ <text x="32" y="84" class="small" font-size="20">Schwanz links: niedrige Ausreißer ziehen ← Mittelwert</text>
+ <line x1="70" y1="410" x2="590" y2="410" class="axis"/><line x1="70" y1="410" x2="70" y2="120" class="axis"/>
+ <path d="M95 410 C150 407 260 410 320 315 C355 255 390 150 450 160 C520 170 555 300 575 410 L95 410 Z" fill="url(#leftFill)" opacity=".72"/>
+ <path d="M95 410 C150 407 260 410 320 315 C355 255 390 150 450 160 C520 170 555 300 575 410" class="curve" stroke="#ff79c6"/>
+ <path d="M292 294 C210 345 140 365 95 382" class="arrow"/><text x="118" y="330" class="tail">linker Schwanz</text>
+ <line x1="260" y1="340" x2="260" y2="410" class="v mean"/><line x1="350" y1="235" x2="350" y2="410" class="v median"/><line x1="430" y1="156" x2="430" y2="410" class="v mode"/>
+ <g transform="translate(115,436)"><rect width="190" height="40" rx="20" class="badge" stroke="#ff5555"/><text x="95" y="28" text-anchor="middle" class="label" font-size="20" fill="#ff5555">Mittelwert</text></g>
+ <g transform="translate(284,486)"><rect width="172" height="40" rx="20" class="badge" stroke="#f1fa8c"/><text x="86" y="28" text-anchor="middle" class="label" font-size="20" fill="#f1fa8c">Median</text></g>
+ <g transform="translate(417,436)"><rect width="172" height="40" rx="20" class="badge" stroke="#8be9fd"/><text x="86" y="28" text-anchor="middle" class="label" font-size="20" fill="#8be9fd">Modus</text></g>
+ <text x="325" y="382" text-anchor="middle" class="label" font-size="27">Mittelwert &lt; Median &lt; Modus</text>
+</g>
+<g transform="translate(420,655)">
+ <circle cx="0" cy="0" r="10" fill="#ff5555"/><text x="18" y="8" class="small" font-size="21">Mittelwert</text>
+ <circle cx="220" cy="0" r="10" fill="#f1fa8c"/><text x="238" y="8" class="small" font-size="21">Median</text>
+ <circle cx="405" cy="0" r="10" fill="#8be9fd"/><text x="423" y="8" class="small" font-size="21">Modus</text>
+</g>
+</svg>

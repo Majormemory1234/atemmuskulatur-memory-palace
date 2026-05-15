@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Statistik: rechtsschiefe und linksschiefe Verteilungen</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+  .stat-hero h1{max-width:1100px}.formula-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}.formula-card{background:rgba(52,55,70,.9);border:1px solid rgba(98,114,164,.8);border-radius:22px;padding:16px}.formula-card h2{font-size:clamp(22px,2.5vw,34px)}.right h2{color:var(--green)}.sym h2{color:var(--cyan)}.left h2{color:var(--pink)}.stat-img{width:100%;border-radius:18px;border:3px solid var(--comment);background:#1e1f29}.compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}.rule{font-size:clamp(22px,3vw,38px);font-weight:1000;color:var(--yellow)}.mean{color:var(--red);font-weight:1000}.median{color:var(--yellow);font-weight:1000}.mode{color:var(--cyan);font-weight:1000}.memory-line{font-size:1.25rem;font-weight:900;color:var(--pink)}@media(max-width:820px){.formula-strip{grid-template-columns:1fr}}
+</style>
+</head>
+<body><nav class="site-nav"><a href="../index.html">← Index</a><a href="atemmuskulatur.html">Atemmuskulatur</a><a href="carotis-externa.html">Carotis externa</a><a href="nasennebenhoehlen.html">Nasennebenhöhlen</a><a href="rhinoskopie.html">Rhinoskopie</a><a href="statistik-schiefe-verteilung.html">Statistik</a></nav>
+<header class="stat-hero">
+  <p class="eyebrow">Statistik · Verteilungen · Lageparameter</p>
+  <h1>Rechtsschief vs. linksschief: Mittelwert, Median, Modus</h1>
+  <p>Die Kernidee: Der <b>Mittelwert</b> wird vom langen Schwanz/Ausreißern am stärksten gezogen. Der <b>Median</b> bleibt mittiger und robuster. Der <b>Modus</b> sitzt am Gipfel der Häufigkeitsverteilung.</p>
+</header>
+<main>
+<section class="poster">
+  <h2>Diagramm: der Schwanz zieht den Mittelwert</h2>
+  <p>Die Grafik ist als eigene SVG-Bilddatei eingebunden, damit du sie später direkt öffnen oder ausdrucken kannst.</p>
+  <img class="stat-img" src="../assets/statistik_schiefe_verteilungen.svg" alt="Rechtsschiefe und linksschiefe Verteilung mit Mittelwert Median Modus">
+  <p><a href="../assets/statistik_schiefe_verteilungen.svg" target="_blank">Diagramm groß öffnen</a></p>
+</section>
+<section class="formula-strip" aria-label="Regeln für Mittelwert Median Modus">
+  <article class="formula-card right"><h2>Rechtsschief</h2><p class="rule"><span class="mode">Modus</span> &lt; <span class="median">Median</span> &lt; <span class="mean">Mittelwert</span></p><p>Langer Schwanz nach rechts: wenige hohe Werte ziehen den Mittelwert nach rechts.</p></article>
+  <article class="formula-card sym"><h2>Symmetrisch</h2><p class="rule"><span class="mean">Mittelwert</span> ≈ <span class="median">Median</span> ≈ <span class="mode">Modus</span></p><p>Bei ideal symmetrischer unimodaler Verteilung liegen alle drei ungefähr am Zentrum/Gipfel.</p></article>
+  <article class="formula-card left"><h2>Linksschief</h2><p class="rule"><span class="mean">Mittelwert</span> &lt; <span class="median">Median</span> &lt; <span class="mode">Modus</span></p><p>Langer Schwanz nach links: wenige niedrige Werte ziehen den Mittelwert nach links.</p></article>
+</section>
+<section class="note topo-note">
+  <h2>Merksatz</h2>
+  <p class="memory-line">„Der Mittelwert läuft dem Schwanz hinterher.“</p>
+  <ul>
+    <li><b>Rechter Schwanz</b> → Mittelwert nach rechts → <b>Modus &lt; Median &lt; Mittelwert</b>.</li>
+    <li><b>Linker Schwanz</b> → Mittelwert nach links → <b>Mittelwert &lt; Median &lt; Modus</b>.</li>
+    <li><b>Median</b> ist robuster gegen Ausreißer als der Mittelwert.</li>
+    <li><b>Modus</b> = häufigster Wert bzw. Gipfel der Kurve.</li>
+  </ul>
+</section>
+<section class="legend"><h2>Wahrheitslayer</h2><table><thead><tr><th>Begriff</th><th>Was bedeutet es?</th><th>Effekt auf Lageparameter</th><th>Prüfungsfalle</th></tr></thead><tbody>
+<tr><td><b>Rechtsschief / positive Schiefe</b></td><td>Die meisten Werte liegen eher links; der lange Schwanz zeigt nach rechts.</td><td>Hohe Ausreißer ziehen den <span class="mean">Mittelwert</span> nach rechts.</td><td>„positiv“ bezieht sich auf die Richtung des Schwanzes, nicht darauf, dass die Daten „gut“ sind.</td></tr>
+<tr><td><b>Linksschief / negative Schiefe</b></td><td>Die meisten Werte liegen eher rechts; der lange Schwanz zeigt nach links.</td><td>Niedrige Ausreißer ziehen den <span class="mean">Mittelwert</span> nach links.</td><td>Bei linksschief liegt der Mittelwert links vom Median — nicht am Gipfel.</td></tr>
+<tr><td><b>Median</b></td><td>50%-Punkt: Hälfte der Beobachtungen darunter, Hälfte darüber.</td><td>Weniger ausreißerempfindlich als Mittelwert.</td><td>Bei schiefen Daten oft besserer „typischer“ Wert als Mittelwert.</td></tr>
+<tr><td><b>Modus</b></td><td>Häufigster Wert / Gipfel.</td><td>Bleibt am Peak der Verteilung.</td><td>Bei multimodalen Verteilungen kann es mehrere Modi geben; die einfache Reihenfolge gilt v. a. als Heuristik für unimodale Verteilungen.</td></tr>
+</tbody></table></section>
+<section class="note"><h2>Mini-Beispiel</h2><div class="compare-grid">
+<article class="mini-card"><h3>Rechtsschief: Einkommen</h3><p>Viele normale Einkommen, wenige extrem hohe Einkommen. Der Durchschnitt kann höher wirken als das „typische“ Einkommen.</p></article>
+<article class="mini-card"><h3>Linksschief: sehr leichte Prüfung</h3><p>Viele hohe Punktzahlen, wenige sehr niedrige Ausreißer. Der Mittelwert wird nach unten gezogen.</p></article>
+</div></section>
+<section class="note"><h2>Quellen / Hinweis</h2><p>Die Reihenfolgen sind die klassische Prüfungs-Heuristik für unimodale schiefe Verteilungen. Mathematisch können Sonderfälle abweichen, besonders bei mehrgipfligen oder diskreten Verteilungen.</p><p><a href="https://en.wikipedia.org/wiki/Skewness" target="_blank" rel="noopener">Wikipedia: Skewness</a> · <a href="https://openstax.org/books/introductory-statistics-2e/pages/2-7-measures-of-the-spread-of-the-data" target="_blank" rel="noopener">OpenStax Introductory Statistics</a></p></section>
+</main>
+</body></html>
