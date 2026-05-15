@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 930" role="img" aria-labelledby="title desc">
+<title id="title">Atemmuskulatur in 7 Merkhaken</title>
+<desc id="desc">Prägnante Atemmuskulatur-Merkkarte: Inspiration links grün, Basis in der Mitte, forcierte Exspiration rechts orange.</desc>
+<style>
+.bg{fill:#1e1f29}.panel{fill:#282a36;stroke:#6272a4;stroke-width:4}.zoneI{fill:#1f4634;stroke:#50fa7b;stroke-width:5}.zoneB{fill:#263949;stroke:#8be9fd;stroke-width:5}.zoneE{fill:#4a2e24;stroke:#ffb86c;stroke-width:5}.label{font-family:Inter,Segoe UI,sans-serif;font-weight:950;fill:#f8f8f2}.big{font-size:48px}.med{font-size:31px}.small{font-size:22px}.mini{font-size:18px}.muted{fill:#c7c9d9}.green{fill:#50fa7b}.cyan{fill:#8be9fd}.orange{fill:#ffb86c}.pink{fill:#ff79c6}.yellow{fill:#f1fa8c}.red{fill:#ff5555}.badge{fill:#ff5555;stroke:#f8f8f2;stroke-width:4}.nerv{fill:#3b2850;stroke:#ff79c6;stroke-width:3}.hook{fill:#343746;stroke:#6272a4;stroke-width:3}.arrowI{fill:none;stroke:#50fa7b;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.arrowE{fill:none;stroke:#ffb86c;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.rib{fill:none;stroke:#f8f8f2;stroke-width:7;opacity:.42;stroke-linecap:round}.rope{fill:none;stroke:#f1fa8c;stroke-width:6;stroke-linecap:round;stroke-dasharray:12 10}.skin{fill:#ffb86c}.frog{fill:#50fa7b;stroke:#f8f8f2;stroke-width:4}.clothG{fill:#50fa7b}.clothO{fill:#ffb86c}.clothP{fill:#ff79c6}
+</style>
+<rect class="bg" width="1500" height="930"/><rect x="35" y="35" width="1430" height="860" rx="36" class="panel"/>
+<text x="75" y="92" class="label big yellow">Atemmuskulatur: 7 Bilder, die sitzen</text>
+<text x="75" y="128" class="label small muted">Merksatz: <tspan class="green">Kuppel runter + Rippen hoch = Luft rein</tspan> · <tspan class="orange">Bauch rein + Rippen runter = Luft raus</tspan></text>
+
+<rect x="70" y="165" width="430" height="650" rx="32" class="zoneI" opacity=".92"/>
+<rect x="535" y="165" width="430" height="650" rx="32" class="zoneB" opacity=".92"/>
+<rect x="1000" y="165" width="430" height="650" rx="32" class="zoneE" opacity=".92"/>
+<text x="95" y="220" class="label med green">EINATMEN: ZIEHEN</text>
+<text x="560" y="220" class="label med cyan">BASIS: MOTOR</text>
+<text x="1025" y="220" class="label med orange">AUSATMEN: PRESSEN</text>
+
+<!-- chest frame -->
+<path class="rib" d="M505 260 C610 180 890 180 995 260"/><path class="rib" d="M500 720 C620 810 880 810 1000 720"/>
+<path class="rib" d="M520 300 C485 450 485 580 520 700"/><path class="rib" d="M980 300 C1015 450 1015 580 980 700"/>
+<path class="rope" d="M260 340 C420 260 540 300 635 455 C735 620 930 580 1170 720"/>
+
+<!-- 1 diaphragm frog -->
+<g transform="translate(675 555)">
+<circle cx="0" cy="0" r="58" class="frog"/><circle cx="-24" cy="-18" r="8" fill="#282a36"/><circle cx="24" cy="-18" r="8" fill="#282a36"/><path d="M-24 22 Q0 45 24 22" fill="none" stroke="#282a36" stroke-width="6" stroke-linecap="round"/>
+<path d="M-115 72 Q0 20 115 72" fill="none" stroke="#8be9fd" stroke-width="16" stroke-linecap="round"/>
+<path class="arrowI" d="M0 -98 L0 -15"/><path class="arrowI" d="M-22 -38 L0 -10 L22 -38"/>
+</g>
+<circle cx="605" cy="490" r="24" class="badge"/><text x="597" y="500" class="label small">1</text>
+<text x="565" y="685" class="label med cyan">Kuppelkröte</text><text x="555" y="720" class="label mini muted">Diaphragma · Phrenicus C3–5</text>
+
+<!-- 2 intercostal ladder -->
+<g transform="translate(805 365)">
+<path d="M-90 -80 L90 80 M-60 -95 L120 65" stroke="#f8f8f2" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+<path d="M-62 -52 L-15 -95 M-33 -24 L14 -67 M-4 4 L43 -39 M25 32 L72 -10 M54 60 L101 18" stroke="#8be9fd" stroke-width="7" stroke-linecap="round"/>
+<path class="arrowI" d="M-115 30 L-170 -20"/><path class="arrowI" d="M122 8 L178 -45"/>
+</g>
+<circle cx="744" cy="285" r="24" class="badge"/><text x="736" y="295" class="label small">2</text>
+<text x="735" y="490" class="label med cyan">Rippenleiter</text><text x="705" y="525" class="label mini muted">Interkostal · Th1–11</text>
+
+<!-- inspiration helpers left -->
+<g transform="translate(160 315)"><circle cx="0" cy="0" r="35" class="skin"/><rect x="-32" y="38" width="64" height="92" rx="24" class="clothG"/><path d="M-80 60 C-25 20 25 20 85 60" class="arrowI"/><path d="M-72 66 L-92 48 L-75 34" class="arrowI"/><path d="M78 66 L98 48 L81 34" class="arrowI"/></g>
+<circle cx="105" cy="245" r="24" class="badge"/><text x="97" y="255" class="label small">3</text>
+<text x="210" y="300" class="label med green">Hals-Seilzieher</text><text x="210" y="332" class="label mini muted">SCM + Scaleni heben oben</text>
+<rect x="215" y="350" width="235" height="70" rx="16" class="nerv"/><text x="232" y="378" class="label mini pink">XI + C2–3</text><text x="232" y="404" class="label mini pink">C3–8 / C6–8</text>
+
+<g transform="translate(165 545)"><circle cx="0" cy="0" r="35" class="skin"/><rect x="-34" y="36" width="68" height="98" rx="20" class="clothG"/><path d="M-45 38 L-120 112 M45 38 L115 112" stroke="#f1fa8c" stroke-width="9" stroke-linecap="round"/><path class="arrowI" d="M-120 112 L-165 80 M115 112 L160 80"/></g>
+<circle cx="105" cy="495" r="24" class="badge"/><text x="97" y="505" class="label small">4</text>
+<text x="210" y="530" class="label med green">Brust-Kran</text><text x="210" y="562" class="label mini muted">Pectorales bei fixierten Armen</text>
+<rect x="215" y="580" width="235" height="70" rx="16" class="nerv"/><text x="232" y="610" class="label mini pink">C5–Th1 / C8–Th1</text>
+
+<g transform="translate(185 720)"><path d="M-80 0 L70 -42 L92 40 L-54 70 Z" fill="#50fa7b" opacity=".6" stroke="#f8f8f2" stroke-width="4"/><path d="M-60 10 L80 -30 M-42 33 L84 -4 M-20 55 L82 22" stroke="#282a36" stroke-width="6"/><circle cx="-105" cy="-12" r="30" class="skin"/><path class="arrowI" d="M70 -40 L120 -85"/></g>
+<circle cx="105" cy="650" r="24" class="badge"/><text x="97" y="660" class="label small">5</text>
+<text x="210" y="700" class="label med green">Sägezähne</text><text x="210" y="732" class="label mini muted">Serrati ziehen/halten Rippen</text>
+<rect x="215" y="750" width="235" height="50" rx="16" class="nerv"/><text x="232" y="782" class="label mini pink">Th2–5 · Th9–12 · C5–7</text>
+
+<!-- exspiration right -->
+<g transform="translate(1100 405)"><rect x="-45" y="-70" width="90" height="150" rx="28" class="clothO"/><path d="M-70 -45 L70 95 M70 -45 L-70 95" stroke="#f8f8f2" stroke-width="10" opacity=".8"/><path class="arrowE" d="M-115 10 L-40 10 M115 10 L40 10"/><circle cx="0" cy="-95" r="34" class="skin"/></g>
+<circle cx="1045" cy="300" r="24" class="badge"/><text x="1037" y="310" class="label small">6</text>
+<text x="1170" y="365" class="label med orange">Bauchpresse</text><text x="1170" y="398" class="label mini muted">Rectus · Transversus · Obliqui</text>
+<rect x="1165" y="420" width="220" height="70" rx="16" class="nerv"/><text x="1182" y="450" class="label mini pink">Th5–12</text><text x="1182" y="476" class="label mini pink">Th7–12 + L1</text>
+
+<g transform="translate(1110 650)"><rect x="-70" y="-45" width="140" height="90" rx="18" class="hook"/><path d="M-45 -10 L45 -10 M-45 15 L45 15" stroke="#ffb86c" stroke-width="10" stroke-linecap="round"/><circle cx="-95" cy="0" r="34" class="skin"/><path class="arrowE" d="M-35 60 L-92 115 M40 60 L100 118"/></g>
+<circle cx="1045" cy="555" r="24" class="badge"/><text x="1037" y="565" class="label small">7</text>
+<text x="1170" y="620" class="label med orange">Anker + Husten</text><text x="1170" y="653" class="label mini muted">Quadratus · Latissimus · Transv. thoracis</text>
+<rect x="1165" y="675" width="220" height="88" rx="16" class="nerv"/><text x="1182" y="706" class="label mini pink">Th12 + L1–4</text><text x="1182" y="732" class="label mini pink">C6–8 · Th2–6</text>
+
+<text x="75" y="860" class="label small yellow">Ein Blick: 1 Kuppel runter, 2 Rippen hoch, 3–5 ziehen/öffnen, 6–7 pressen/senken.</text>
+</svg>
