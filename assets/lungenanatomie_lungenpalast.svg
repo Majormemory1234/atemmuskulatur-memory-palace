@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 980" role="img" aria-labelledby="title desc">
+<title id="title">Lungenanatomie: Lappen, Fissuren, Bronchialbaum, Hilum und Pleura</title>
+<desc id="desc">Dracula-farbige Lernkarte der Lungenanatomie mit rechter und linker Lunge, Lappen, Fissuren, Bronchialbaum, Hilum, Pleura und Alveolen.</desc>
+<style>
+  .bg{fill:#1e1f29}.panel{fill:#282a36;stroke:#6272a4;stroke-width:3}.label{font-family:Inter,Segoe UI,sans-serif;font-weight:900;fill:#f8f8f2}.small{font-size:22px}.mini{font-size:18px}.big{font-size:42px}.med{font-size:28px}.muted{fill:#c7c9d9}.cyan{fill:#8be9fd}.green{fill:#50fa7b}.pink{fill:#ff79c6}.orange{fill:#ffb86c}.yellow{fill:#f1fa8c}.purple{fill:#bd93f9}.red{fill:#ff5555}.lungR{fill:#2f8061;stroke:#50fa7b;stroke-width:5}.lungL{fill:#8a4775;stroke:#ff79c6;stroke-width:5}.fiss{fill:none;stroke:#f1fa8c;stroke-width:8;stroke-linecap:round;stroke-dasharray:18 14}.air{fill:none;stroke:#8be9fd;stroke-width:18;stroke-linecap:round;stroke-linejoin:round}.air2{fill:none;stroke:#8be9fd;stroke-width:10;stroke-linecap:round;stroke-linejoin:round}.vesselA{fill:none;stroke:#ff5555;stroke-width:8;stroke-linecap:round}.vesselV{fill:none;stroke:#8be9fd;stroke-width:8;stroke-linecap:round}.nerve{fill:none;stroke:#bd93f9;stroke-width:5;stroke-linecap:round;stroke-dasharray:9 8}.badge{fill:#ff5555;stroke:#f8f8f2;stroke-width:4}.callout{fill:#343746;stroke:#6272a4;stroke-width:2}.arrow{fill:none;stroke:#f8f8f2;stroke-width:3;marker-end:url(#arrow)}
+</style>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#f8f8f2"/></marker></defs>
+<rect class="bg" width="1400" height="980"/>
+<rect x="35" y="35" width="1330" height="910" rx="32" class="panel"/>
+<text x="80" y="95" class="label big yellow">Lungenanatomie-Palast</text>
+<text x="80" y="130" class="label small muted">Route: Luftweg → Lappen/Fissuren → Hilum → Pleura/Alveole → Gefäße/Lymphe</text>
+
+<!-- trachea and main bronchi -->
+<path d="M700 150 L700 260 M700 260 C640 310 585 335 520 390 M700 260 C765 305 815 330 885 388" class="air"/>
+<path d="M648 173 L752 173" stroke="#8be9fd" stroke-width="7" stroke-linecap="round"/>
+<path d="M650 207 L750 207" stroke="#8be9fd" stroke-width="7" stroke-linecap="round"/>
+<text x="642" y="143" class="label med cyan">Trachea</text>
+<text x="625" y="285" class="label mini yellow">Carina ≈ Th4/5</text>
+<circle cx="700" cy="260" r="16" class="badge"/><text x="692" y="268" class="label mini">1</text>
+
+<!-- lungs -->
+<path class="lungR" d="M485 330 C360 360 270 500 275 695 C280 850 415 890 540 820 C610 780 635 685 615 560 C605 480 570 385 485 330 Z"/>
+<path class="lungL" d="M915 330 C1045 360 1130 500 1125 690 C1120 835 1000 885 882 815 C815 775 790 690 812 565 C827 470 845 380 915 330 Z"/>
+<path class="fiss" d="M570 420 C505 545 440 665 330 805"/>
+<path class="fiss" d="M395 520 C470 535 540 535 610 510"/>
+<path class="fiss" d="M840 425 C900 545 975 670 1080 800"/>
+
+<!-- lobe labels -->
+<text x="333" y="430" class="label med green">rechts: 3 Lappen</text>
+<text x="335" y="470" class="label mini">Oberlappen</text>
+<text x="370" y="590" class="label mini">Mittellappen</text>
+<text x="365" y="750" class="label mini">Unterlappen</text>
+<text x="880" y="430" class="label med pink">links: 2 Lappen</text>
+<text x="888" y="482" class="label mini">Oberlappen</text>
+<text x="970" y="548" class="label mini orange">Lingula</text>
+<text x="930" y="748" class="label mini">Unterlappen</text>
+<path d="M965 575 C1000 610 1040 610 1070 575" fill="none" stroke="#ffb86c" stroke-width="7" stroke-linecap="round"/>
+<text x="1005" y="625" class="label mini orange">Herzbucht</text>
+
+<!-- segmental hints -->
+<g opacity=".72">
+<path d="M520 390 C480 420 450 450 420 490" class="air2"/><path d="M520 390 C535 455 545 520 548 585" class="air2"/><path d="M548 585 C510 640 470 700 430 770" class="air2"/>
+<path d="M885 388 C925 420 960 470 990 528" class="air2"/><path d="M885 388 C865 475 855 560 855 625" class="air2"/><path d="M855 625 C905 680 955 735 1005 790" class="air2"/>
+</g>
+
+<!-- hilum inset -->
+<rect x="88" y="610" width="230" height="240" rx="20" class="callout"/>
+<text x="110" y="648" class="label med yellow">Hilum-Stack</text>
+<text x="110" y="680" class="label mini muted">Merke: RALS</text>
+<path d="M128 720 L278 720" class="vesselA"/><text x="118" y="712" class="label mini red">A. pulmonalis</text>
+<path d="M128 760 L278 760" class="air2"/><text x="118" y="752" class="label mini cyan">Bronchus</text>
+<path d="M128 800 L278 800" class="vesselV"/><text x="118" y="832" class="label mini cyan">Vv. pulmonales</text>
+<text x="110" y="865" class="label mini">R: Arterie anterior</text>
+<text x="110" y="892" class="label mini">L: Arterie superior</text>
+<circle cx="300" cy="630" r="16" class="badge"/><text x="292" y="638" class="label mini">3</text>
+
+<!-- pleura/alveoli inset -->
+<rect x="1042" y="604" width="245" height="255" rx="20" class="callout"/>
+<text x="1065" y="642" class="label med yellow">Pleura + Alveole</text>
+<circle cx="1125" cy="715" r="35" fill="#343746" stroke="#ff79c6" stroke-width="8"/>
+<circle cx="1200" cy="715" r="35" fill="#343746" stroke="#50fa7b" stroke-width="8"/>
+<path d="M1130 768 C1165 810 1215 812 1245 768" class="air2"/>
+<path d="M1078 682 C1110 632 1164 620 1210 650" class="vesselA"/><path d="M1075 748 C1120 792 1190 795 1245 750" class="vesselV"/>
+<text x="1070" y="822" class="label mini muted">Gasaustausch:</text>
+<text x="1070" y="848" class="label mini">O₂ rein · CO₂ raus</text>
+<circle cx="1044" cy="606" r="16" class="badge"/><text x="1036" y="614" class="label mini">4</text>
+
+<!-- aspiration callout -->
+<rect x="520" y="790" width="365" height="100" rx="18" class="callout"/>
+<text x="545" y="828" class="label med orange">Prüfungsfalle: Aspiration</text>
+<text x="545" y="860" class="label mini muted">rechter Hauptbronchus = kürzer, weiter, steiler</text>
+<path d="M760 790 C755 690 625 500 555 405" class="arrow"/>
+<circle cx="885" cy="790" r="16" class="badge"/><text x="877" y="798" class="label mini">2</text>
+
+<!-- pleura nerves around lungs -->
+<path d="M260 350 C210 525 220 790 360 890" class="nerve"/>
+<path d="M1140 350 C1190 520 1190 785 1040 888" class="nerve"/>
+<text x="78" y="380" class="label mini purple">Pleura parietalis:</text>
+<text x="78" y="407" class="label mini purple">Schmerz sensibel</text>
+<text x="78" y="435" class="label mini purple">N. phrenicus/interkostal</text>
+<circle cx="250" cy="350" r="16" class="badge"/><text x="242" y="358" class="label mini">5</text>
+
+<!-- route badges -->
+<circle cx="512" cy="392" r="16" class="badge"/><text x="504" y="400" class="label mini">6</text>
+<circle cx="898" cy="390" r="16" class="badge"/><text x="890" y="398" class="label mini">7</text>
+<text x="525" y="927" class="label small muted">Bild ist ein Lernschema: räumlich vereinfacht, nicht maßstabsgetreu.</text>
+</svg>

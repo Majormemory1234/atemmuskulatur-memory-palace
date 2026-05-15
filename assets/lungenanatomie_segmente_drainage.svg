@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+<title id="title">Bronchopulmonale Segmente und Drainage-Merkkarte</title>
+<desc id="desc">Übersicht der wichtigsten bronchopulmonalen Segmente, Blutversorgung, Lymphe und typischer Prüfungsfallen.</desc>
+<style>
+.bg{fill:#1e1f29}.panel{fill:#282a36;stroke:#6272a4;stroke-width:3}.label{font-family:Inter,Segoe UI,sans-serif;font-weight:900;fill:#f8f8f2}.big{font-size:40px}.med{font-size:26px}.mini{font-size:17px}.small{font-size:21px}.tiny{font-size:15px}.muted{fill:#c7c9d9}.cyan{fill:#8be9fd}.green{fill:#50fa7b}.pink{fill:#ff79c6}.orange{fill:#ffb86c}.yellow{fill:#f1fa8c}.purple{fill:#bd93f9}.red{fill:#ff5555}.box{fill:#343746;stroke:#6272a4;stroke-width:2}.rbox{fill:#243d35;stroke:#50fa7b;stroke-width:3}.lbox{fill:#3d2a45;stroke:#ff79c6;stroke-width:3}.line{stroke:#8be9fd;stroke-width:5;fill:none;stroke-linecap:round}.bloodR{stroke:#ff5555;stroke-width:7;fill:none;stroke-linecap:round}.bloodB{stroke:#8be9fd;stroke-width:7;fill:none;stroke-linecap:round}.lymph{stroke:#50fa7b;stroke-width:6;fill:none;stroke-dasharray:11 9;stroke-linecap:round}.badge{fill:#ff5555;stroke:#f8f8f2;stroke-width:3}.num{font-size:17px;font-family:Inter,Segoe UI,sans-serif;font-weight:1000;fill:#fff}
+</style>
+<rect class="bg" width="1400" height="760"/><rect x="35" y="35" width="1330" height="690" rx="30" class="panel"/>
+<text x="80" y="98" class="label big yellow">High-Yield-Karte: Segmente · Gefäße · Lymphe</text>
+<text x="80" y="132" class="label small muted">Was in MC-Fragen fast immer zählt: Segmentgrenzen, Aspiration, RALS, Pleuraschmerz, Lymphabfluss.</text>
+
+<rect x="75" y="175" width="510" height="465" rx="24" class="rbox"/>
+<text x="105" y="220" class="label med green">Rechte Lunge: 10 Segmente</text>
+<text x="105" y="255" class="label mini yellow">Oberlappen</text>
+<circle cx="125" cy="290" r="15" class="badge"/><text x="119" y="297" class="num">1</text><text x="155" y="297" class="label mini">apikal</text>
+<circle cx="125" cy="330" r="15" class="badge"/><text x="119" y="337" class="num">2</text><text x="155" y="337" class="label mini">posterior</text>
+<circle cx="125" cy="370" r="15" class="badge"/><text x="119" y="377" class="num">3</text><text x="155" y="377" class="label mini">anterior</text>
+<text x="320" y="255" class="label mini yellow">Mittellappen</text>
+<circle cx="340" cy="290" r="15" class="badge"/><text x="334" y="297" class="num">4</text><text x="370" y="297" class="label mini">lateral</text>
+<circle cx="340" cy="330" r="15" class="badge"/><text x="334" y="337" class="num">5</text><text x="370" y="337" class="label mini">medial</text>
+<text x="105" y="435" class="label mini yellow">Unterlappen</text>
+<circle cx="125" cy="470" r="15" class="badge"/><text x="119" y="477" class="num">6</text><text x="155" y="477" class="label mini">superior</text>
+<circle cx="125" cy="510" r="15" class="badge"/><text x="119" y="517" class="num">7</text><text x="155" y="517" class="label mini">medial-basal</text>
+<circle cx="125" cy="550" r="15" class="badge"/><text x="119" y="557" class="num">8</text><text x="155" y="557" class="label mini">anterior-basal</text>
+<circle cx="340" cy="510" r="15" class="badge"/><text x="334" y="517" class="num">9</text><text x="370" y="517" class="label mini">lateral-basal</text>
+<circle cx="340" cy="550" r="15" class="badge"/><text x="330" y="557" class="num">10</text><text x="370" y="557" class="label mini">posterior-basal</text>
+<text x="105" y="610" class="label mini muted">Segment = eigener Bronchus + eigene A. pulmonalis; Venen zwischen Segmenten.</text>
+
+<rect x="815" y="175" width="510" height="465" rx="24" class="lbox"/>
+<text x="845" y="220" class="label med pink">Linke Lunge: meist 8–10 Segmente</text>
+<text x="845" y="255" class="label mini yellow">Oberlappen + Lingula</text>
+<circle cx="865" cy="290" r="15" class="badge"/><text x="859" y="297" class="num">1</text><text x="895" y="297" class="label mini">apikal +</text>
+<circle cx="865" cy="330" r="15" class="badge"/><text x="859" y="337" class="num">2</text><text x="895" y="337" class="label mini">posterior oft kombiniert</text>
+<circle cx="865" cy="370" r="15" class="badge"/><text x="859" y="377" class="num">3</text><text x="895" y="377" class="label mini">anterior</text>
+<circle cx="1080" cy="310" r="15" class="badge"/><text x="1074" y="317" class="num">4</text><text x="1110" y="317" class="label mini">lingular superior</text>
+<circle cx="1080" cy="350" r="15" class="badge"/><text x="1074" y="357" class="num">5</text><text x="1110" y="357" class="label mini">lingular inferior</text>
+<text x="845" y="435" class="label mini yellow">Unterlappen</text>
+<circle cx="865" cy="470" r="15" class="badge"/><text x="859" y="477" class="num">6</text><text x="895" y="477" class="label mini">superior</text>
+<circle cx="865" cy="510" r="15" class="badge"/><text x="859" y="517" class="num">8</text><text x="895" y="517" class="label mini">anteromedial-basal</text>
+<circle cx="1080" cy="492" r="15" class="badge"/><text x="1074" y="499" class="num">9</text><text x="1110" y="499" class="label mini">lateral-basal</text>
+<circle cx="1080" cy="562" r="15" class="badge"/><text x="1070" y="569" class="num">10</text><text x="1110" y="569" class="label mini">posterior-basal</text>
+<text x="895" y="548" class="label tiny muted">S8 oft mit S7/medial kombiniert</text>
+<text x="845" y="610" class="label tiny muted">Varianten: S1+2 häufig zusammen; S7 links oft nicht separat.</text>
+
+<rect x="615" y="180" width="170" height="450" rx="20" class="box"/>
+<text x="642" y="220" class="label med cyan">Mitte</text>
+<path d="M700 255 C665 300 655 340 650 385" class="line"/><path d="M700 255 C735 300 745 340 750 385" class="line"/>
+<path d="M662 440 C630 490 625 545 640 590" class="bloodR"/><path d="M740 440 C775 493 778 545 760 590" class="bloodB"/>
+<path d="M700 610 C700 655 700 675 700 700" class="lymph"/>
+<text x="640" y="407" class="label mini cyan">Bronchien</text>
+<text x="635" y="635" class="label mini green">Lymphe → Hilum</text>
+<text x="642" y="472" class="label mini red">A. pulmonalis</text>
+<text x="647" y="522" class="label mini cyan">Vv. pulmonales</text>
+
+<text x="83" y="690" class="label small orange">Merksatz: „Luft und Pulmonalarterie gehen segmental hinein; Venen markieren die Grenzen.“</text>
+</svg>
