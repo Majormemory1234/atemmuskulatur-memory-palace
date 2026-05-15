@@ -5,78 +5,90 @@
 <title>RAAS: Renin-Angiotensin-Aldosteron-System</title>
 <link rel="stylesheet" href="../style.css">
 <style>
-.raas-hero h1{max-width:1200px}.schema-wide{width:100%;border-radius:18px;border:3px solid var(--comment);background:#1e1f29}.raas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.raas-card{background:rgba(52,55,70,.93);border:1px solid rgba(98,114,164,.85);border-radius:20px;padding:16px}.raas-card h3{font-size:clamp(22px,2.1vw,32px);margin:.1rem 0 .45rem}.big-rule{font-size:clamp(22px,3vw,39px);font-weight:1000;color:var(--yellow);line-height:1.12}.good{color:var(--green);font-weight:1000}.bad{color:var(--red);font-weight:1000}.pinkword{color:var(--pink);font-weight:1000}.hy{color:var(--yellow);font-weight:1000}.cyan{color:var(--cyan);font-weight:1000}.orange{color:var(--orange);font-weight:1000}.route{counter-reset:item;list-style:none;padding-left:0}.route li{counter-increment:item;margin:.85rem 0;padding-left:3.25rem;position:relative}.route li::before{content:counter(item);position:absolute;left:0;top:-.15rem;width:2.25rem;height:2.25rem;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-weight:1000;border:2px solid var(--text)}.drug-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}.drug{background:#343746;border:1px solid var(--comment);border-radius:18px;padding:14px}.drug h3{color:var(--pink)}@media(max-width:760px){.big-rule{font-size:24px}}
+:root{--raas-glow:0 0 34px rgba(139,233,253,.18),0 0 70px rgba(255,121,198,.10)}
+body{background:radial-gradient(circle at 15% 5%,rgba(255,121,198,.12),transparent 24rem),radial-gradient(circle at 85% 9%,rgba(139,233,253,.12),transparent 26rem),#1e1f29}.raas-hero{position:relative;overflow:hidden}.raas-hero::after{content:"";position:absolute;right:-140px;top:-160px;width:420px;height:420px;background:radial-gradient(circle,rgba(80,250,123,.18),transparent 68%);pointer-events:none}.raas-hero h1{max-width:1180px;letter-spacing:-.045em}.hero-line{font-size:clamp(24px,3.2vw,46px);font-weight:1000;color:var(--yellow);line-height:1.08;max-width:1180px}.hero-line b{color:var(--cyan)}.hero-punch{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:22px}.punch{border:1px solid rgba(98,114,164,.95);border-radius:18px;padding:13px 14px;background:linear-gradient(135deg,rgba(52,55,70,.98),rgba(40,42,54,.84));box-shadow:var(--raas-glow)}.punch strong{display:block;color:var(--pink);font-size:1.04rem}.punch span{font-size:.95rem;color:var(--text)}.schema-wide{width:100%;border-radius:22px;border:3px solid var(--comment);background:#161821;box-shadow:0 18px 70px rgba(0,0,0,.34)}.section-head{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.legend-strip{display:flex;flex-wrap:wrap;gap:8px;margin:.75rem 0 1.2rem}.tag{border:1px solid currentColor;border-radius:999px;padding:.32rem .62rem;font-weight:900;background:rgba(40,42,54,.7)}.cyan{color:var(--cyan)}.yellow{color:var(--yellow)}.orange{color:var(--orange)}.green{color:var(--green)}.pinkword{color:var(--pink)}.red{color:var(--red)}.player-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;margin:18px 0}.player{position:relative;overflow:hidden;border-radius:22px;padding:18px 18px 16px;overflow-wrap:anywhere;border:1px solid rgba(98,114,164,.9);background:linear-gradient(145deg,rgba(52,55,70,.96),rgba(32,35,49,.98));box-shadow:0 10px 34px rgba(0,0,0,.24)}.player::before{content:attr(data-n);position:absolute;right:12px;top:8px;font-size:3.2rem;font-weight:1000;color:rgba(248,248,242,.07)}.player h3{margin:.1rem 0 .45rem;font-size:clamp(23px,2.3vw,34px);line-height:1}.type{display:inline-block;border-radius:999px;padding:.25rem .55rem;font-weight:1000;font-size:.85rem;margin-bottom:.55rem}.t-enzyme{background:rgba(139,233,253,.13);color:var(--cyan);border:1px solid var(--cyan)}.t-protein{background:rgba(241,250,140,.13);color:var(--yellow);border:1px solid var(--yellow)}.t-peptide{background:rgba(255,184,108,.13);color:var(--orange);border:1px solid var(--orange)}.t-steroid{background:rgba(255,159,67,.13);color:#ffb86c;border:1px solid #ffb86c}.t-rec{background:rgba(80,250,123,.13);color:var(--green);border:1px solid var(--green)}.player dl{display:grid;grid-template-columns:76px 1fr;gap:.32rem .7rem;margin:.45rem 0 0;line-height:1.28}.player dt{color:var(--comment);font-weight:900}.player dd{margin:0}.flow-mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:14px}.step{background:#343746;border:1px solid rgba(98,114,164,.9);border-radius:18px;padding:12px}.step b{color:var(--yellow);display:block}.route{counter-reset:item;list-style:none;padding-left:0}.route li{counter-increment:item;margin:.78rem 0;padding-left:3.2rem;position:relative}.route li::before{content:counter(item);position:absolute;left:0;top:-.15rem;width:2.2rem;height:2.2rem;border-radius:50%;background:linear-gradient(135deg,var(--red),var(--pink));color:#fff;display:grid;place-items:center;font-weight:1000;border:2px solid var(--text)}.exam-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}.exam{border-left:5px solid var(--pink);background:rgba(52,55,70,.78);border-radius:18px;padding:14px}.exam h3{margin-top:0;color:var(--yellow)}.truth-table td:first-child{font-weight:1000;color:var(--cyan)}@media(max-width:850px){.hero-punch{grid-template-columns:1fr 1fr}.player dl{grid-template-columns:1fr}.player dt{margin-top:.25rem}}@media(max-width:560px){.hero-punch{grid-template-columns:1fr}}
 </style>
 </head>
 <body><nav class="site-nav"><a href="../index.html">← Index</a><a href="atemmuskulatur.html">Atemmuskulatur</a><a href="lungenanatomie.html">Lungenanatomie</a><a href="raas.html">RAAS</a><a href="carotis-externa.html">Carotis externa</a><a href="nasennebenhoehlen.html">Nasennebenhöhlen</a><a href="rhinoskopie.html">Rhinoskopie</a><a href="statistik-schiefe-verteilung.html">Statistik</a></nav>
 <header class="raas-hero">
 <p class="eyebrow">Physiologie · Niere · Endokrinologie · High Yield</p>
-<h1>RAAS: Renin-Angiotensin-Aldosteron-System</h1>
-<p class="big-rule">Wenn effektives Blutvolumen oder Nierendruck fällt: Niere setzt Renin frei → Angiotensin II macht Druck → Aldosteron spart Salz.</p>
-<p>Hier ist die prüfungsrelevante Kette: wo Renin entsteht, welche Moleküle Enzyme/Peptide/Steroide sind, wo sie binden, welche Effekte sie haben und wo Medikamente eingreifen.</p>
+<h1>RAAS: die Druck-Rettungs-Kaskade</h1>
+<p class="hero-line">Niere misst <b>zu wenig Druck/Salz</b> → Renin startet die Kaskade → Ang II presst → Aldosteron salzt → ADH wässert.</p>
+<div class="hero-punch" aria-label="RAAS Kurzformeln">
+<div class="punch"><strong>Renin</strong><span>Enzym aus JG-Zellen der afferenten Arteriole.</span></div>
+<div class="punch"><strong>Ang II</strong><span>Octapeptid-Hormon; AT1/Gq ist der Hauptschalter.</span></div>
+<div class="punch"><strong>Aldosteron</strong><span>Steroidhormon aus Zona glomerulosa; Na⁺ rein, K⁺/H⁺ raus.</span></div>
+<div class="punch"><strong>ADH</strong><span>Nonapeptid aus Hypothalamus; Neurohypophyse setzt frei.</span></div>
+</div>
 </header>
 <main>
 <section class="poster">
-<h2>Übersichtsdiagramm: RAAS-Kaskade</h2>
-<p>Das Diagramm trennt <b class="cyan">Enzyme</b>, <b class="hy">Hormone/Vorläufer</b>, <b class="good">Rezeptoren</b> und <b class="orange">Effekte</b>. Wichtig: Renin ist ein Enzym, Angiotensinogen ist ein Leber-Protein, Angiotensin II ist das zentrale Peptidhormon, Aldosteron ist ein Steroidhormon.</p>
-<img class="schema-wide" src="../assets/raas_flow_diagram.svg" alt="RAAS Ablaufdiagramm mit Renin Angiotensinogen ACE Angiotensin II AT1 Aldosteron und Effekten">
-<p><a href="../assets/raas_flow_diagram.svg" target="_blank" rel="noopener">RAAS-Kaskade groß öffnen</a></p>
+<div class="section-head"><div><h2>Clean Master-Diagramm: Player, Typ, Quelle, Ziel</h2><p>Ein Bild für die ganze Story. Die exakten Fakten stehen zusätzlich darunter als Wahrheitslayer.</p></div></div>
+<div class="legend-strip"><span class="tag cyan">Enzyme</span><span class="tag yellow">Proteine/Vorstufen</span><span class="tag orange">Peptidhormone</span><span class="tag green">Rezeptoren</span><span class="tag pinkword">Effekte</span><span class="tag red">Medikamenten-Blockaden</span></div>
+<img class="schema-wide" src="../assets/raas_player_map.svg" alt="RAAS Player Map mit Typen, Produktionsorten, Rezeptoren und Effekten inklusive ADH">
+<p><a href="../assets/raas_player_map.svg" target="_blank" rel="noopener">Master-Diagramm groß öffnen</a></p>
 </section>
 
-<section class="raas-grid" aria-label="RAAS Kernaussagen">
-<article class="raas-card"><h3 class="pinkword">Renin kommt aus der Niere</h3><p class="big-rule">JG-Zellen</p><p>Juxtaglomeruläre Zellen [juxtaglomeruläre Granulazellen] in der Wand der <b>afferenten Arteriole</b>. Freisetzung bei ↓ Druck, ↓ NaCl an Macula densa oder β1-Sympathikus.</p></article>
-<article class="raas-card"><h3 class="cyan">Renin ist ein Enzym</h3><p class="big-rule">Protease</p><p>Renin spaltet <b>Angiotensinogen</b> zu <b>Angiotensin I</b>. Es ist kein Steroidhormon und kein Rezeptor.</p></article>
-<article class="raas-card"><h3 class="hy">Ang II ist der Befehl</h3><p class="big-rule">AT1: Gq</p><p>Angiotensin II bindet v. a. an den <b>AT1-Rezeptor</b> [GPCR, Gq] → Vasokonstriktion, Aldosteron, ADH/Durst, proximale Na⁺-Rückresorption.</p></article>
-<article class="raas-card"><h3 class="orange">Aldosteron spart Salz</h3><p class="big-rule">Na⁺ rein, K⁺/H⁺ raus</p><p>Steroidhormon aus der <b>Zona glomerulosa</b>. Bindet intrazellulären Mineralokortikoid-Rezeptor im Sammelrohr → ENaC/Na⁺K⁺-ATPase ↑.</p></article>
-</section>
+<section class="poster"><h2>Die Player — was sind sie genau?</h2>
+<div class="player-grid">
+<article class="player" data-n="01"><span class="type t-enzyme">Enzym</span><h3>Renin</h3><dl><dt>Quelle</dt><dd>Juxtaglomeruläre Granulazellen [JG-Granulazellen] = modifizierte glatte Muskelzellen in der Wand der afferenten Arteriole.</dd><dt>Trigger</dt><dd>↓ Dehnung/Druck, ↓ NaCl an Macula densa, β1-Sympathikus.</dd><dt>Effekt</dt><dd>Spaltet Angiotensinogen → Angiotensin I.</dd></dl></article>
+<article class="player" data-n="02"><span class="type t-protein">Vorläuferprotein</span><h3>Angiotensinogen</h3><dl><dt>Quelle</dt><dd>Hepatozyten der Leber; zirkulierendes α2-Globulin.</dd><dt>Ziel</dt><dd>Substrat für Renin.</dd><dt>Effekt</dt><dd>Nach Renin-Spaltung entsteht Angiotensin I.</dd></dl></article>
+<article class="player" data-n="03"><span class="type t-peptide">Peptid</span><h3>Angiotensin I / ATI</h3><dl><dt>Typ</dt><dd>Decapeptid, relativ wenig biologisch aktiv.</dd><dt>Quelle</dt><dd>Entsteht im Plasma aus Angiotensinogen durch Renin.</dd><dt>Ziel</dt><dd>Substrat für ACE → Angiotensin II.</dd></dl></article>
+<article class="player" data-n="04"><span class="type t-enzyme">Enzym</span><h3>ACE</h3><dl><dt>Ort</dt><dd>Endothelgebunden: v. a. pulmonale Kapillaren; auch Gefäß- und Nierenendothel.</dd><dt>Typ</dt><dd>Zink-Metalloprotease / Dipeptidylcarboxypeptidase.</dd><dt>Effekt</dt><dd>Ang I → Ang II; Bradykinin-Abbau.</dd></dl></article>
+<article class="player" data-n="05"><span class="type t-peptide">Peptidhormon</span><h3>Angiotensin II / ATII</h3><dl><dt>Typ</dt><dd>Octapeptid; wichtigster akuter RAAS-Effektor.</dd><dt>Quelle</dt><dd>Entsteht aus Ang I durch ACE.</dd><dt>Effekt</dt><dd>Vasokonstriktion, Aldosteron ↑, ADH/Durst ↑, efferente Arteriole eng, proximal Na⁺ ↑.</dd></dl></article>
+<article class="player" data-n="06"><span class="type t-rec">Rezeptor</span><h3>AT1-Rezeptor</h3><dl><dt>Typ</dt><dd>Gq-gekoppelter GPCR → PLC/IP3/DAG/Ca²⁺.</dd><dt>Ort</dt><dd>Gefäßmuskel, Niere, Zona glomerulosa, ZNS.</dd><dt>Effekt</dt><dd>Vasokonstriktion + Aldosteronsekretion + Na⁺-Retention.</dd></dl></article>
+<article class="player" data-n="07"><span class="type t-steroid">Steroidhormon</span><h3>Aldosteron</h3><dl><dt>Quelle</dt><dd>Zona glomerulosa der Nebennierenrinde.</dd><dt>Bindet</dt><dd>Intrazellulärer Mineralokortikoid-Rezeptor [MR] im distalen Nephron/Sammelrohr.</dd><dt>Effekt</dt><dd>ENaC/Na⁺K⁺-ATPase ↑ → Na⁺/Wasser rein; K⁺ und H⁺ raus.</dd></dl></article>
+<article class="player" data-n="08"><span class="type t-peptide">Peptidhormon</span><h3>ADH / Vasopressin</h3><dl><dt>Quelle</dt><dd>Synthese im Ncl. supraopticus + paraventricularis des Hypothalamus; Speicherung/Freisetzung aus Neurohypophyse.</dd><dt>Rezeptor</dt><dd>V2 in Sammelrohr-Hauptzellen [Gs/cAMP]; V1 an Gefäßen [Gq].</dd><dt>Effekt</dt><dd>AQP2-Einbau ↑ → Wasserretention; bei hohen Spiegeln Vasokonstriktion.</dd></dl></article>
+</div></section>
 
-<section class="poster">
-<h2>Wo entsteht Renin? JGA + Zielorgane</h2>
-<p>Die Niere ist der Sensor: afferenter Druck, Macula-densa-NaCl und β1-Sympathikus entscheiden über Renin. Ang II und Aldosteron wirken dann an Gefäßen, Nebenniere, ZNS und Tubulus.</p>
+<section class="poster"><h2>Source/Target-Diagramm: Niere, Nebenniere, Sammelrohr</h2>
+<p>Das zweite Diagramm zoomt auf den juxtaglomerulären Apparat: genau dort wird Renin freigesetzt.</p>
 <img class="schema-wide" src="../assets/raas_kidney_targets.svg" alt="Juxtaglomerulärer Apparat mit Reninfreisetzung und RAAS Zielorganen">
 <p><a href="../assets/raas_kidney_targets.svg" target="_blank" rel="noopener">Nieren-/Zielorgan-Diagramm groß öffnen</a></p>
 </section>
 
-<section class="note topo-note"><h2>Walk-Route / Merksatz</h2>
+<section class="note topo-note"><h2>5-Schritt Walk-Route</h2>
 <ol class="route">
-<li><b>Sinkender Nierendruck</b>: afferente Arteriole ist schlaff, Macula densa sieht wenig NaCl, Sympathikus drückt β1.</li>
-<li><b>Renin-Schere</b>: JG-Zellen geben Renin ab; Renin schneidet Leber-Angiotensinogen.</li>
-<li><b>Ang I geht zur Lunge</b>: ACE auf Endothel, klassisch Lunge, macht daraus Ang II und baut Bradykinin ab.</li>
-<li><b>Ang II ruft AT1</b>: Gefäße eng, efferente Arteriole eng, proximal mehr Na⁺ rein, Durst/ADH hoch.</li>
-<li><b>Zona glomerulosa gießt Aldosteron</b>: Sammelrohr speichert Na⁺/Wasser und verliert K⁺/H⁺.</li>
+<li><b>Sensor:</b> afferente Arteriole wenig Dehnung, Macula densa wenig NaCl, β1-Sympathikus hoch.</li>
+<li><b>Renin:</b> JG-Zellen sezernieren Renin; Renin schneidet Leber-Angiotensinogen zu Ang I.</li>
+<li><b>ACE:</b> Endothel-ACE, v. a. Lunge, macht aus Ang I das aktive Ang II und baut Bradykinin ab.</li>
+<li><b>AT1:</b> Ang II bindet AT1/Gq → Gefäße eng, efferente Arteriole eng, Aldosteron/ADH/Durst hoch.</li>
+<li><b>Salz + Wasser:</b> Aldosteron speichert Na⁺, ADH speichert Wasser → effektives Volumen und Blutdruck steigen.</li>
 </ol>
+<div class="flow-mini"><div class="step"><b>Renin schneidet</b>Enzym, kein Hormon im klassischen Sinn.</div><div class="step"><b>Ang II presst</b>stärkster schneller Druck-Effektor.</div><div class="step"><b>Aldosteron salzt</b>Na⁺ rein; K⁺/H⁺ raus.</div><div class="step"><b>ADH wässert</b>freies Wasser via AQP2 rein.</div></div>
 </section>
 
-<section class="legend"><h2>Wahrheitslayer: Molekül, Typ, Ort, Rezeptor, Effekt</h2><table><thead><tr><th>Baustein</th><th>Was ist es?</th><th>Quelle / Ort</th><th>Bindung / Ziel</th><th>High-Yield Effekt</th></tr></thead><tbody>
-<tr><td><b>Renin</b></td><td>Enzym; Aspartyl-Protease</td><td>Juxtaglomeruläre Granulazellen der afferenten Arteriole</td><td>spaltet Angiotensinogen</td><td>Startet RAAS bei ↓ Nierendruck, ↓ NaCl, β1-Sympathikus</td></tr>
-<tr><td><b>Angiotensinogen</b></td><td>Plasma-Vorläuferprotein; α2-Globulin</td><td>Leber</td><td>Substrat von Renin</td><td>wird zu Angiotensin I</td></tr>
-<tr><td><b>Angiotensin I</b></td><td>Decapeptid; relativ inaktiv</td><td>aus Angiotensinogen durch Renin</td><td>Substrat von ACE</td><td>Vorstufe von Angiotensin II</td></tr>
-<tr><td><b>ACE</b></td><td>Zink-Metalloprotease / Dipeptidylcarboxypeptidase</td><td>Endothel, klassisch Lunge; auch Niere/Gefäße</td><td>Ang I → Ang II; Bradykinin-Abbau</td><td>ACE-Hemmer: ↓ Ang II, ↑ Bradykinin → Husten/Angioödem</td></tr>
-<tr><td><b>Angiotensin II</b></td><td>Octapeptid-Hormon</td><td>aus Ang I durch ACE</td><td>AT1-Rezeptor (GPCR, Gq); AT2 weniger prüfungszentral</td><td>Vasokonstriktion, Aldosteron ↑, ADH/Durst ↑, proximale Na⁺-Rückresorption ↑</td></tr>
-<tr><td><b>AT1-Rezeptor</b></td><td>Gq-gekoppelter GPCR</td><td>Gefäßmuskel, Niere, Nebennierenrinde, ZNS</td><td>bindet Ang II</td><td>Ca²⁺/IP3/DAG-Signal → Vasokonstriktion und Aldosteron-Stimulation</td></tr>
-<tr><td><b>Aldosteron</b></td><td>Steroidhormon / Mineralokortikoid</td><td>Zona glomerulosa der Nebennierenrinde</td><td>intrazellulärer Mineralokortikoid-Rezeptor</td><td>Hauptzellen: ENaC/Na⁺K⁺-ATPase ↑; α-Schaltzellen: H⁺-Sekretion ↑</td></tr>
-<tr><td><b>ANP/BNP</b></td><td>Peptidhormone</td><td>Vorhof/Ventrikel bei Dehnung</td><td>Natriuretische Peptid-Rezeptoren</td><td>Gegenspieler: Natriurese, Vasodilatation, Renin/Aldosteron ↓</td></tr>
+<section class="legend"><h2>Wahrheitslayer: Typ · exakte Quelle · Bindung · Effekt</h2><table class="truth-table"><thead><tr><th>Player</th><th>Typ</th><th>Exakte Produktion / Freisetzung</th><th>Bindung / Ziel</th><th>Effekt</th></tr></thead><tbody>
+<tr><td>Renin</td><td>Aspartyl-Protease; Enzym</td><td>Juxtaglomeruläre Granulazellen [JG-Granulazellen], modifizierte glatte Muskelzellen in der Wand der afferenten Arteriole</td><td>Angiotensinogen</td><td>Angiotensinogen → Angiotensin I; RAAS-Start</td></tr>
+<tr><td>Angiotensinogen</td><td>α2-Globulin; Vorläuferprotein</td><td>Hepatozyten der Leber; zirkuliert im Plasma</td><td>Substrat für Renin</td><td>Vorläufer für Ang I</td></tr>
+<tr><td>Angiotensin I / ATI</td><td>Decapeptid</td><td>Entsteht aus Angiotensinogen durch Renin im Blut/Plasma</td><td>Substrat für ACE</td><td>Relativ inaktiv; Vorstufe von Ang II</td></tr>
+<tr><td>ACE</td><td>Zink-Metalloprotease</td><td>Endothelgebunden, klassisch pulmonales Kapillarendothel; auch systemische Endothelien</td><td>Ang I und Bradykinin</td><td>Ang I → Ang II; Bradykinin-Abbau</td></tr>
+<tr><td>Angiotensin II / ATII</td><td>Octapeptid-Peptidhormon</td><td>Aus Ang I durch ACE; lokal auch Gewebe-RAAS</td><td>v. a. AT1-Rezeptor; AT2 weniger prüfungszentral</td><td>Vasokonstriktion, efferente Arteriole eng, Aldosteron ↑, ADH/Durst ↑, proximal Na⁺ ↑</td></tr>
+<tr><td>AT1-Rezeptor</td><td>Gq-GPCR</td><td>Rezeptor auf Gefäßmuskel, Niere, Zona glomerulosa, ZNS</td><td>Ang II</td><td>IP3/DAG/Ca²⁺ ↑ → Vasokonstriktion und Aldosteronfreisetzung</td></tr>
+<tr><td>Aldosteron</td><td>Steroidhormon; Mineralokortikoid</td><td>Zona glomerulosa der Nebennierenrinde; stimuliert durch Ang II und Hyperkaliämie</td><td>Intrazellulärer Mineralokortikoid-Rezeptor im Sammelrohr/distalen Nephron</td><td>ENaC und Na⁺/K⁺-ATPase ↑; Na⁺/Wasser rein, K⁺/H⁺ raus</td></tr>
+<tr><td>ADH / Vasopressin</td><td>Nonapeptid-Peptidhormon</td><td>Synthese: Ncl. supraopticus + paraventricularis im Hypothalamus; Freisetzung: Neurohypophyse</td><td>V2 [Gs] im Sammelrohr; V1 [Gq] an Gefäßen</td><td>V2: AQP2 ↑ → Wasserretention; V1: Vasokonstriktion</td></tr>
+<tr><td>ANP/BNP</td><td>Natriuretische Peptidhormone</td><td>ANP: Vorhof; BNP: Ventrikel bei Dehnung</td><td>Natriuretische Peptidrezeptoren</td><td>Gegenspieler: Natriurese, Vasodilatation, Renin/Aldosteron ↓</td></tr>
 </tbody></table></section>
 
 <section class="legend"><h2>Medikamente: wo greift man ein?</h2><table><thead><tr><th>Stelle</th><th>Beispiel</th><th>Mechanismus</th><th>Prüfungsfalle</th></tr></thead><tbody>
 <tr><td><b>β1 an JG-Zellen</b></td><td>β-Blocker</td><td>Reninfreisetzung ↓</td><td>Sympathikus stimuliert Renin über β1, nicht α1.</td></tr>
-<tr><td><b>Renin</b></td><td>Aliskiren</td><td>direkter Renin-Inhibitor</td><td>Kontraindikationen/Interaktionen ähnlich RAAS-Blockade beachten.</td></tr>
-<tr><td><b>ACE</b></td><td>ACE-Hemmer: Ramipril, Enalapril</td><td>Ang II ↓, Bradykinin ↑</td><td>Husten/Angioödem; kontraindiziert in Schwangerschaft; Kreatinin/K⁺ kontrollieren.</td></tr>
-<tr><td><b>AT1</b></td><td>ARB/Sartane: Losartan, Valsartan</td><td>blockiert AT1-Rezeptor</td><td>weniger Bradykinin-Husten als ACE-Hemmer; trotzdem Hyperkaliämie/Schwangerschaftsverbot.</td></tr>
+<tr><td><b>Renin</b></td><td>Aliskiren</td><td>direkter Renin-Inhibitor</td><td>Reserve; nicht mit ACE-Hemmer/ARB bei Diabetes/Niereninsuffizienz kombinieren.</td></tr>
+<tr><td><b>ACE</b></td><td>Ramipril, Enalapril</td><td>Ang II ↓, Bradykinin ↑</td><td>Husten/Angioödem; Hyperkaliämie; teratogen; Kreatininanstieg möglich.</td></tr>
+<tr><td><b>AT1</b></td><td>Losartan, Valsartan</td><td>blockiert AT1-Rezeptor</td><td>weniger Bradykinin-Husten; trotzdem Hyperkaliämie und Schwangerschaftsverbot.</td></tr>
 <tr><td><b>MR/Aldosteron</b></td><td>Spironolacton, Eplerenon</td><td>Mineralokortikoid-Rezeptor-Antagonisten</td><td>Hyperkaliämie; Spironolacton antiandrogen → Gynäkomastie.</td></tr>
+<tr><td><b>ADH V2</b></td><td>Tolvaptan; Desmopressin als Agonist</td><td>Vaptane blocken Wasserretention; Desmopressin ersetzt ADH</td><td>Vaptane bei SIADH; Desmopressin bei zentralem Diabetes insipidus/vWF-Freisetzung.</td></tr>
 </tbody></table></section>
 
-<section class="note"><h2>High-Yield Gems / Pearls</h2><ul>
-<li><b>Renal artery stenosis [Nierenarterienstenose]:</b> Niere denkt „zu wenig Druck“ → Renin ↑ → sekundärer Hyperaldosteronismus; ACE-Hemmer können bei bilateraler Stenose/Einzelniere GFR stark senken.</li>
-<li><b>Efferente Arteriole:</b> Ang II konstrigiert bevorzugt efferent → glomerulärer Druck/GFR kurzfristig erhalten, aber renale Durchblutung sinkt.</li>
-<li><b>Primärer Hyperaldosteronismus [Conn-Syndrom]:</b> Aldosteron ↑, Renin ↓, Hypertonie + Hypokaliämie + metabolische Alkalose.</li>
-<li><b>Sekundärer Hyperaldosteronismus:</b> Renin ↑ und Aldosteron ↑, z. B. Nierenarterienstenose, Herzinsuffizienz, Zirrhose.</li>
-<li><b>ACE-Hemmer Nebenwirkungen:</b> Hyperkaliämie, Kreatininanstieg, Husten/Angioödem durch Bradykinin, teratogen.</li>
-<li><b>Aldosteron-Effekt:</b> Na⁺-Retention zieht Wasser nach; K⁺- und H⁺-Verlust erklärt Hypokaliämie und metabolische Alkalose.</li>
-<li><b>Negatives Feedback:</b> Ang II hemmt Reninfreisetzung; Volumen-/Druckanstieg bremst RAAS.</li>
-</ul></section>
+<section class="note"><h2>High-Yield Gems / Pearls</h2><div class="exam-grid">
+<div class="exam"><h3>Nierenarterienstenose</h3><p>Niere denkt „zu wenig Druck“ → Renin ↑, Ang II ↑, Aldosteron ↑. ACE-Hemmer können bei bilateraler Stenose/Einzelniere die GFR stark senken.</p></div>
+<div class="exam"><h3>Conn-Syndrom</h3><p>Primärer Hyperaldosteronismus: Aldosteron ↑, Renin ↓ → Hypertonie, Hypokaliämie, metabolische Alkalose.</p></div>
+<div class="exam"><h3>Sekundär</h3><p>Renin ↑ und Aldosteron ↑: z. B. Nierenarterienstenose, Herzinsuffizienz, Zirrhose.</p></div>
+<div class="exam"><h3>Efferente Arteriole</h3><p>Ang II konstrigiert bevorzugt efferent → glomerulärer Druck/GFR kurzfristig erhalten, renaler Plasmafluss sinkt, Filtrationsfraktion ↑.</p></div>
+<div class="exam"><h3>ACE-Hemmer</h3><p>Ang II ↓ und Bradykinin ↑ → Husten/Angioödem. Außerdem Hyperkaliämie, Kreatininanstieg, kontraindiziert in Schwangerschaft.</p></div>
+<div class="exam"><h3>Aldosteron-Lab</h3><p>Na⁺-Retention zieht Wasser nach; K⁺- und H⁺-Verlust erklärt Hypokaliämie + metabolische Alkalose.</p></div>
+</div></section>
 
-<section class="note"><h2>Mini-Prüfungsfrage</h2><p><b>Frage:</b> Ein Patient mit bilateraler Nierenarterienstenose erhält einen ACE-Hemmer und entwickelt einen Kreatininanstieg. Welche RAAS-Wirkung wurde blockiert?</p><p><b>Antwort:</b> Angiotensin II konstrigiert bevorzugt die efferente Arteriole und hält so den glomerulären Filtrationsdruck aufrecht. ACE-Hemmung nimmt diese efferente Konstriktion weg → GFR fällt.</p></section>
+<section class="note"><h2>Mini-Prüfungsfrage</h2><p><b>Frage:</b> Ein Patient mit bilateraler Nierenarterienstenose erhält Ramipril und entwickelt einen Kreatininanstieg. Welche RAAS-Wirkung wurde blockiert?</p><p><b>Antwort:</b> Angiotensin II hält über bevorzugte efferente Vasokonstriktion den glomerulären Filtrationsdruck aufrecht. ACE-Hemmung nimmt diese efferente Konstriktion weg → GFR fällt.</p></section>
 
 <section class="note"><h2>Quellen / Hinweis</h2><p>Selbst gezeichnete Lernschemata, nicht maßstabsgetreu. Für prüfungsnahe Details zu Medikamenten/Kontraindikationen immer mit Kurs/AMBOSS/Via Medici abgleichen.</p><p><a href="https://www.ncbi.nlm.nih.gov/books/NBK470410/" target="_blank" rel="noopener">StatPearls: Physiology, Renin Angiotensin System</a> · <a href="https://www.ncbi.nlm.nih.gov/books/NBK538331/" target="_blank" rel="noopener">StatPearls: ACE Inhibitors</a> · <a href="https://openstax.org/books/anatomy-and-physiology-2e/pages/26-3-electrolyte-balance" target="_blank" rel="noopener">OpenStax: Electrolyte Balance / RAAS</a></p></section>
 </main>

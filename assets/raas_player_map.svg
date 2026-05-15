@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1180" role="img" aria-labelledby="title desc">
+<title id="title">RAAS Clean Master Diagram</title>
+<desc id="desc">Clean RAAS diagram with molecule types, sources, receptors and major effects including ADH.</desc>
+<style>
+.bg{fill:#161821}.panel{fill:#202331;stroke:#6272a4;stroke-width:3}.lane{fill:#282a36;stroke:#44475a;stroke-width:2}.box{stroke-width:3;rx:24}.trigger{fill:#3a234d;stroke:#ff79c6}.enzyme{fill:#123d49;stroke:#8be9fd}.protein{fill:#463b16;stroke:#f1fa8c}.peptide{fill:#453017;stroke:#ffb86c}.steroid{fill:#3b271e;stroke:#ffb86c}.receptor{fill:#183f2a;stroke:#50fa7b}.effect{fill:#3a2730;stroke:#ff79c6}.label{font-family:Inter,Segoe UI,Arial,sans-serif;font-weight:900;fill:#f8f8f2}.big{font-size:50px}.med{font-size:30px}.small{font-size:21px}.mini{font-size:17px}.muted{fill:#c7c9d9}.pink{fill:#ff79c6}.cyan{fill:#8be9fd}.yellow{fill:#f1fa8c}.green{fill:#50fa7b}.orange{fill:#ffb86c}.red{fill:#ff5555}.arrow{fill:none;stroke:#f8f8f2;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrow)}.branch{fill:none;stroke:#ffb86c;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowO)}.drugline{fill:none;stroke:#ff5555;stroke-width:5;stroke-dasharray:10 8;marker-end:url(#bar)}.chip{fill:#343746;stroke:#6272a4;stroke-width:2}.numcirc{fill:#f8f8f2;stroke:#ff5555;stroke-width:4}.num{font-size:20px;fill:#161821;font-weight:1000}.class{font-size:16px;font-weight:1000}.glow{filter:url(#glow)}
+</style>
+<defs>
+<marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M1 1 L13 7 L1 13 Z" fill="#f8f8f2"/></marker>
+<marker id="arrowO" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto"><path d="M1 1 L13 7 L1 13 Z" fill="#ffb86c"/></marker>
+<marker id="bar" markerWidth="12" markerHeight="12" refX="8" refY="6" orient="auto"><path d="M8 1 L8 11" stroke="#ff5555" stroke-width="4"/></marker>
+<filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect class="bg" width="1800" height="1180"/><rect x="35" y="35" width="1730" height="1110" rx="34" class="panel"/>
+<text x="70" y="98" class="label big yellow">RAAS: Niere startet → Ang II befiehlt → Salz &amp; Wasser bleiben</text>
+<text x="72" y="138" class="label small muted">Clean map: große Box = Player · farbiger Chip = Molekültyp · kleine Zeilen = exakte Quelle / Hauptwirkung</text>
+
+<rect x="70" y="175" width="1660" height="150" rx="26" class="lane"/>
+<text x="100" y="218" class="label med pink">1  Trigger für Reninfreisetzung</text>
+<rect x="100" y="245" width="360" height="52" rx="16" class="chip"/><text x="125" y="279" class="label small">↓ Druck/Dehnung afferent</text>
+<rect x="500" y="245" width="380" height="52" rx="16" class="chip"/><text x="525" y="279" class="label small">↓ NaCl an Macula densa</text>
+<rect x="920" y="245" width="300" height="52" rx="16" class="chip"/><text x="945" y="279" class="label small">β1-Sympathikus ↑</text>
+<rect x="1260" y="245" width="410" height="52" rx="16" class="chip"/><text x="1285" y="279" class="label small yellow">= effektives Volumen zu niedrig</text>
+
+<!-- cascade row -->
+<rect x="80" y="390" width="250" height="175" rx="24" class="box enzyme glow"/>
+<circle cx="108" cy="420" r="18" class="numcirc"/><text x="102" y="427" class="label num">2</text>
+<text x="135" y="425" class="label med cyan">Renin</text>
+<text x="110" y="462" class="label class cyan">ENZYM / Protease</text>
+<text x="110" y="496" class="label mini">JG-Granulazellen</text>
+<text x="110" y="523" class="label mini muted">afferente Arteriole</text>
+<text x="110" y="550" class="label mini yellow">schneidet</text>
+
+<rect x="410" y="390" width="285" height="175" rx="24" class="box protein"/>
+<circle cx="438" cy="420" r="18" class="numcirc"/><text x="432" y="427" class="label num">3</text>
+<text x="465" y="425" class="label med yellow">Angiotensinogen</text>
+<text x="440" y="462" class="label class yellow">VORLÄUFERPROTEIN</text>
+<text x="440" y="496" class="label mini">Hepatozyten / Leber</text>
+<text x="440" y="523" class="label mini muted">α2-Globulin im Plasma</text>
+
+<rect x="775" y="390" width="235" height="175" rx="24" class="box peptide"/>
+<circle cx="803" cy="420" r="18" class="numcirc"/><text x="797" y="427" class="label num">4</text>
+<text x="830" y="425" class="label med orange">Ang I / ATI</text>
+<text x="805" y="462" class="label class orange">DECAPEPTID</text>
+<text x="805" y="496" class="label mini">relativ inaktiv</text>
+<text x="805" y="523" class="label mini muted">Substrat für ACE</text>
+
+<rect x="1090" y="390" width="245" height="175" rx="24" class="box enzyme"/>
+<circle cx="1118" cy="420" r="18" class="numcirc"/><text x="1112" y="427" class="label num">5</text>
+<text x="1150" y="425" class="label med cyan">ACE</text>
+<text x="1120" y="462" class="label class cyan">ENZYM</text>
+<text x="1120" y="496" class="label mini">Endothel, v.a. Lunge</text>
+<text x="1120" y="523" class="label mini muted">Ang I → Ang II</text>
+<text x="1120" y="550" class="label mini muted">Bradykinin ↓</text>
+
+<rect x="1415" y="390" width="295" height="175" rx="24" class="box peptide glow"/>
+<circle cx="1443" cy="420" r="18" class="numcirc"/><text x="1437" y="427" class="label num">6</text>
+<text x="1475" y="425" class="label med orange">Ang II / ATII</text>
+<text x="1445" y="462" class="label class orange">OCTAPEPTID-HORMON</text>
+<text x="1445" y="496" class="label mini">aktiv aus Ang I</text>
+<text x="1445" y="523" class="label mini yellow">zentraler Befehl</text>
+
+<path class="arrow" d="M330 477 L410 477"/><text x="342" y="454" class="label mini cyan">spaltet</text>
+<path class="arrow" d="M695 477 L775 477"/>
+<path class="arrow" d="M1010 477 L1090 477"/>
+<path class="arrow" d="M1335 477 L1415 477"/><text x="1347" y="454" class="label mini cyan">2 AS ab</text>
+<path class="arrow" d="M900 325 C835 350 705 355 570 390"/>
+<path class="arrow" d="M900 325 C760 345 330 355 220 390"/>
+
+<!-- receptor/effect row -->
+<rect x="90" y="705" width="365" height="235" rx="24" class="box effect"/>
+<text x="120" y="747" class="label med pink">Gefäße / Niere</text>
+<text x="120" y="789" class="label small">AT1 auf Gefäßmuskel</text>
+<text x="120" y="823" class="label small">→ Vasokonstriktion</text>
+<text x="120" y="857" class="label small">efferent > afferent eng</text>
+<text x="120" y="891" class="label mini muted">GFR kurzfristig erhalten</text>
+
+<rect x="520" y="705" width="320" height="235" rx="24" class="box receptor"/>
+<text x="550" y="747" class="label med green">AT1-Rezeptor</text>
+<text x="550" y="789" class="label small">Typ: GPCR / Gq</text>
+<text x="550" y="823" class="label small">bindet Ang II</text>
+<text x="550" y="857" class="label mini muted">PLC → IP3/DAG → Ca²⁺</text>
+<text x="550" y="891" class="label mini yellow">Sartane blockieren hier</text>
+
+<rect x="905" y="705" width="355" height="235" rx="24" class="box steroid"/>
+<text x="935" y="747" class="label med orange">Aldosteron</text>
+<text x="935" y="789" class="label small">Typ: Steroidhormon</text>
+<text x="935" y="823" class="label small">Quelle: Zona glomerulosa</text>
+<text x="935" y="857" class="label small">MR im Sammelrohr</text>
+<text x="935" y="891" class="label mini muted">Na⁺ rein · K⁺/H⁺ raus</text>
+
+<rect x="1325" y="705" width="365" height="235" rx="24" class="box peptide"/>
+<text x="1355" y="747" class="label med orange">ADH / Vasopressin</text>
+<text x="1355" y="789" class="label small">Typ: Nonapeptid</text>
+<text x="1355" y="823" class="label mini">Synthese: Ncl. supraopticus</text>
+<text x="1355" y="850" class="label mini">+ paraventricularis</text>
+<text x="1355" y="877" class="label mini muted">Freisetzung: Neurohypophyse</text>
+<text x="1355" y="904" class="label mini yellow">V2 → AQP2 → Wasser rein</text>
+
+<path class="branch" d="M1535 565 C1500 630 1460 660 1420 705"/>
+<path class="branch" d="M1535 565 C1390 650 1130 670 1085 705"/>
+<path class="branch" d="M1535 565 C1230 630 800 655 680 705"/>
+<path class="branch" d="M1535 565 C1260 640 420 650 270 705"/>
+
+<rect x="90" y="990" width="1600" height="95" rx="24" class="chip"/>
+<text x="120" y="1032" class="label med yellow">Merksatz:</text>
+<text x="305" y="1032" class="label med">Renin schneidet · Ang II presst · Aldosteron salzt · ADH wässert.</text>
+<text x="120" y="1066" class="label small muted">Exam-Falle: ACE-Hemmer/ARB nehmen efferente Konstriktion weg → GFR-Abfall bei bilateraler Nierenarterienstenose.</text>
+
+<path class="drugline" d="M225 355 C225 370 225 380 225 390"/><text x="120" y="355" class="label mini red">β-Blocker ↓ Renin</text>
+<path class="drugline" d="M1210 350 C1210 365 1210 380 1210 390"/><text x="1220" y="355" class="label mini red">ACE-Hemmer</text>
+<path class="drugline" d="M675 665 C675 680 675 695 675 705"/><text x="520" y="665" class="label mini red">ARB/Sartane</text>
+<path class="drugline" d="M1085 665 C1085 680 1085 695 1085 705"/><text x="970" y="665" class="label mini red">MR-Antagonisten</text>
+</svg>
