@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Schema arterielle Versorgung des Thymus über die A. thoracica interna">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#282a36"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#ff5555"/></marker>
+  </defs>
+  <rect width="1200" height="760" rx="34" fill="url(#bg)"/>
+  <text x="60" y="70" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#f8f8f2">Thymus: arterielle Versorgung</text>
+  <text x="60" y="115" font-family="Arial, sans-serif" font-size="25" fill="#f1fa8c">IMPP-Kern: überwiegend aus der A. thoracica interna</text>
+
+  <path d="M600 95 C600 150 600 175 600 215" stroke="#bd93f9" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <text x="625" y="158" font-family="Arial, sans-serif" font-size="24" fill="#bd93f9">Trachea</text>
+
+  <path d="M430 220 C360 315 350 455 410 585" stroke="#8be9fd" stroke-width="14" stroke-linecap="round" fill="none" opacity=".9"/>
+  <path d="M770 220 C840 315 850 455 790 585" stroke="#8be9fd" stroke-width="14" stroke-linecap="round" fill="none" opacity=".9"/>
+  <text x="285" y="250" font-family="Arial, sans-serif" font-size="25" fill="#8be9fd">Lunge</text>
+  <text x="850" y="250" font-family="Arial, sans-serif" font-size="25" fill="#8be9fd">Lunge</text>
+
+  <path d="M565 245 C510 300 488 405 515 540 C540 625 655 625 685 540 C712 405 690 300 635 245 C615 225 585 225 565 245 Z" fill="#ff79c6" stroke="#ffb86c" stroke-width="6" filter="url(#glow)"/>
+  <text x="535" y="430" font-family="Arial, sans-serif" font-size="34" font-weight="800" fill="#282a36">THYMUS</text>
+  <text x="487" y="465" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#282a36">vorderes/oberes Mediastinum</text>
+
+  <path d="M470 150 L470 625" stroke="#ff5555" stroke-width="12" stroke-linecap="round"/>
+  <path d="M730 150 L730 625" stroke="#ff5555" stroke-width="12" stroke-linecap="round"/>
+  <text x="160" y="165" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#ff5555">A. thoracica interna</text>
+  <text x="780" y="165" font-family="Arial, sans-serif" font-size="30" font-weight="800" fill="#ff5555">A. thoracica interna</text>
+
+  <path d="M470 300 C505 305 525 320 550 345" stroke="#ff5555" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+  <path d="M470 395 C508 400 535 415 560 445" stroke="#ff5555" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+  <path d="M730 300 C695 305 675 320 650 345" stroke="#ff5555" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+  <path d="M730 395 C692 400 665 415 640 445" stroke="#ff5555" stroke-width="7" fill="none" marker-end="url(#arrow)"/>
+  <text x="72" y="345" font-family="Arial, sans-serif" font-size="23" fill="#f8f8f2">thymische / vordere mediastinale Äste</text>
+  <text x="760" y="345" font-family="Arial, sans-serif" font-size="23" fill="#f8f8f2">perikardiakophrenische Äste möglich</text>
+
+  <rect x="58" y="610" width="1084" height="96" rx="22" fill="#343746" stroke="#6272a4"/>
+  <text x="85" y="650" font-family="Arial, sans-serif" font-size="26" font-weight="800" fill="#50fa7b">Merke:</text>
+  <text x="185" y="650" font-family="Arial, sans-serif" font-size="26" fill="#f8f8f2">Thymus liegt vorne hinter dem Sternum → vordere Brustwandarterie = A. thoracica interna.</text>
+  <text x="85" y="685" font-family="Arial, sans-serif" font-size="22" fill="#f1fa8c">Nicht: A. intercostalis suprema / A. vertebralis / A. cervicalis profunda — diese gehören eher dorsal/kranial.</text>
+</svg>
